@@ -21,6 +21,17 @@ def test_counter_and_sampled_power_agree():
     assert reading.samples > 5
 
 
+def test_a_trace_gives_the_draw_sample_by_sample():
+    rows = GpuMeter(nvml=FakeNvml(), interval=0.01).trace(0.1)
+    times = [at for at, _, _ in rows]
+
+    assert len(rows) > 5
+    assert times == sorted(times) and times[0] < 0.01 and times[-1] >= 0.1
+    assert all(watts == 200 for _, watts, _ in rows)
+    # The counter climbs at the rate the samples say.
+    assert rows[-1][2] - rows[0][2] == pytest.approx(200 * (times[-1] - times[0]), rel=0.05)
+
+
 def test_falls_back_to_sampled_power_without_a_counter():
     meter = GpuMeter(nvml=FakeNvml(counter=False), interval=0.01)
     assert meter.describe() == {"gpu": "Fake L40S", "driver": "1.0", "energy_counter": False}

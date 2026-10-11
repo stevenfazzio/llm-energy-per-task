@@ -122,3 +122,19 @@ class GpuMeter:
         self.start()
         time.sleep(seconds)
         return self.stop().mean_watts
+
+    def trace(self, seconds: float) -> list[tuple[float, float, float | None]]:
+        """The draw over a quiet stretch, sample by sample, so its settling can be seen.
+
+        Each row is seconds since the start, watts, and the counter in joules.
+        """
+        if self._thread is not None:
+            raise RuntimeError("already metering")
+        began = self._clock()
+        rows = []
+        while True:
+            now, watts = self._sample()
+            rows.append((now - began, watts, self._counter()))
+            if now - began >= seconds:
+                return rows
+            time.sleep(self._interval)

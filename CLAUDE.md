@@ -64,12 +64,15 @@ What it left open, for Steven to decide:
   the time. The pilot's own files still carry F1 as their score.
 - **`idle_watts` is not a settled idle.** It read 108 to 113 W, 2 seconds after
   warm-up. The same card drew 35 W empty at boot and still 56 W empty, 11
-  seconds after a run exited, so it settles slower than that. Talked through on
-  2026-10-11: leave `run.py` alone. The loaded, idle state is the same for
-  every model, since vLLM reserves the same memory each time, and the number
-  enters nothing. Proposed and not yet agreed: read it once on the full-run
-  pod before `run_all` (the empty card, then a two-minute trace after a burst
-  with a model loaded) and publish that in the README.
+  seconds after a run exited, so it settles slower than that. Decided with
+  Steven on 2026-10-11: leave the per-run reading as it is, and calibrate once
+  at the end of the full run, after the results are copied back, with
+  `bash scripts/pod_run.sh calibrate`. That writes `results/calibration.json`:
+  the card empty, the card loaded and settled, and what `idle_watts` catches,
+  each with its trace. Put those three numbers in the README afterwards.
+  `calibrate.py` has only run against fakes, which is why it goes last. It is
+  documentation, not a correction: nothing here can read the draw in the gaps
+  inside a task, which is what the next item would need.
 - **The small end is overcharged.** Energy per item follows model size times
   tokens to within 12% across the 3B and 7B models, and the 0.5B model sits 8
   to 37% above them. That biases against the smallest models, so it understates

@@ -111,6 +111,7 @@ src/llm_energy_per_task/
   energy.py          the NVML meter
   run.py             measure one model            (pod)
   run_all.py         loop over models, resumable  (pod)
+  calibrate.py       what the card draws doing nothing, once per pod  (pod)
   frontier.py        results -> summary.csv and frontier.csv
 scripts/pod_run.sh   install and run, on the pod
 scripts/pod_guard.sh has the pod terminate itself after a time limit
@@ -176,9 +177,14 @@ On a rented GPU (run once, for the pilot, on RunPod's secure cloud):
      'umask 077; mkdir -p /workspace/hf-cache; cat > /workspace/hf-cache/token'
    ```
 
-4. Copy `results/` back, then terminate the pod, which deletes its disk:
+4. Copy `results/` back. Then, with the measurements safe, read what the card
+   draws doing nothing (about six minutes), copy that back too, and terminate
+   the pod, which deletes its disk:
 
    ```sh
+   rsync -az -e "ssh -p PORT" root@HOST:/workspace/llm-energy-per-task/results/ results/
+   ssh -p PORT root@HOST 'cd /workspace/llm-energy-per-task; \
+     bash scripts/pod_run.sh calibrate > calibrate.log 2>&1'
    rsync -az -e "ssh -p PORT" root@HOST:/workspace/llm-energy-per-task/results/ results/
    ssh -p PORT root@HOST 'bash -s -- now' < scripts/pod_guard.sh
    ```

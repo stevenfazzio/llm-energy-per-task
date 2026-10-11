@@ -12,7 +12,7 @@ import types
 import pytest
 from fakes import FakeNvml
 
-from llm_energy_per_task import TASK_DATA, run
+from llm_energy_per_task import TASK_DATA, calibrate, run
 from llm_energy_per_task.energy import GpuMeter
 from llm_energy_per_task.models import Model
 
@@ -121,3 +121,27 @@ def test_a_smoke_run_writes_outside_the_real_results(fake_gpu, monkeypatch, tmp_
         lines = (tmp_path / "smoke" / "outputs" / MODEL.slug / f"{name}.jsonl").read_text()
         assert len(lines.splitlines()) == 4
     assert not (tmp_path / "runs").exists()
+
+
+def test_calibration_traces_the_card_empty_then_quiet_after_the_usual_warm_up(
+    fake_gpu, monkeypatch
+):
+    monkeypatch.setattr(calibrate, "GpuMeter", lambda: GpuMeter(nvml=FakeNvml(), interval=0.01))
+    record = calibrate.calibrate(MODEL, empty_s=0.1, quiet_s=0.2)
+
+    json.dumps(record)
+    # The engine is the one every measurement uses, and so is the warm-up before the quiet.
+    assert FakeLLM.engine_args["max_num_seqs"] == run.MAX_NUM_SEQS
+    warm_ups = [(run.WARMUP_ITEMS, task.max_tokens) for task in run.TASKS.values()]
+    assert [(asked, cap) for asked, cap, _ in FakeLLM.calls] == warm_ups
+    for key in ("empty_watts", "loaded_watts", "idle_watts_as_recorded"):
+        assert record[key] == pytest.approx(200, rel=0.05), key
+    assert record["empty_trace"][-1][0] >= 0.1
+    assert record["loaded_trace"][-1][0] >= 0.2
+
+
+def test_mean_watts_prefers_the_counter_and_falls_back_to_the_samples():
+    rows = [(0.0, 100.0, 0.0), (1.0, 100.0, 150.0), (2.0, 100.0, 300.0)]
+    assert calibrate.mean_watts(rows, 0, 2) == 150
+    assert calibrate.mean_watts([(at, watts, None) for at, watts, _ in rows], 0, 2) == 100
+    assert calibrate.mean_watts(rows, 5, 9) is None  # nothing was read in that stretch

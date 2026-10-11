@@ -68,16 +68,10 @@ def timed_passes(
     return first, passes, meter.stop()
 
 
-def measure(
-    model: Model, task_names: list[str], limit: int | None, min_window_s: float
-) -> tuple[dict, dict[str, list[dict]]]:
-    import torch
-    import vllm
+def load_engine(model: Model) -> Callable[[list[str], int], list]:
+    """Start the engine as every measurement uses it. Returns what answers a batch."""
     from vllm import LLM, SamplingParams
 
-    meter = GpuMeter()
-
-    loading = time.perf_counter()
     llm = LLM(
         model=model.id,
         revision=model.revision,
@@ -90,7 +84,6 @@ def measure(
         trust_remote_code=model.trust_remote_code,
         seed=0,
     )
-    load_seconds = time.perf_counter() - loading
 
     def answer(prompts: list[str], max_tokens: int) -> list:
         return llm.chat(
@@ -99,6 +92,21 @@ def measure(
             use_tqdm=False,
             chat_template_kwargs=TEMPLATE_KWARGS,
         )
+
+    return answer
+
+
+def measure(
+    model: Model, task_names: list[str], limit: int | None, min_window_s: float
+) -> tuple[dict, dict[str, list[dict]]]:
+    import torch
+    import vllm
+
+    meter = GpuMeter()
+
+    loading = time.perf_counter()
+    answer = load_engine(model)
+    load_seconds = time.perf_counter() - loading
 
     batches = {}
     for name in task_names:

@@ -5,6 +5,7 @@
 #
 #   bash scripts/pod_run.sh pilot
 #   bash scripts/pod_run.sh all --max-hours 8
+#   bash scripts/pod_run.sh calibrate     # what the card draws doing nothing; run it last
 set -euo pipefail
 
 SET="${1:-pilot}"
@@ -33,5 +34,9 @@ fi
 uv sync --extra gpu --no-dev --frozen
 
 nvidia-smi --query-gpu=name,driver_version,memory.total --format=csv
+
+if [ "$SET" = calibrate ]; then
+  exec uv run --no-sync python -m llm_energy_per_task.calibrate "$@"
+fi
 
 uv run --no-sync python -m llm_energy_per_task.run_all --set "$SET" "$@"
