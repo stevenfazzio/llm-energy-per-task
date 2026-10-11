@@ -167,6 +167,15 @@ On a rented GPU (run once, for the pilot, on RunPod's secure cloud):
      setsid bash scripts/pod_run.sh pilot > run.log 2>&1 < /dev/null &'
    ```
 
+   To measure the gated models, leave a Hugging Face token on the pod before
+   starting the run. Piped like this it is never shown or put in a command
+   line, and `pod_run.sh` picks it up:
+
+   ```sh
+   printf '%s' "$HF_TOKEN" | ssh -p PORT root@HOST \
+     'umask 077; mkdir -p /workspace/hf-cache; cat > /workspace/hf-cache/token'
+   ```
+
 4. Copy `results/` back, then terminate the pod, which deletes its disk:
 
    ```sh
@@ -177,8 +186,9 @@ On a rented GPU (run once, for the pilot, on RunPod's secure cloud):
 `run_all.py` measures smallest models first, skips any already measured, records
 a failure and moves on, and deletes each model's weights when it is done.
 `--max-hours` stops it starting new models after a time budget. Gated models
-(Llama, and Gemma before version 4) are skipped unless `HF_TOKEN` is set and the
-licence has been accepted on that account.
+(Llama, and Gemma before version 4) are skipped unless a token is on the pod.
+One whose licence that account has not accepted is recorded as failed, and
+`--retry-failed` picks it up once it has.
 
 ## Adding a model
 

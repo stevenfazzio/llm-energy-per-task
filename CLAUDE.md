@@ -135,10 +135,16 @@ an extrapolation from four models, none above 7B. The largest models should
 take about 9 minutes each, inside the 40-minute timeout. 60 GB of volume was
 ample; the largest download is about 30 GB.
 
-14 models are gated (every Llama, Gemma 1 through 3). They are skipped unless
-`HF_TOKEN` is set on the pod and the licences are accepted on that account; ask
-Steven how he wants to handle that. The token on this machine can read the
-Llama 2 and Gemma repos but is refused by the four Llama 3.x ones.
+14 models are gated (every Llama, Gemma 1 through 3). Decided with Steven on
+2026-10-11: all 14 go in, using the read-only token already on this machine.
+It goes to the pod as a file, piped over SSH so its value is never shown (the
+command is in the README); `pod_run.sh` reads it from there.
+
+That token reads the two Llama 2 and eight Gemma repos. The four Llama 3.x
+repos refused it: Meta reviews each request by hand, and Steven submitted the
+four requests on 2026-10-11. Check again before the run. If they are still
+pending, run the rest: those four fail fast, and `--retry-failed` on a later
+pod of the same card measures them without redoing anything.
 
 ## Rules that protect the measurements
 

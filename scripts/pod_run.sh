@@ -16,6 +16,14 @@ if [ -d /workspace ]; then
   export UV_CACHE_DIR="${UV_CACHE_DIR:-/workspace/uv-cache}"
 fi
 
+# Gated models need a Hugging Face token. One left where huggingface_hub keeps
+# its own is picked up here, so it never has to appear in a command line.
+TOKEN_FILE="${HF_HOME:-$HOME/.cache/huggingface}/token"
+if [ -z "${HF_TOKEN:-}" ] && [ -f "$TOKEN_FILE" ]; then
+  HF_TOKEN="$(cat "$TOKEN_FILE")"
+  export HF_TOKEN
+fi
+
 if ! command -v uv >/dev/null 2>&1; then
   curl -LsSf https://astral.sh/uv/install.sh | sh
   export PATH="$HOME/.local/bin:$PATH"
