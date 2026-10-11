@@ -37,9 +37,21 @@ What it left open, for Steven to decide:
   and score below the 0.5B model: 0.366 and 0.474 against 0.527. v0.2 hits the
   48-token cap on 17% of items. The answers are kept, so trying another scorer
   needs no GPU.
-- **`idle_watts` is probably not a settled idle.** It read 108 to 113 W, but the
-  same card drew 35 W before anything loaded and 56 W just after a run exited.
-  It is read 2 seconds after warm-up. It does not enter `joules_per_item`.
+- **`idle_watts` is not a settled idle.** It read 108 to 113 W, 2 seconds after
+  warm-up. The same card drew 35 W empty at boot and still 56 W empty, 11
+  seconds after a run exited, so it settles slower than that. Talked through on
+  2026-10-11: leave `run.py` alone. The loaded, idle state is the same for
+  every model, since vLLM reserves the same memory each time, and the number
+  enters nothing. Proposed and not yet agreed: read it once on the full-run
+  pod before `run_all` (the empty card, then a two-minute trace after a burst
+  with a model loaded) and publish that in the README.
+- **The small end is overcharged.** Energy per item follows model size times
+  tokens to within 12% across the 3B and 7B models, and the 0.5B model sits 8
+  to 37% above them. That biases against the smallest models, so against the
+  trend Steven is after: whether better models mean less energy per task. It
+  should be worse below 500M, which is a guess until the full run.
+  `summary.csv` carries `mean_watts` and
+  `joules_per_billion_params_per_1000_tokens` to show it.
 
 What reading vLLM 0.31.0 showed, since it shapes the code:
 
@@ -100,8 +112,8 @@ volume was ample; the largest download is about 30 GB.
 `HF_TOKEN` is set on the pod and the licences are accepted on that account; ask
 Steven how he wants to handle that.
 
-Settle the open questions above first where they touch `run.py`: changing the
-idle reading there means measuring the four pilot models again.
+None of the open questions above needs a change to `run.py` as things stand, so
+the pilot rows hold and the full run can skip those four.
 
 ## Rules that protect the measurements
 

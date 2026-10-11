@@ -28,10 +28,25 @@ COLUMNS = [
     "score",
     "joules_per_item",
     "wh_per_1000_items",
+    "prompt_tokens_per_item",
     "output_tokens_per_item",
+    "mean_watts",
+    "joules_per_billion_params_per_1000_tokens",
     "energy_source",
     "gpu",
 ]
+
+
+def per_unit_of_work(joules_per_item: float, params: int | None, tokens: float) -> float | None:
+    """Energy per item with model size and tokens processed divided out.
+
+    Roughly level across models when energy tracks the work done. A model well
+    above the rest is paying for something that is not the model, which is what
+    happens at the small end: the card and the serving stack waiting on it.
+    """
+    if not params:
+        return None
+    return joules_per_item / (params / 1e9) / (tokens / 1000)
 
 
 def summary() -> list[dict]:
@@ -43,6 +58,7 @@ def summary() -> list[dict]:
     for path in sorted((RESULTS / "runs").glob("*.json")):
         run = json.loads(path.read_text())
         for name, task in run["tasks"].items():
+            tokens = task["prompt_tokens_per_item"] + task["output_tokens_per_item"]
             rows.append(
                 {
                     "task": name,
@@ -53,7 +69,12 @@ def summary() -> list[dict]:
                     "score": task["score"],
                     "joules_per_item": task["joules_per_item"],
                     "wh_per_1000_items": task["joules_per_item"] / 3.6,
+                    "prompt_tokens_per_item": task["prompt_tokens_per_item"],
                     "output_tokens_per_item": task["output_tokens_per_item"],
+                    "mean_watts": task["mean_watts"],
+                    "joules_per_billion_params_per_1000_tokens": per_unit_of_work(
+                        task["joules_per_item"], run["params"], tokens
+                    ),
                     "energy_source": task["energy_source"],
                     "gpu": run["environment"]["gpu"],
                 }

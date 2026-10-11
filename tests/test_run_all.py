@@ -5,6 +5,7 @@ import sys
 import time
 from dataclasses import replace
 
+import pytest
 from test_run import MODEL
 
 from llm_energy_per_task import frontier, run_all
@@ -76,7 +77,9 @@ def test_summary_reads_run_files_and_prefers_the_registry_date(tmp_path, monkeyp
         "metric": "accuracy",
         "score": 0.8,
         "joules_per_item": 3.6,
+        "prompt_tokens_per_item": 396.0,
         "output_tokens_per_item": 4.0,
+        "mean_watts": 300.0,
         "energy_source": "counter",
     }
     run = {
@@ -94,6 +97,9 @@ def test_summary_reads_run_files_and_prefers_the_registry_date(tmp_path, monkeyp
     (row,) = frontier.summary()
     assert row["released"] == MODEL.released
     assert row["wh_per_1000_items"] == 1.0
+    # 3.6 J for a 1B model over 400 tokens: 9 J per billion parameters per 1000 tokens.
+    assert row["joules_per_billion_params_per_1000_tokens"] == pytest.approx(9.0)
+    assert frontier.per_unit_of_work(3.6, None, 400.0) is None  # no parameter count published
 
     monkeypatch.setattr(frontier, "load_models", lambda: [])
     assert frontier.summary()[0]["released"] == "2024-12-25"

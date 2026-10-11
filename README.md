@@ -65,9 +65,17 @@ integrating sampled power over the same window. Both are recorded.
 - **Not the cheapest way to do the task.** A fine-tuned classifier a hundredth
   the size handles intent routing for far less. This is about general-purpose
   models, prompted.
-- **Not hardware-neutral at the small end.** A 300M-parameter model cannot keep
-  a 48 GB card busy, so part of its figure is the card idling. Idle draw is
-  recorded alongside each run.
+- **Not hardware-neutral at the small end.** A very small model cannot keep a
+  48 GB card and its serving stack fully busy, so part of its figure is not the
+  model's. In the four-model pilot, energy per item followed model size times
+  tokens processed to within 12% across the 3B and 7B models on each task. The
+  0.5B model came out 8 to 37% above them, most on tool calls, where the card's
+  draw also dipped, which points to the card and the serving stack rather than
+  the model. The error runs one way: the smallest models are overcharged, so
+  the lines understate how far energy has fallen at the small end.
+  `summary.csv` has two columns for spotting it: `mean_watts`, and
+  `joules_per_billion_params_per_1000_tokens`, which is level across models
+  when energy tracks the work done.
 - **Not free of contamination.** All three datasets are public and old enough to
   be in training data, more so for newer models.
 
