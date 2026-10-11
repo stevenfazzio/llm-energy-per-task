@@ -21,11 +21,15 @@ from ..files import write_json, write_jsonl
 from . import TASKS
 
 SEED = 0
-SAMPLE = 500
+# Enough that a score is known to about two points either way. The pilot ran on
+# 500, which left four, and bars that models cleared or missed by chance. A
+# source with fewer rows than this is used whole, as the tool calls are.
+SAMPLE = 2000
 
-# The longest context any model here must fit is 2,048 tokens. At a pessimistic
-# three characters per token, a prompt this long still leaves room for the answer.
-MAX_PROMPT_CHARS = 5_500
+# The longest context any model here must fit is 2,048 tokens. The least any
+# tokenizer here managed on a long prompt was 2.7 characters per token; at 2.5, a
+# prompt this long still leaves room for the longest answer and the template.
+MAX_PROMPT_CHARS = 4_400
 
 SOURCES = {
     "intent": {

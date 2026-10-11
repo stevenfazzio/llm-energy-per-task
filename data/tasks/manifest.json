@@ -6,9 +6,9 @@
    "data/test-00000-of-00001.parquet"
   ],
   "origin": "Banking77, PolyAI (CC BY 4.0), read from the mteb parquet mirror",
-  "items": 500,
+  "items": 2000,
   "seed": 0,
-  "longest_prompt_chars": 2095
+  "longest_prompt_chars": 2147
  },
  "extraction": {
   "dataset": "rajpurkar/squad",
@@ -17,9 +17,9 @@
    "plain_text/validation-00000-of-00001.parquet"
   ],
   "origin": "SQuAD v1.1, Rajpurkar et al. (CC BY-SA 4.0)",
-  "items": 500,
+  "items": 2000,
   "seed": 0,
-  "longest_prompt_chars": 3368
+  "longest_prompt_chars": 4326
  },
  "toolcall": {
   "dataset": "gorilla-llm/Berkeley-Function-Calling-Leaderboard",

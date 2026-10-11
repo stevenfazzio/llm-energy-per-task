@@ -6,11 +6,17 @@ caveats; this file has what a session needs that the README does not.
 
 ## State (2026-10-11)
 
-The pilot has run. Four models are measured on one L40S and sit in
-`results/runs/`; the other 77 are not. The 0.5B model was measured three times
-for noise, and the two extra runs are in `results/repeat/`, which `frontier.py`
-does not read. The pilot rows were measured under the protocol now in `run.py`,
-so they stand unless it changes.
+The pilot has run, and nothing in the dataset proper is measured yet. The four
+pilot models ran on 500 items a task. Steven then chose larger item sets (2,000
+for intent and extraction; the 400 tool calls are the whole source), so the
+pilot rows are not comparable and sit under `results/pilot/`, which
+`frontier.py` does not read. That folder also holds the two extra runs of the
+0.5B model made for noise. `results/runs/` is empty: all 80 loadable models,
+the pilot four included, are for the full run.
+
+Every prompt in the new sets was tokenized with each model's own tokenizer: the
+longest is 934 tokens against a 2,048 window. The four Llama 3.x tokenizers
+could not be fetched and were not checked; theirs are not the wasteful kind.
 
 What the pilot confirmed:
 
@@ -29,9 +35,21 @@ What the pilot confirmed:
 
 What it left open, for Steven to decide:
 
-- **Score bars.** No pilot model reaches 0.7 on intent (best 0.556), while the
-  0.5B model already scores 0.815 on tool calls. The bars have to be per task;
-  `frontier.py` still defaults to 0.7/0.8/0.9 for all three.
+- **Score bars: the rule is agreed, the numbers wait for the data.** Agreed
+  with Steven on 2026-10-11, before the full run, so the trend cannot steer it:
+  1. `frontier.csv` carries every bar on a 0.05 grid.
+  2. The chart shows two bars per task: the highest that some model released
+     in 2023 clears, and the highest that at least three models clear.
+  3. A model clears a bar when its score is at or above it. A record-setter
+     whose score interval straddles the bar is flagged.
+  4. A new low counts as a step only if it is about 3% below the last; energy
+     repeats to within 1%.
+  None of this is in `frontier.py` yet, which still takes `--bars` and
+  defaults to 0.7/0.8/0.9. Why a rule was needed: on 500 items a score was
+  only good to 3 or 4 points either way, and on intent the 3B and both 7B
+  models sat within 3 points of each other, so a bar of 0.50 gave 5.4 J and a
+  bar of 0.55 gave 19.1 J. The larger sets halve that interval for intent and
+  extraction; tool calls stay at 400 items.
 - **Extraction rewards short answers more than right ones.** Both Mistrals
   answer in sentences (a median of 11 to 15 words against 2 in the references)
   and score below the 0.5B model: 0.366 and 0.474 against 0.527. v0.2 hits the
@@ -103,17 +121,17 @@ once. What they do not say:
 ## Next step: the full run
 
 80 models can load (`microsoft/phi-2` publishes no chat template), 66 of them
-without a token. At the pilot's pace, about 2.1 minutes plus 0.2 per billion
-parameters, all 80 take about 4.2 hours: roughly $3.30 at $0.79/hr or $4.50 at
-$1.09/hr. That is an extrapolation from four models, none above 7B. 60 GB of
-volume was ample; the largest download is about 30 GB.
+without a token. All 80 should take about 5.5 hours: roughly $4.30 at $0.79/hr
+or $6.00 at $1.09/hr. That is the pilot's pace, about 2.1 minutes plus 0.2 per
+billion parameters, plus about 80 minutes for the larger item sets, and it is
+an extrapolation from four models, none above 7B. The largest models should
+take about 9 minutes each, inside the 40-minute timeout. 60 GB of volume was
+ample; the largest download is about 30 GB.
 
 14 models are gated (every Llama, Gemma 1 through 3). They are skipped unless
 `HF_TOKEN` is set on the pod and the licences are accepted on that account; ask
-Steven how he wants to handle that.
-
-None of the open questions above needs a change to `run.py` as things stand, so
-the pilot rows hold and the full run can skip those four.
+Steven how he wants to handle that. The token on this machine can read the
+Llama 2 and Gemma repos but is refused by the four Llama 3.x ones.
 
 ## Rules that protect the measurements
 

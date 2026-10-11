@@ -9,9 +9,10 @@ the bar? Plotted over time that is a running minimum, stepping down only when a
 more frugal model clears it. Fixing the score is what makes the comparison mean
 something, since the most frugal model is always a weak one.
 
-**Status: a four-model pilot has run; the other 77 models have not.** The pilot
-checked the harness on real hardware. Four models are too few to draw a line
-through, so there is no chart yet.
+**Status: a four-model pilot has run; the dataset itself is not measured yet.**
+The pilot checked the harness on real hardware, using 500 items a task. The
+item sets were then enlarged, so its numbers are not comparable with what comes
+next. They are kept under `results/pilot/` for the record.
 
 ## What gets measured
 
@@ -21,8 +22,8 @@ and joules per item.
 
 | Task | Items | Source | Scored by |
 |---|---|---|---|
-| `intent` — route a customer message to one of 77 intents | 500 | Banking77, test split | exact label match |
-| `extraction` — answer a question with a span from a passage | 500 | SQuAD v1.1, validation split | token F1 against the closest reference |
+| `intent` — route a customer message to one of 77 intents | 2,000 | Banking77, test split | exact label match |
+| `extraction` — answer a question with a span from a passage | 2,000 | SQuAD v1.1, validation split | token F1 against the closest reference |
 | `toolcall` — turn a request into one call to a described function | 400 | Berkeley Function-Calling Leaderboard v3, "simple" | name and arguments match |
 
 These stand in for what small models are actually used for: routing, pulling an
@@ -101,6 +102,7 @@ scripts/pod_guard.sh has the pod terminate itself after a time limit
 results/
   runs/              one JSON per model: scores, energy, and the environment it ran in
   outputs/           every raw answer, so scoring can be redone without a GPU
+  pilot/             the four-model pilot, measured on smaller item sets
 ```
 
 ## Running it
