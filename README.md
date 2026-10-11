@@ -9,9 +9,9 @@ the bar? Plotted over time that is a running minimum, stepping down only when a
 more frugal model clears it. Fixing the score is what makes the comparison mean
 something, since the most frugal model is always a weak one.
 
-**Status: nothing has been measured yet.** The harness, the frozen task items
-and the model list are in place and tested without a GPU. The first paid step is
-a three-model pilot.
+**Status: a four-model pilot has run; the other 77 models have not.** The pilot
+checked the harness on real hardware. Four models are too few to draw a line
+through, so there is no chart yet.
 
 ## What gets measured
 
@@ -41,9 +41,11 @@ Held fixed for every model, and written into every result file:
 - **Thinking off** wherever a template has the switch. A reasoning variant would
   be a separate entry, charged for its thinking tokens.
 - **Greedy decoding**, with a per-task cap on answer length.
-- **The whole batch at once.** All of a task's items are submitted together, so
-  the engine batches as hard as it can. This is the most favourable regime;
-  serving one request at a time would cost several times more per item.
+- **Batched hard.** All of a task's items are submitted together and the engine
+  works on up to 256 of them at a time. That is vLLM's own choice for a 48 GB
+  card, set explicitly so a different card cannot change it. This is the most
+  favourable regime; serving one request at a time would cost several times
+  more per item.
 - **Prefix caching off.** It is on by default in vLLM and would make every
   repeated pass nearly free.
 - **A window of at least 30 seconds.** A tiny model clears a task in a second or
@@ -87,6 +89,7 @@ src/llm_energy_per_task/
   run_all.py         loop over models, resumable  (pod)
   frontier.py        results -> summary.csv and frontier.csv
 scripts/pod_run.sh   install and run, on the pod
+scripts/pod_guard.sh has the pod terminate itself after a time limit
 results/
   runs/              one JSON per model: scores, energy, and the environment it ran in
   outputs/           every raw answer, so scoring can be redone without a GPU
@@ -107,13 +110,44 @@ uv run python -m llm_energy_per_task.frontier    # once there are results
 overwrite without `--force`, because changing the items invalidates every
 measurement made on them.
 
-On a rented GPU (not yet exercised end to end):
+On a rented GPU (run once, for the pilot, on RunPod's secure cloud):
 
 1. Start a pod with one 48 GB card, a host CUDA of 12.9 or newer (what the
-   pinned vLLM wheels are built for), about 60 GB of disk, and a terminate-after
-   guard.
-2. Copy this repo to it and run `bash scripts/pod_run.sh pilot`.
-3. Copy `results/` back, then terminate the pod.
+   pinned vLLM wheels are built for), about 60 GB of volume at `/workspace`, and
+   SSH on a public IP, which copying files needs:
+
+   ```sh
+   runpodctl pod create --name llm-energy --template-id runpod-torch-v280 \
+     --gpu-id "NVIDIA L40S" --cloud-type COMMUNITY --public-ip \
+     --min-cuda-version 12.9 --ports 22/tcp --volume-in-gb 60 --wait
+   runpodctl ssh info POD_ID      # HOST and PORT for the steps below
+   ```
+
+2. Arm the guard before anything else. `runpodctl` has no terminate-after
+   setting, so the pod is told to terminate itself, and a second timer runs
+   locally in case the pod cannot:
+
+   ```sh
+   ssh -p PORT root@HOST 'bash -s -- 90' < scripts/pod_guard.sh
+   (sleep 5400 && runpodctl pod delete POD_ID) &
+   ```
+
+3. Copy this repo over and start the run detached, so it outlives the SSH
+   session (`apt-get install -y rsync` on the pod first if the image lacks it):
+
+   ```sh
+   rsync -az -e "ssh -p PORT" --exclude .git --exclude .venv --exclude results \
+     ./ root@HOST:/workspace/llm-energy-per-task/
+   ssh -p PORT root@HOST 'cd /workspace/llm-energy-per-task; \
+     setsid bash scripts/pod_run.sh pilot > run.log 2>&1 < /dev/null &'
+   ```
+
+4. Copy `results/` back, then terminate the pod, which deletes its disk:
+
+   ```sh
+   rsync -az -e "ssh -p PORT" root@HOST:/workspace/llm-energy-per-task/results/ results/
+   ssh -p PORT root@HOST 'bash -s -- now' < scripts/pod_guard.sh
+   ```
 
 `run_all.py` measures smallest models first, skips any already measured, records
 a failure and moves on, and deletes each model's weights when it is done.

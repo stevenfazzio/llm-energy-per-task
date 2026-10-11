@@ -1,0 +1,500 @@
+{"id": "banking77-test-0", "output": " lost_or_stolen_card", "score": 0.0, "prompt_tokens": 652, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "banking77-test-4", "output": " card_arrival", "score": 1.0, "prompt_tokens": 652, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-6", "output": " card_delivery_estimate", "score": 0.0, "prompt_tokens": 662, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-9", "output": " card_delivery_estimate", "score": 0.0, "prompt_tokens": 660, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-13", "output": " card_delivery_estimate or get_physical_card", "score": 0.0, "prompt_tokens": 651, "output_tokens": 15, "finish_reason": "stop"}
+{"id": "banking77-test-32", "output": " card_delivery_estimate", "score": 0.0, "prompt_tokens": 655, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-36", "output": " lost_or_stolen_card", "score": 0.0, "prompt_tokens": 667, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "banking77-test-39", "output": " card_delivery_estimate", "score": 0.0, "prompt_tokens": 657, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-50", "output": " card_linking", "score": 1.0, "prompt_tokens": 653, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-54", "output": " card_linking", "score": 1.0, "prompt_tokens": 652, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-57", "output": " card_linking or get_virtual_card", "score": 0.0, "prompt_tokens": 657, "output_tokens": 11, "finish_reason": "stop"}
+{"id": "banking77-test-58", "output": " card_linking", "score": 1.0, "prompt_tokens": 657, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-60", "output": " card_linking", "score": 1.0, "prompt_tokens": 656, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-66", "output": " card_not_working\n\nExplanation: The customer is reporting an issue with the app not recognizing or", "score": 0.0, "prompt_tokens": 656, "output_tokens": 24, "finish_reason": "length"}
+{"id": "banking77-test-76", "output": " card_found", "score": 0.0, "prompt_tokens": 669, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-88", "output": " exchange_rate", "score": 1.0, "prompt_tokens": 651, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-89", "output": " exchange_rate", "score": 1.0, "prompt_tokens": 651, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-93", "output": " exchange_rate", "score": 1.0, "prompt_tokens": 653, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-109", "output": " exchange_rate", "score": 1.0, "prompt_tokens": 651, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-113", "output": " exchange_rate", "score": 1.0, "prompt_tokens": 654, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-129", "output": " wrong_exchange_rate_for_cash_withdrawal", "score": 0.0, "prompt_tokens": 665, "output_tokens": 16, "finish_reason": "stop"}
+{"id": "banking77-test-135", "output": " wrong_exchange_rate_for_cash_withdrawal", "score": 0.0, "prompt_tokens": 659, "output_tokens": 16, "finish_reason": "stop"}
+{"id": "banking77-test-145", "output": " exchange_rate", "score": 0.0, "prompt_tokens": 653, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-146", "output": " exchange_rate\n\nMessage context: The customer is expressing that the exchange rate they received for a purchase was incorrect", "score": 0.0, "prompt_tokens": 661, "output_tokens": 24, "finish_reason": "length"}
+{"id": "banking77-test-149", "output": " wrong_exchange_rate_for_cash_withdrawal (This intent is not an exact match,", "score": 0.0, "prompt_tokens": 659, "output_tokens": 24, "finish_reason": "length"}
+{"id": "banking77-test-154", "output": " exchange_rate", "score": 0.0, "prompt_tokens": 658, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-158", "output": " wrong_exchange_rate_for_cash_withdrawal or exchange_rate", "score": 0.0, "prompt_tokens": 667, "output_tokens": 20, "finish_reason": "stop"}
+{"id": "banking77-test-159", "output": " wrong_exchange_rate_for_cash_withdrawal or wrong_exchange_rate", "score": 0.0, "prompt_tokens": 660, "output_tokens": 23, "finish_reason": "stop"}
+{"id": "banking77-test-161", "output": " extra_charge_on_statement", "score": 1.0, "prompt_tokens": 658, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-165", "output": " request_refund", "score": 0.0, "prompt_tokens": 658, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-166", "output": " extra_charge_on_statement", "score": 1.0, "prompt_tokens": 656, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-168", "output": " extra_charge_on_statement", "score": 1.0, "prompt_tokens": 654, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-172", "output": " transfer_timing", "score": 0.0, "prompt_tokens": 657, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-173", "output": " extra_charge_on_statement", "score": 1.0, "prompt_tokens": 652, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-185", "output": " extra_charge_on_statement", "score": 1.0, "prompt_tokens": 656, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-187", "output": " extra_charge_on_statement", "score": 1.0, "prompt_tokens": 659, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-191", "output": " extra_charge_on_statement", "score": 1.0, "prompt_tokens": 663, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-197", "output": " exchange_charge", "score": 0.0, "prompt_tokens": 653, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-204", "output": " transfer_timing", "score": 0.0, "prompt_tokens": 656, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-237", "output": " atm_support\n\nExplanation: The customer is asking about the time it takes to complete an ATM withdrawal", "score": 0.0, "prompt_tokens": 656, "output_tokens": 24, "finish_reason": "length"}
+{"id": "banking77-test-250", "output": " exchange_rate\n\nExplanation:\nThe customer is asking about exchanging money for EUR, which falls", "score": 0.0, "prompt_tokens": 655, "output_tokens": 24, "finish_reason": "length"}
+{"id": "banking77-test-254", "output": " fiat_currency_support", "score": 1.0, "prompt_tokens": 652, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "banking77-test-255", "output": " exchange_rate\n\nExplanation: The customer is asking for information related to changing currencies to Euros", "score": 0.0, "prompt_tokens": 656, "output_tokens": 24, "finish_reason": "length"}
+{"id": "banking77-test-257", "output": " supported_currencies_and_currencies", "score": 0.0, "prompt_tokens": 663, "output_tokens": 12, "finish_reason": "stop"}
+{"id": "banking77-test-261", "output": " fiat_currency_support", "score": 1.0, "prompt_tokens": 656, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "banking77-test-269", "output": " supported_currencies_and_currencies", "score": 0.0, "prompt_tokens": 657, "output_tokens": 12, "finish_reason": "stop"}
+{"id": "banking77-test-282", "output": " card_delivery_estimate", "score": 1.0, "prompt_tokens": 650, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-286", "output": " card_delivery_estimate", "score": 1.0, "prompt_tokens": 656, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-290", "output": " card_delivery_estimate", "score": 1.0, "prompt_tokens": 653, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-294", "output": " card_delivery_estimate", "score": 1.0, "prompt_tokens": 654, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-302", "output": " card_delivery_estimate", "score": 1.0, "prompt_tokens": 656, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-303", "output": " card_delivery_estimate", "score": 1.0, "prompt_tokens": 655, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-323", "output": " automatic_top_up", "score": 1.0, "prompt_tokens": 660, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-328", "output": " automatic_top_up", "score": 1.0, "prompt_tokens": 659, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-329", "output": " automatic_top_up", "score": 1.0, "prompt_tokens": 667, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-330", "output": " automatic_top_up", "score": 1.0, "prompt_tokens": 657, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-333", "output": " compromised_card", "score": 0.0, "prompt_tokens": 652, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-337", "output": " top_up_limits", "score": 0.0, "prompt_tokens": 655, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-341", "output": " automatic_top_up", "score": 1.0, "prompt_tokens": 666, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-342", "output": " automatic_top_up", "score": 1.0, "prompt_tokens": 654, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-346", "output": " automatic_top_up", "score": 1.0, "prompt_tokens": 661, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-356", "output": " automatic_top_up", "score": 1.0, "prompt_tokens": 655, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-367", "output": " card_not_working", "score": 1.0, "prompt_tokens": 656, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-373", "output": " card_not_working", "score": 1.0, "prompt_tokens": 651, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-374", "output": " card_not_working", "score": 1.0, "prompt_tokens": 651, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-375", "output": " card_not_working", "score": 1.0, "prompt_tokens": 653, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-382", "output": " compromised_card", "score": 0.0, "prompt_tokens": 649, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-383", "output": " card_not_working", "score": 1.0, "prompt_tokens": 649, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-388", "output": " card_not_working", "score": 1.0, "prompt_tokens": 657, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-400", "output": " exchange_rate", "score": 0.0, "prompt_tokens": 654, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-401", "output": " exchange_rate\n\nExplanation:\nThe customer is asking for information on exchanging between different currencies", "score": 0.0, "prompt_tokens": 655, "output_tokens": 24, "finish_reason": "length"}
+{"id": "banking77-test-404", "output": " exchange_rate", "score": 0.0, "prompt_tokens": 653, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-407", "output": " currencies\\_support", "score": 0.0, "prompt_tokens": 655, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-410", "output": " supported_currencies_and_currencies", "score": 0.0, "prompt_tokens": 655, "output_tokens": 12, "finish_reason": "stop"}
+{"id": "banking77-test-412", "output": " exchange_rate", "score": 0.0, "prompt_tokens": 663, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-413", "output": " exchange_rate", "score": 0.0, "prompt_tokens": 653, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-415", "output": " exchange_rate", "score": 0.0, "prompt_tokens": 656, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-428", "output": " supported_currencies_and_currencies", "score": 0.0, "prompt_tokens": 654, "output_tokens": 12, "finish_reason": "stop"}
+{"id": "banking77-test-429", "output": " exchange_rate", "score": 0.0, "prompt_tokens": 655, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-445", "output": " lost\\_or\\_stolen\\_card", "score": 1.0, "prompt_tokens": 657, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "banking77-test-446", "output": " compromised_card", "score": 0.0, "prompt_tokens": 666, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-470", "output": " lost\\_or\\_stolen\\_card", "score": 1.0, "prompt_tokens": 656, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "banking77-test-471", "output": " lost_or_stolen_card\n\nMessage: I've tried to activate my card but it's", "score": 1.0, "prompt_tokens": 675, "output_tokens": 24, "finish_reason": "length"}
+{"id": "banking77-test-472", "output": " lost\\_or\\_stolen\\_card", "score": 1.0, "prompt_tokens": 653, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "banking77-test-474", "output": " lost_or_stolen_card", "score": 1.0, "prompt_tokens": 657, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "banking77-test-475", "output": " lost_or_stolen_card", "score": 1.0, "prompt_tokens": 652, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "banking77-test-479", "output": " age_limit", "score": 1.0, "prompt_tokens": 658, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-480", "output": " age_limit", "score": 1.0, "prompt_tokens": 656, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-487", "output": " age_limit", "score": 1.0, "prompt_tokens": 653, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-490", "output": " age_limit", "score": 1.0, "prompt_tokens": 651, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-507", "output": " age_limit", "score": 1.0, "prompt_tokens": 651, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-509", "output": " account\\_creation\\_for\\_minor", "score": 0.0, "prompt_tokens": 656, "output_tokens": 10, "finish_reason": "stop"}
+{"id": "banking77-test-511", "output": " age_limit", "score": 1.0, "prompt_tokens": 653, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-531", "output": " pin_blocked", "score": 1.0, "prompt_tokens": 659, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-533", "output": " pin_blocked", "score": 1.0, "prompt_tokens": 663, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-534", "output": " change_pin", "score": 0.0, "prompt_tokens": 662, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-542", "output": " compromised_card or pin_blocked", "score": 0.0, "prompt_tokens": 651, "output_tokens": 10, "finish_reason": "stop"}
+{"id": "banking77-test-546", "output": " pin_blocked", "score": 1.0, "prompt_tokens": 659, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-552", "output": " change_pin", "score": 0.0, "prompt_tokens": 652, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-567", "output": " contactless_not_working", "score": 1.0, "prompt_tokens": 655, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "banking77-test-570", "output": " contactless_not_working", "score": 1.0, "prompt_tokens": 662, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "banking77-test-572", "output": " contactless_not_working", "score": 1.0, "prompt_tokens": 664, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "banking77-test-583", "output": " contactless_not_working", "score": 1.0, "prompt_tokens": 669, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "banking77-test-599", "output": " transfer_fee_charged", "score": 0.0, "prompt_tokens": 654, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "banking77-test-601", "output": " transfer_fee_charged", "score": 0.0, "prompt_tokens": 658, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "banking77-test-607", "output": " top_up_by_card_charge\ntop_up_by_bank_transfer_charge", "score": 0.0, "prompt_tokens": 658, "output_tokens": 22, "finish_reason": "stop"}
+{"id": "banking77-test-612", "output": " receiving_money", "score": 0.0, "prompt_tokens": 654, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-618", "output": " top_up_by_bank_transfer_charge", "score": 1.0, "prompt_tokens": 659, "output_tokens": 12, "finish_reason": "stop"}
+{"id": "banking77-test-619", "output": " receiving_money\n\nExplanation:\nThe customer is asking about the charges for receiving money, which falls", "score": 0.0, "prompt_tokens": 653, "output_tokens": 24, "finish_reason": "length"}
+{"id": "banking77-test-628", "output": " transfer_fee_charged", "score": 0.0, "prompt_tokens": 661, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "banking77-test-632", "output": " transfer_into_account", "score": 0.0, "prompt_tokens": 652, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-637", "output": " transfer_fee_charged or transfer_limits (if asking about maximum transfer amount)", "score": 0.0, "prompt_tokens": 656, "output_tokens": 19, "finish_reason": "stop"}
+{"id": "banking77-test-638", "output": " supported_cards_and_currencies (This intent includes Swift as a supported transfer method under the umbre", "score": 0.0, "prompt_tokens": 652, "output_tokens": 24, "finish_reason": "length"}
+{"id": "banking77-test-645", "output": " pending_top_up", "score": 1.0, "prompt_tokens": 658, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-648", "output": " top_up_failed", "score": 0.0, "prompt_tokens": 656, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-655", "output": " pending_top_up", "score": 1.0, "prompt_tokens": 655, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-663", "output": " pending_top_up", "score": 1.0, "prompt_tokens": 667, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-671", "output": " pending_top_up", "score": 1.0, "prompt_tokens": 662, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-678", "output": " pending_top_up", "score": 1.0, "prompt_tokens": 671, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-682", "output": " transfer_not_received_by_recipient", "score": 0.0, "prompt_tokens": 657, "output_tokens": 13, "finish_reason": "stop"}
+{"id": "banking77-test-693", "output": " request_refund", "score": 0.0, "prompt_tokens": 677, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-698", "output": " declined_transfer\n\nExplanation: The customer is asking about the possibility of cancelling a transfer that has", "score": 0.0, "prompt_tokens": 655, "output_tokens": 24, "finish_reason": "length"}
+{"id": "banking77-test-716", "output": " pending_transaction\n\nExplanation: The customer message indicates that they do not want the transaction to be processed at", "score": 0.0, "prompt_tokens": 656, "output_tokens": 24, "finish_reason": "length"}
+{"id": "banking77-test-730", "output": " top_up_limits", "score": 1.0, "prompt_tokens": 658, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-735", "output": " top_up_limits", "score": 1.0, "prompt_tokens": 656, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-738", "output": " top_up_limits", "score": 1.0, "prompt_tokens": 656, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-746", "output": " top_up_limits", "score": 1.0, "prompt_tokens": 653, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-753", "output": " top_up_limits", "score": 1.0, "prompt_tokens": 654, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-757", "output": " top_up_limits", "score": 1.0, "prompt_tokens": 654, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-764", "output": " wrong_amount_of_cash_received", "score": 1.0, "prompt_tokens": 653, "output_tokens": 12, "finish_reason": "stop"}
+{"id": "banking77-test-770", "output": " cash_withdrawal_not_recognised or wrong_amount_of_cash_received", "score": 0.0, "prompt_tokens": 660, "output_tokens": 23, "finish_reason": "stop"}
+{"id": "banking77-test-772", "output": " pending_cash_withdrawal", "score": 0.0, "prompt_tokens": 663, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "banking77-test-775", "output": " wrong_amount_of_cash_received", "score": 1.0, "prompt_tokens": 662, "output_tokens": 12, "finish_reason": "stop"}
+{"id": "banking77-test-779", "output": " cash_withdrawal_not_recognised or transaction_charged_twice or wrong_amount_of", "score": 0.0, "prompt_tokens": 658, "output_tokens": 24, "finish_reason": "length"}
+{"id": "banking77-test-780", "output": " wrong_amount_of_cash_received", "score": 1.0, "prompt_tokens": 660, "output_tokens": 12, "finish_reason": "stop"}
+{"id": "banking77-test-782", "output": " cash_withdrawal_not_recognised or cash_withdrawal_not_dispensed (depending", "score": 0.0, "prompt_tokens": 659, "output_tokens": 24, "finish_reason": "length"}
+{"id": "banking77-test-786", "output": " wrong_amount_of_cash_received", "score": 1.0, "prompt_tokens": 656, "output_tokens": 12, "finish_reason": "stop"}
+{"id": "banking77-test-787", "output": " cash_withdrawal_not_recognised or wrong_amount_of_cash_received", "score": 0.0, "prompt_tokens": 655, "output_tokens": 23, "finish_reason": "stop"}
+{"id": "banking77-test-797", "output": " cash_withdrawal_not_recognised or wrong_amount_of_cash_received", "score": 0.0, "prompt_tokens": 652, "output_tokens": 23, "finish_reason": "stop"}
+{"id": "banking77-test-810", "output": " exchange_charge\nor, alternatively,\ncard_payment_fee_charged", "score": 0.0, "prompt_tokens": 653, "output_tokens": 19, "finish_reason": "stop"}
+{"id": "banking77-test-811", "output": " extra_charge_on_statement", "score": 0.0, "prompt_tokens": 653, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-813", "output": " exchange_charge\nor\ntransaction_charged_twice\n\nThe message could be related to an extra charge", "score": 0.0, "prompt_tokens": 658, "output_tokens": 24, "finish_reason": "length"}
+{"id": "banking77-test-816", "output": " card_payment_fee_charged", "score": 1.0, "prompt_tokens": 655, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "banking77-test-826", "output": " card_payment_fee_charged", "score": 1.0, "prompt_tokens": 658, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "banking77-test-827", "output": " extra_charge_on_statement", "score": 0.0, "prompt_tokens": 667, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-832", "output": " extra_charge_on_statement\nor:\nexchange_charge\nor:\ntransaction_charged_", "score": 0.0, "prompt_tokens": 665, "output_tokens": 24, "finish_reason": "length"}
+{"id": "banking77-test-833", "output": " card_payment_fee_charged", "score": 1.0, "prompt_tokens": 657, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "banking77-test-837", "output": " card_payment_fee_charged", "score": 1.0, "prompt_tokens": 656, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "banking77-test-842", "output": " transfer_not_received_by_recipient", "score": 1.0, "prompt_tokens": 658, "output_tokens": 13, "finish_reason": "stop"}
+{"id": "banking77-test-848", "output": " transfer_timing", "score": 0.0, "prompt_tokens": 653, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-851", "output": " transfer_not_received_by_recipient", "score": 1.0, "prompt_tokens": 662, "output_tokens": 13, "finish_reason": "stop"}
+{"id": "banking77-test-862", "output": " transfer_not_received_by_recipient", "score": 1.0, "prompt_tokens": 655, "output_tokens": 13, "finish_reason": "stop"}
+{"id": "banking77-test-874", "output": " transfer_timing", "score": 0.0, "prompt_tokens": 654, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-881", "output": " supported_cards_and_currencies", "score": 1.0, "prompt_tokens": 657, "output_tokens": 10, "finish_reason": "stop"}
+{"id": "banking77-test-884", "output": " card_acceptance", "score": 0.0, "prompt_tokens": 661, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-889", "output": " card_acceptance", "score": 0.0, "prompt_tokens": 658, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-894", "output": " supported_cards_and_currencies", "score": 1.0, "prompt_tokens": 651, "output_tokens": 10, "finish_reason": "stop"}
+{"id": "banking77-test-896", "output": " transfer_into_account", "score": 0.0, "prompt_tokens": 658, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-901", "output": " supported_currencies_and_currencies", "score": 0.0, "prompt_tokens": 667, "output_tokens": 12, "finish_reason": "stop"}
+{"id": "banking77-test-903", "output": " supported_cards_and_currencies", "score": 1.0, "prompt_tokens": 655, "output_tokens": 10, "finish_reason": "stop"}
+{"id": "banking77-test-904", "output": " supported_cards_and_currencies", "score": 1.0, "prompt_tokens": 655, "output_tokens": 10, "finish_reason": "stop"}
+{"id": "banking77-test-905", "output": " supported_cards_and_currencies", "score": 1.0, "prompt_tokens": 658, "output_tokens": 10, "finish_reason": "stop"}
+{"id": "banking77-test-908", "output": " supported_cards_and_currencies", "score": 1.0, "prompt_tokens": 659, "output_tokens": 10, "finish_reason": "stop"}
+{"id": "banking77-test-913", "output": " supported_cards_and_currencies", "score": 1.0, "prompt_tokens": 655, "output_tokens": 10, "finish_reason": "stop"}
+{"id": "banking77-test-964", "output": " country_support", "score": 0.0, "prompt_tokens": 657, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-977", "output": " country_support", "score": 0.0, "prompt_tokens": 661, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-980", "output": " card_acceptance", "score": 1.0, "prompt_tokens": 655, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-981", "output": " card_acceptance", "score": 1.0, "prompt_tokens": 652, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-983", "output": " card_acceptance", "score": 1.0, "prompt_tokens": 652, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-991", "output": " card_acceptance", "score": 1.0, "prompt_tokens": 652, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-995", "output": " country_support", "score": 0.0, "prompt_tokens": 654, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-999", "output": " top_up_reverted", "score": 1.0, "prompt_tokens": 655, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "banking77-test-1026", "output": " top_up_reverted", "score": 1.0, "prompt_tokens": 652, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "banking77-test-1027", "output": " cancelled_top_up", "score": 0.0, "prompt_tokens": 658, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-1050", "output": " pending_deposit", "score": 0.0, "prompt_tokens": 657, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-1052", "output": " balance_not_updated_after_bank_transfer", "score": 0.0, "prompt_tokens": 659, "output_tokens": 12, "finish_reason": "stop"}
+{"id": "banking77-test-1060", "output": " balance_not_updated_after_cash_deposit", "score": 0.0, "prompt_tokens": 671, "output_tokens": 15, "finish_reason": "stop"}
+{"id": "banking77-test-1061", "output": " balance_not_updated_after_cheque_or_cash_deposit", "score": 1.0, "prompt_tokens": 661, "output_tokens": 20, "finish_reason": "stop"}
+{"id": "banking77-test-1063", "output": " balance_not_updated_after_cheque_or_cash_deposit", "score": 1.0, "prompt_tokens": 662, "output_tokens": 20, "finish_reason": "stop"}
+{"id": "banking77-test-1064", "output": " balance_not_updated_after_cheque_or_cash_deposit", "score": 1.0, "prompt_tokens": 658, "output_tokens": 20, "finish_reason": "stop"}
+{"id": "banking77-test-1065", "output": " cash_deposit_not_recognised", "score": 0.0, "prompt_tokens": 655, "output_tokens": 11, "finish_reason": "stop"}
+{"id": "banking77-test-1066", "output": " cash_withdrawal_not_recognised or pending_cash_withdrawal or transaction_charged", "score": 0.0, "prompt_tokens": 664, "output_tokens": 24, "finish_reason": "length"}
+{"id": "banking77-test-1068", "output": " balance_not_updated_after_cheque_or_cash_deposit", "score": 1.0, "prompt_tokens": 663, "output_tokens": 20, "finish_reason": "stop"}
+{"id": "banking77-test-1104", "output": " card_payment_not_recognised", "score": 1.0, "prompt_tokens": 655, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "banking77-test-1110", "output": " compromised_card", "score": 0.0, "prompt_tokens": 654, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-1111", "output": " compromised_card", "score": 0.0, "prompt_tokens": 677, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-1125", "output": " edit_personal_details", "score": 1.0, "prompt_tokens": 653, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-1127", "output": " edit_personal_details", "score": 1.0, "prompt_tokens": 656, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-1128", "output": " edit_personal_details", "score": 1.0, "prompt_tokens": 656, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-1140", "output": " edit_personal_details", "score": 1.0, "prompt_tokens": 655, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-1146", "output": " edit_personal_details", "score": 1.0, "prompt_tokens": 655, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-1150", "output": " edit_personal_details", "score": 1.0, "prompt_tokens": 652, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-1154", "output": " edit_personal_details", "score": 1.0, "prompt_tokens": 656, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-1178", "output": " verify_identity", "score": 0.0, "prompt_tokens": 655, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-1179", "output": " verify_identity", "score": 0.0, "prompt_tokens": 655, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-1185", "output": " unwilling_to_verify_identity", "score": 0.0, "prompt_tokens": 653, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "banking77-test-1187", "output": " unwilling_to_verify_identity", "score": 0.0, "prompt_tokens": 654, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "banking77-test-1189", "output": " verify_identity", "score": 0.0, "prompt_tokens": 651, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-1192", "output": " verify_identity", "score": 0.0, "prompt_tokens": 661, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-1201", "output": " verify_identity", "score": 0.0, "prompt_tokens": 654, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-1225", "output": " verify_my_identity", "score": 0.0, "prompt_tokens": 659, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-1233", "output": " verify_identity", "score": 0.0, "prompt_tokens": 652, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-1234", "output": " unable_to_verify_identity", "score": 1.0, "prompt_tokens": 657, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-1236", "output": " verify_identity", "score": 0.0, "prompt_tokens": 654, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-1238", "output": " change_pin", "score": 0.0, "prompt_tokens": 655, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-1239", "output": " card_delivery_estimate", "score": 0.0, "prompt_tokens": 652, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-1242", "output": " change_pin", "score": 0.0, "prompt_tokens": 658, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-1261", "output": " change_pin", "score": 0.0, "prompt_tokens": 655, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-1270", "output": " change_pin", "score": 0.0, "prompt_tokens": 652, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-1275", "output": " change_pin", "score": 0.0, "prompt_tokens": 652, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-1278", "output": " visa_or_mastercard", "score": 1.0, "prompt_tokens": 655, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-1289", "output": " visa_or_mastercard", "score": 1.0, "prompt_tokens": 653, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-1295", "output": " supported_cards_and_currencies", "score": 0.0, "prompt_tokens": 651, "output_tokens": 10, "finish_reason": "stop"}
+{"id": "banking77-test-1298", "output": " supported_cards_and_currencies", "score": 0.0, "prompt_tokens": 655, "output_tokens": 10, "finish_reason": "stop"}
+{"id": "banking77-test-1303", "output": " visa_or_mastercard", "score": 1.0, "prompt_tokens": 655, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-1310", "output": " visa_or_mastercard", "score": 1.0, "prompt_tokens": 652, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-1318", "output": " topping_up_by_card", "score": 1.0, "prompt_tokens": 656, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "banking77-test-1320", "output": " topping_up_by_card", "score": 1.0, "prompt_tokens": 653, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "banking77-test-1328", "output": " pending_transfer or failed_transfer", "score": 0.0, "prompt_tokens": 670, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-1332", "output": " receiving_money", "score": 0.0, "prompt_tokens": 661, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-1335", "output": " pending_top-up", "score": 0.0, "prompt_tokens": 664, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-1345", "output": " top_up_failed", "score": 0.0, "prompt_tokens": 652, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-1352", "output": " top_up_by_card\ntop_up_by_bank_transfer\ntop_up_by_", "score": 0.0, "prompt_tokens": 652, "output_tokens": 24, "finish_reason": "length"}
+{"id": "banking77-test-1362", "output": " disposable_card_limits", "score": 1.0, "prompt_tokens": 655, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "banking77-test-1364", "output": " disposable_card_limits", "score": 1.0, "prompt_tokens": 657, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "banking77-test-1365", "output": " disposable_card_limits", "score": 1.0, "prompt_tokens": 656, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "banking77-test-1369", "output": " disposable_card_limits", "score": 1.0, "prompt_tokens": 658, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "banking77-test-1372", "output": " disposable_card_limits", "score": 1.0, "prompt_tokens": 658, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "banking77-test-1373", "output": " top_up_limits", "score": 0.0, "prompt_tokens": 659, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-1375", "output": " disposable_card_limits", "score": 1.0, "prompt_tokens": 654, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "banking77-test-1380", "output": " disposable_card_limits", "score": 1.0, "prompt_tokens": 658, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "banking77-test-1382", "output": " disposable_card_limits", "score": 1.0, "prompt_tokens": 662, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "banking77-test-1385", "output": " disposable_card_limits", "score": 1.0, "prompt_tokens": 655, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "banking77-test-1393", "output": " disposable_card_limits", "score": 1.0, "prompt_tokens": 658, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "banking77-test-1402", "output": " card_security\n\nExplanation: The customer is asking to freeze their card, which falls under the card security", "score": 0.0, "prompt_tokens": 653, "output_tokens": 24, "finish_reason": "length"}
+{"id": "banking77-test-1407", "output": " compromised_card", "score": 1.0, "prompt_tokens": 663, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-1421", "output": " compromised_card", "score": 1.0, "prompt_tokens": 661, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-1434", "output": " compromised_card", "score": 1.0, "prompt_tokens": 659, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-1442", "output": " atm_support", "score": 1.0, "prompt_tokens": 659, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-1449", "output": " atm_support", "score": 1.0, "prompt_tokens": 656, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-1462", "output": " atm_support", "score": 1.0, "prompt_tokens": 654, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-1463", "output": " atm_support", "score": 1.0, "prompt_tokens": 656, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-1466", "output": " atm_support", "score": 1.0, "prompt_tokens": 656, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-1468", "output": " atm_support", "score": 1.0, "prompt_tokens": 656, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-1471", "output": " atm_support", "score": 1.0, "prompt_tokens": 655, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-1478", "output": " compromised_card or unauthorized_transaction", "score": 0.0, "prompt_tokens": 657, "output_tokens": 10, "finish_reason": "stop"}
+{"id": "banking77-test-1481", "output": " extra_charge_on_statement", "score": 0.0, "prompt_tokens": 652, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-1502", "output": " pending_direct_debit_payment\n\nor alternatively,\n\ndeclared_fraudulent_", "score": 0.0, "prompt_tokens": 666, "output_tokens": 24, "finish_reason": "length"}
+{"id": "banking77-test-1504", "output": " direct_debit_payment_not_recognised", "score": 1.0, "prompt_tokens": 657, "output_tokens": 12, "finish_reason": "stop"}
+{"id": "banking77-test-1508", "output": " pending_card_payment or reverted_card_payment (depending on the payment status)", "score": 0.0, "prompt_tokens": 667, "output_tokens": 21, "finish_reason": "stop"}
+{"id": "banking77-test-1516", "output": " declined_card_payment or direct_debit_payment_not_recognised", "score": 0.0, "prompt_tokens": 665, "output_tokens": 18, "finish_reason": "stop"}
+{"id": "banking77-test-1523", "output": " change_pin", "score": 0.0, "prompt_tokens": 652, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-1525", "output": " change_pin", "score": 0.0, "prompt_tokens": 656, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-1538", "output": " change_pin", "score": 0.0, "prompt_tokens": 657, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-1548", "output": " change_pin or passcode_forgotten", "score": 0.0, "prompt_tokens": 661, "output_tokens": 11, "finish_reason": "stop"}
+{"id": "banking77-test-1550", "output": " change_pin", "score": 0.0, "prompt_tokens": 656, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-1576", "output": " cash_withdrawal_not_recognised", "score": 0.0, "prompt_tokens": 659, "output_tokens": 11, "finish_reason": "stop"}
+{"id": "banking77-test-1577", "output": " atm_support\n\nMessage: I want to activate my card.\nIntent: activate_my_card\n\n", "score": 0.0, "prompt_tokens": 653, "output_tokens": 24, "finish_reason": "length"}
+{"id": "banking77-test-1589", "output": " declined_cash_withdrawal", "score": 1.0, "prompt_tokens": 652, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "banking77-test-1591", "output": " declined_cash_withdrawal", "score": 1.0, "prompt_tokens": 686, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "banking77-test-1602", "output": " pending_payment\n\nOr alternatively, you could use the more general intent name \"payment_issue\" to cover", "score": 0.0, "prompt_tokens": 653, "output_tokens": 24, "finish_reason": "length"}
+{"id": "banking77-test-1613", "output": " pending_payment", "score": 0.0, "prompt_tokens": 651, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-1617", "output": " pending_payment", "score": 0.0, "prompt_tokens": 657, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-1624", "output": " pending_transfer", "score": 0.0, "prompt_tokens": 662, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-1630", "output": " pending_card_payment", "score": 1.0, "prompt_tokens": 659, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-1633", "output": " pending_transaction", "score": 0.0, "prompt_tokens": 652, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-1645", "output": " compromised_phone or lost_or_stolen_phone\n\nHowever, it's important to note that", "score": 0.0, "prompt_tokens": 658, "output_tokens": 24, "finish_reason": "length"}
+{"id": "banking77-test-1647", "output": " lost_or_stolen_phone", "score": 1.0, "prompt_tokens": 656, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "banking77-test-1651", "output": " lost_or_stolen_phone", "score": 1.0, "prompt_tokens": 660, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "banking77-test-1658", "output": " lost_or_stolen_phone", "score": 1.0, "prompt_tokens": 660, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "banking77-test-1662", "output": " compromised_card or lost_or_stolen_phone.\n\nPlease let me know which one applies to", "score": 0.0, "prompt_tokens": 672, "output_tokens": 24, "finish_reason": "length"}
+{"id": "banking77-test-1678", "output": " request_refund", "score": 1.0, "prompt_tokens": 654, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-1697", "output": " request_refund", "score": 1.0, "prompt_tokens": 652, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-1698", "output": " cancel_transfer", "score": 0.0, "prompt_tokens": 651, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-1700", "output": " request_refund", "score": 1.0, "prompt_tokens": 657, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-1710", "output": " request_refund", "score": 1.0, "prompt_tokens": 661, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-1713", "output": " request_refund", "score": 1.0, "prompt_tokens": 652, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-1717", "output": " declined_transfer", "score": 1.0, "prompt_tokens": 658, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-1722", "output": " declined_transfer", "score": 1.0, "prompt_tokens": 691, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-1732", "output": " declined_transfer", "score": 1.0, "prompt_tokens": 687, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-1733", "output": " transferred_not_received_by_recipient\nor\ndeclined_transfer\nor\npending_", "score": 0.0, "prompt_tokens": 654, "output_tokens": 24, "finish_reason": "length"}
+{"id": "banking77-test-1743", "output": " declined_transfer", "score": 1.0, "prompt_tokens": 658, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-1745", "output": " declined_transfer", "score": 1.0, "prompt_tokens": 663, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-1747", "output": " declined_transfer", "score": 1.0, "prompt_tokens": 659, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-1766", "output": " request_refund", "score": 0.0, "prompt_tokens": 659, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-1778", "output": " request_refund", "score": 0.0, "prompt_tokens": 653, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-1783", "output": " request_refund", "score": 0.0, "prompt_tokens": 651, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-1786", "output": " balance_not_updated_after_refund", "score": 0.0, "prompt_tokens": 658, "output_tokens": 11, "finish_reason": "stop"}
+{"id": "banking77-test-1811", "output": " card_not_working", "score": 0.0, "prompt_tokens": 653, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-1813", "output": " declined_card_payment", "score": 1.0, "prompt_tokens": 657, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-1822", "output": " card_payment_not_recognised", "score": 0.0, "prompt_tokens": 657, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "banking77-test-1824", "output": " declined_card_payment", "score": 1.0, "prompt_tokens": 653, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-1828", "output": " declined_card_payment", "score": 1.0, "prompt_tokens": 651, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-1834", "output": " declined_card_payment", "score": 1.0, "prompt_tokens": 658, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-1835", "output": " card_payment_not_recognised", "score": 0.0, "prompt_tokens": 654, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "banking77-test-1837", "output": " pending_transfer", "score": 1.0, "prompt_tokens": 653, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-1845", "output": " pending_transfer", "score": 1.0, "prompt_tokens": 655, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-1849", "output": " pending_transfer", "score": 1.0, "prompt_tokens": 654, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-1855", "output": " pending_transfer", "score": 1.0, "prompt_tokens": 655, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-1875", "output": " transfer_timing", "score": 0.0, "prompt_tokens": 657, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-1877", "output": " terminate_account\n\nHowever, it's important to note that this intent assumes the customer wants to permanently close", "score": 1.0, "prompt_tokens": 669, "output_tokens": 24, "finish_reason": "length"}
+{"id": "banking77-test-1878", "output": " terminate_account", "score": 1.0, "prompt_tokens": 652, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-1912", "output": " terminate_account", "score": 1.0, "prompt_tokens": 658, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-1913", "output": " terminate_account", "score": 1.0, "prompt_tokens": 664, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-1926", "output": " card_swallowed", "score": 1.0, "prompt_tokens": 655, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-1931", "output": " card_swallowed", "score": 1.0, "prompt_tokens": 652, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-1933", "output": " card_swallowed", "score": 1.0, "prompt_tokens": 664, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-1941", "output": " card_swallowed", "score": 1.0, "prompt_tokens": 654, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-1948", "output": " card_swallowed", "score": 1.0, "prompt_tokens": 654, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-1951", "output": " card_swallowed", "score": 1.0, "prompt_tokens": 676, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-1952", "output": " card_not_working\n\nExplanation: The customer is reporting an issue with an ATM not returning their", "score": 0.0, "prompt_tokens": 655, "output_tokens": 24, "finish_reason": "length"}
+{"id": "banking77-test-1953", "output": " card_swallowed", "score": 1.0, "prompt_tokens": 657, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-1958", "output": " transaction_charged_twice", "score": 1.0, "prompt_tokens": 655, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-1962", "output": " transaction_charged_twice", "score": 1.0, "prompt_tokens": 668, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-1970", "output": " request_refund", "score": 0.0, "prompt_tokens": 690, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-1973", "output": " transaction_charged_twice", "score": 1.0, "prompt_tokens": 655, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-1990", "output": " transaction_charged_twice", "score": 1.0, "prompt_tokens": 653, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-1992", "output": " transaction_charged_twice", "score": 1.0, "prompt_tokens": 658, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-1995", "output": " transaction_charged_twice", "score": 1.0, "prompt_tokens": 663, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-1998", "output": " verify_source_of_funds", "score": 1.0, "prompt_tokens": 654, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "banking77-test-2001", "output": " verify_source_of_funds", "score": 1.0, "prompt_tokens": 653, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "banking77-test-2004", "output": " verify_source_of_funds", "score": 1.0, "prompt_tokens": 659, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "banking77-test-2017", "output": " verify_source_of_funds", "score": 1.0, "prompt_tokens": 654, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "banking77-test-2021", "output": " verify_source_of_funds", "score": 1.0, "prompt_tokens": 652, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "banking77-test-2025", "output": " verify_source_of_funds", "score": 1.0, "prompt_tokens": 658, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "banking77-test-2029", "output": " verify_source_of_funds", "score": 1.0, "prompt_tokens": 655, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "banking77-test-2036", "output": " transfer_timing", "score": 1.0, "prompt_tokens": 660, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-2038", "output": " transfer_timing", "score": 1.0, "prompt_tokens": 660, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-2041", "output": " transfer_timing", "score": 1.0, "prompt_tokens": 653, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-2042", "output": " transfer_timing", "score": 1.0, "prompt_tokens": 653, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-2062", "output": " transfer_timing", "score": 1.0, "prompt_tokens": 658, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-2067", "output": " transfer_timing", "score": 1.0, "prompt_tokens": 668, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-2080", "output": " declined_card_payment or declined_cash_withdrawal", "score": 0.0, "prompt_tokens": 651, "output_tokens": 15, "finish_reason": "stop"}
+{"id": "banking77-test-2083", "output": " transfer_not_received_by_recipient", "score": 0.0, "prompt_tokens": 698, "output_tokens": 13, "finish_reason": "stop"}
+{"id": "banking77-test-2094", "output": " declined_card_payment or declined_transfer", "score": 0.0, "prompt_tokens": 653, "output_tokens": 10, "finish_reason": "stop"}
+{"id": "banking77-test-2125", "output": " change_pin\n\nExplanation: The customer is asking to change their PIN, which falls under the \"", "score": 1.0, "prompt_tokens": 670, "output_tokens": 24, "finish_reason": "length"}
+{"id": "banking77-test-2133", "output": " change_pin", "score": 1.0, "prompt_tokens": 653, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-2134", "output": " change_pin", "score": 1.0, "prompt_tokens": 654, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-2135", "output": " change_pin", "score": 1.0, "prompt_tokens": 653, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-2137", "output": " change_pin", "score": 1.0, "prompt_tokens": 668, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-2142", "output": " change_pin", "score": 1.0, "prompt_tokens": 652, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-2148", "output": " change_pin (This intent is for customers who need to change their PIN and are not currently at their home location", "score": 0.0, "prompt_tokens": 658, "output_tokens": 24, "finish_reason": "length"}
+{"id": "banking77-test-2150", "output": " change_pin", "score": 1.0, "prompt_tokens": 652, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-2153", "output": " change_pin", "score": 1.0, "prompt_tokens": 659, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-2160", "output": " pending_transfer", "score": 0.0, "prompt_tokens": 650, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-2164", "output": " exchange_via_app", "score": 0.0, "prompt_tokens": 674, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-2168", "output": " fiat_currency_support", "score": 0.0, "prompt_tokens": 659, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "banking77-test-2181", "output": " transferred_not_received_by_recipient", "score": 0.0, "prompt_tokens": 656, "output_tokens": 13, "finish_reason": "stop"}
+{"id": "banking77-test-2188", "output": " transfer_not_received_by_recipient or beneficiary_not_allowed", "score": 0.0, "prompt_tokens": 659, "output_tokens": 21, "finish_reason": "stop"}
+{"id": "banking77-test-2203", "output": " transfer_fee_charged", "score": 1.0, "prompt_tokens": 651, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "banking77-test-2213", "output": " transfer_fee_charged\nor\ntransaction_charged_twice", "score": 1.0, "prompt_tokens": 653, "output_tokens": 17, "finish_reason": "stop"}
+{"id": "banking77-test-2214", "output": " transfer_fee_charged", "score": 1.0, "prompt_tokens": 651, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "banking77-test-2223", "output": " transfer_fee_charged", "score": 1.0, "prompt_tokens": 656, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "banking77-test-2224", "output": " transfer_fee_charged", "score": 1.0, "prompt_tokens": 654, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "banking77-test-2229", "output": " extra_charge_on_statement", "score": 0.0, "prompt_tokens": 651, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-2238", "output": " fiat_currency_support", "score": 0.0, "prompt_tokens": 662, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "banking77-test-2241", "output": " exchange_rate\nor:\nbalance_not_updated_after_bank_transfer (if the salary hasn'", "score": 0.0, "prompt_tokens": 657, "output_tokens": 24, "finish_reason": "length"}
+{"id": "banking77-test-2242", "output": " exchange_rate\nor:\nfiat_currency_support", "score": 0.0, "prompt_tokens": 660, "output_tokens": 14, "finish_reason": "stop"}
+{"id": "banking77-test-2246", "output": " supported_currencies_and_deposits (or fiat_currency_support, depending on the exact", "score": 0.0, "prompt_tokens": 667, "output_tokens": 24, "finish_reason": "length"}
+{"id": "banking77-test-2247", "output": " receiving_money", "score": 1.0, "prompt_tokens": 652, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-2257", "output": " receiving_money", "score": 1.0, "prompt_tokens": 654, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-2263", "output": " receiving_money", "score": 1.0, "prompt_tokens": 655, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-2279", "output": " pending_transfer\nor\ntransfer_not_received_by_recipient", "score": 0.0, "prompt_tokens": 667, "output_tokens": 19, "finish_reason": "stop"}
+{"id": "banking77-test-2287", "output": " transferred_not_received_by_recipient", "score": 0.0, "prompt_tokens": 653, "output_tokens": 13, "finish_reason": "stop"}
+{"id": "banking77-test-2292", "output": " declined_transfer", "score": 0.0, "prompt_tokens": 652, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-2296", "output": " transfer_fee_charged\ntransfer_limits\ntransfer_timing", "score": 0.0, "prompt_tokens": 654, "output_tokens": 16, "finish_reason": "stop"}
+{"id": "banking77-test-2297", "output": " pending_transfer or declined_transfer", "score": 0.0, "prompt_tokens": 663, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-2299", "output": " pending_transfer", "score": 0.0, "prompt_tokens": 654, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-2309", "output": " pending_transfer", "score": 0.0, "prompt_tokens": 650, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-2312", "output": " pending_transfer", "score": 0.0, "prompt_tokens": 654, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-2324", "output": " top_up_by_bank_transfer", "score": 0.0, "prompt_tokens": 658, "output_tokens": 10, "finish_reason": "stop"}
+{"id": "banking77-test-2327", "output": " transfer_into_account", "score": 1.0, "prompt_tokens": 661, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-2331", "output": " top_up_by_bank_transfer", "score": 0.0, "prompt_tokens": 659, "output_tokens": 10, "finish_reason": "stop"}
+{"id": "banking77-test-2333", "output": " transfer_into_account", "score": 1.0, "prompt_tokens": 655, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-2350", "output": " transfer_into_account", "score": 1.0, "prompt_tokens": 668, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-2357", "output": " verify_top_up", "score": 1.0, "prompt_tokens": 656, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-2359", "output": " verify_top_up", "score": 1.0, "prompt_tokens": 659, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-2374", "output": " verify_top_up", "score": 1.0, "prompt_tokens": 658, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-2389", "output": " verify_top_up", "score": 1.0, "prompt_tokens": 653, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-2395", "output": " verify_top_up", "score": 1.0, "prompt_tokens": 656, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-2397", "output": " card_delivery_estimate or topping_up_by_card (Depending on the context of the", "score": 0.0, "prompt_tokens": 655, "output_tokens": 24, "finish_reason": "length"}
+{"id": "banking77-test-2404", "output": " getting_physical_card or getting_virtual_card", "score": 0.0, "prompt_tokens": 655, "output_tokens": 13, "finish_reason": "stop"}
+{"id": "banking77-test-2406", "output": " top_up_limits or disposable_card_limits", "score": 0.0, "prompt_tokens": 656, "output_tokens": 13, "finish_reason": "stop"}
+{"id": "banking77-test-2415", "output": " getting_spare_card", "score": 1.0, "prompt_tokens": 651, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "banking77-test-2417", "output": " getting_spare_card or getting_physical_card", "score": 0.0, "prompt_tokens": 651, "output_tokens": 14, "finish_reason": "stop"}
+{"id": "banking77-test-2435", "output": " card_linking", "score": 0.0, "prompt_tokens": 657, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-2442", "output": " balance_not_updated_after_cheque_or_cash_deposit", "score": 0.0, "prompt_tokens": 654, "output_tokens": 20, "finish_reason": "stop"}
+{"id": "banking77-test-2443", "output": " top_up_by_cash_or_cheque", "score": 1.0, "prompt_tokens": 668, "output_tokens": 14, "finish_reason": "stop"}
+{"id": "banking77-test-2444", "output": " top_up_by_cash_or_cheque", "score": 1.0, "prompt_tokens": 657, "output_tokens": 14, "finish_reason": "stop"}
+{"id": "banking77-test-2465", "output": " cash_payment_acceptance", "score": 0.0, "prompt_tokens": 655, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "banking77-test-2466", "output": " top_up_by_cash_or_cheque", "score": 1.0, "prompt_tokens": 654, "output_tokens": 14, "finish_reason": "stop"}
+{"id": "banking77-test-2468", "output": " top_up_by_cash_or_cheque", "score": 1.0, "prompt_tokens": 658, "output_tokens": 14, "finish_reason": "stop"}
+{"id": "banking77-test-2470", "output": " top_up_by_cash_or_cheque", "score": 1.0, "prompt_tokens": 654, "output_tokens": 14, "finish_reason": "stop"}
+{"id": "banking77-test-2473", "output": " topping_up_by_card", "score": 0.0, "prompt_tokens": 654, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "banking77-test-2480", "output": " get_physical_card", "score": 0.0, "prompt_tokens": 649, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "banking77-test-2483", "output": " card_delivery_estimate", "score": 0.0, "prompt_tokens": 658, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-2488", "output": " card_payment_fee_charged or top_up_by_card_charge", "score": 0.0, "prompt_tokens": 653, "output_tokens": 19, "finish_reason": "stop"}
+{"id": "banking77-test-2491", "output": " card_delivery_estimate", "score": 0.0, "prompt_tokens": 651, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-2497", "output": " get_physical_card", "score": 0.0, "prompt_tokens": 652, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "banking77-test-2499", "output": " get_physical_card", "score": 0.0, "prompt_tokens": 653, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "banking77-test-2502", "output": " card_delivery_estimate", "score": 0.0, "prompt_tokens": 652, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-2506", "output": " card_delivery_estimate", "score": 0.0, "prompt_tokens": 652, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-2507", "output": " card_delivery_estimate", "score": 0.0, "prompt_tokens": 653, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-2509", "output": " lost_or_stolen_card", "score": 0.0, "prompt_tokens": 652, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "banking77-test-2532", "output": " virtual_card_not_working", "score": 1.0, "prompt_tokens": 654, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-2541", "output": " virtual_card_not_working", "score": 1.0, "prompt_tokens": 660, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-2543", "output": " virtual_card_not_working", "score": 1.0, "prompt_tokens": 672, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-2553", "output": " card_payment_not_recognised", "score": 0.0, "prompt_tokens": 667, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "banking77-test-2561", "output": " cash_withdrawal_not_recognised or cash_withdrawal_charge", "score": 0.0, "prompt_tokens": 689, "output_tokens": 19, "finish_reason": "stop"}
+{"id": "banking77-test-2567", "output": " cash_withdrawal_charge\n\nExplanation: The customer is asking about a fee for exchanging cash", "score": 0.0, "prompt_tokens": 654, "output_tokens": 24, "finish_reason": "length"}
+{"id": "banking77-test-2570", "output": " wrong_exchange_rate_for_cash_withdrawal", "score": 1.0, "prompt_tokens": 656, "output_tokens": 16, "finish_reason": "stop"}
+{"id": "banking77-test-2581", "output": " exchange_rate", "score": 0.0, "prompt_tokens": 656, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-2593", "output": " cash_withdrawal_charge", "score": 0.0, "prompt_tokens": 683, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-2595", "output": " cash_withdrawal_not_recognised or cash_withdrawal_charge", "score": 0.0, "prompt_tokens": 686, "output_tokens": 19, "finish_reason": "stop"}
+{"id": "banking77-test-2597", "output": " disposable_card_limits", "score": 0.0, "prompt_tokens": 654, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "banking77-test-2598", "output": " get_virtual_card", "score": 0.0, "prompt_tokens": 658, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-2600", "output": " virtual_card_not_working or getting_virtual_card", "score": 0.0, "prompt_tokens": 651, "output_tokens": 14, "finish_reason": "stop"}
+{"id": "banking77-test-2610", "output": " get_disposable_virtual_card", "score": 1.0, "prompt_tokens": 657, "output_tokens": 10, "finish_reason": "stop"}
+{"id": "banking77-test-2616", "output": " get_disposable_virtual_card", "score": 1.0, "prompt_tokens": 664, "output_tokens": 10, "finish_reason": "stop"}
+{"id": "banking77-test-2622", "output": " get_disposable_virtual_card", "score": 1.0, "prompt_tokens": 657, "output_tokens": 10, "finish_reason": "stop"}
+{"id": "banking77-test-2623", "output": " get_disposable_virtual_card", "score": 1.0, "prompt_tokens": 655, "output_tokens": 10, "finish_reason": "stop"}
+{"id": "banking77-test-2626", "output": " disposable_card_limits or getting_disposable_virtual_card", "score": 0.0, "prompt_tokens": 652, "output_tokens": 17, "finish_reason": "stop"}
+{"id": "banking77-test-2638", "output": " top_up_failed", "score": 1.0, "prompt_tokens": 660, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-2641", "output": " top_up_failed", "score": 1.0, "prompt_tokens": 655, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-2649", "output": " top_up_failed", "score": 1.0, "prompt_tokens": 654, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-2655", "output": " top_up_failed", "score": 1.0, "prompt_tokens": 657, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-2658", "output": " top_up_failed", "score": 1.0, "prompt_tokens": 654, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-2659", "output": " pending_transfer or transfer_not_received_by_recipient", "score": 0.0, "prompt_tokens": 657, "output_tokens": 17, "finish_reason": "stop"}
+{"id": "banking77-test-2665", "output": " top_up_not_working", "score": 0.0, "prompt_tokens": 656, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-2677", "output": " balance_not_updated_after_bank_transfer", "score": 1.0, "prompt_tokens": 657, "output_tokens": 12, "finish_reason": "stop"}
+{"id": "banking77-test-2684", "output": " transfer_not_received_by_recipient", "score": 0.0, "prompt_tokens": 654, "output_tokens": 13, "finish_reason": "stop"}
+{"id": "banking77-test-2689", "output": " pending_transfer", "score": 0.0, "prompt_tokens": 654, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-2693", "output": " balance_not_updated_after_bank_transfer", "score": 1.0, "prompt_tokens": 656, "output_tokens": 12, "finish_reason": "stop"}
+{"id": "banking77-test-2704", "output": " transfer_timing", "score": 0.0, "prompt_tokens": 655, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-2709", "output": " transfer_timing\nor\ncountry_support\n\nBased on the given message, it could be asking about the", "score": 0.0, "prompt_tokens": 654, "output_tokens": 24, "finish_reason": "length"}
+{"id": "banking77-test-2712", "output": " transfer_timing", "score": 0.0, "prompt_tokens": 684, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-2721", "output": " pending_cash_withdrawal or transaction_charged_twice", "score": 0.0, "prompt_tokens": 655, "output_tokens": 17, "finish_reason": "stop"}
+{"id": "banking77-test-2726", "output": " compromised_card", "score": 0.0, "prompt_tokens": 661, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "banking77-test-2733", "output": " pending_withdrawal or transaction_charged_twice", "score": 0.0, "prompt_tokens": 652, "output_tokens": 14, "finish_reason": "stop"}
+{"id": "banking77-test-2736", "output": " pending_transfer or declined_cash_withdrawal or transaction_charged_twice or reverted_", "score": 0.0, "prompt_tokens": 656, "output_tokens": 24, "finish_reason": "length"}
+{"id": "banking77-test-2740", "output": " pending_transaction_or_fraud\n\nExplanation: The customer message indicates that there is an unusual", "score": 0.0, "prompt_tokens": 654, "output_tokens": 24, "finish_reason": "length"}
+{"id": "banking77-test-2755", "output": " cash_withdrawal_not_recognised", "score": 1.0, "prompt_tokens": 658, "output_tokens": 11, "finish_reason": "stop"}
+{"id": "banking77-test-2756", "output": " exchange_charge", "score": 1.0, "prompt_tokens": 651, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-2758", "output": " exchange_fee\n\nExplanation: The customer is asking about the fees for currency exchange, which falls under the", "score": 0.0, "prompt_tokens": 652, "output_tokens": 24, "finish_reason": "length"}
+{"id": "banking77-test-2759", "output": " exchange_rate", "score": 0.0, "prompt_tokens": 653, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-2769", "output": " exchange_charge", "score": 1.0, "prompt_tokens": 655, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-2772", "output": " exchange_rate\nsupported_cards_and_currencies\n(or)\nexchange_via_app", "score": 0.0, "prompt_tokens": 667, "output_tokens": 24, "finish_reason": "length"}
+{"id": "banking77-test-2779", "output": " exchange_fee", "score": 0.0, "prompt_tokens": 651, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-2780", "output": " exchange_rate", "score": 0.0, "prompt_tokens": 657, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-2782", "output": " exchange_charge", "score": 1.0, "prompt_tokens": 658, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-2783", "output": " exchange_rate", "score": 0.0, "prompt_tokens": 659, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-2787", "output": " exchange_rate", "score": 0.0, "prompt_tokens": 664, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-2789", "output": " exchange_rate", "score": 0.0, "prompt_tokens": 657, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-2790", "output": " exchange_fee", "score": 0.0, "prompt_tokens": 654, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-2795", "output": " exchange_charge", "score": 1.0, "prompt_tokens": 654, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-2799", "output": " exchange_rate\nor:\nextra_charge_on_statement", "score": 0.0, "prompt_tokens": 658, "output_tokens": 15, "finish_reason": "stop"}
+{"id": "banking77-test-2801", "output": " top_up_by_card_charge", "score": 1.0, "prompt_tokens": 655, "output_tokens": 10, "finish_reason": "stop"}
+{"id": "banking77-test-2812", "output": " top_up_by_card_charge", "score": 1.0, "prompt_tokens": 656, "output_tokens": 10, "finish_reason": "stop"}
+{"id": "banking77-test-2813", "output": " exchange_charge or top_up_by_card_charge", "score": 0.0, "prompt_tokens": 661, "output_tokens": 14, "finish_reason": "stop"}
+{"id": "banking77-test-2829", "output": " exchange_rate\n\nExplanation: The customer is asking about charges or discounts related to using a European bank", "score": 0.0, "prompt_tokens": 662, "output_tokens": 24, "finish_reason": "length"}
+{"id": "banking77-test-2857", "output": " activate_my_card", "score": 1.0, "prompt_tokens": 653, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "banking77-test-2864", "output": " card_activation\n\nExplanation: The customer is asking about the process to activate a new card, which", "score": 0.0, "prompt_tokens": 656, "output_tokens": 24, "finish_reason": "length"}
+{"id": "banking77-test-2868", "output": " card_arrival or card_linking or get_physical_card or get_virtual_card", "score": 0.0, "prompt_tokens": 653, "output_tokens": 24, "finish_reason": "stop"}
+{"id": "banking77-test-2878", "output": " cash_withdrawal_charge", "score": 1.0, "prompt_tokens": 655, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-2882", "output": " cash_withdrawal_charge", "score": 1.0, "prompt_tokens": 676, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-2888", "output": " cash_withdrawal_charge", "score": 1.0, "prompt_tokens": 658, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-2889", "output": " cash_withdrawal_charge", "score": 1.0, "prompt_tokens": 718, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-2891", "output": " cash_withdrawal_charge", "score": 1.0, "prompt_tokens": 655, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-2894", "output": " cash_withdrawal_charge", "score": 1.0, "prompt_tokens": 654, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-2896", "output": " cash_withdrawal_charge", "score": 1.0, "prompt_tokens": 656, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-2903", "output": " cash_withdrawal_charge", "score": 1.0, "prompt_tokens": 652, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-2906", "output": " cash_withdrawal_charge", "score": 1.0, "prompt_tokens": 664, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-2909", "output": " cash_withdrawal_charge", "score": 1.0, "prompt_tokens": 655, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "banking77-test-2912", "output": " cash_withdrawal_charge\n\nExplanation: The customer is reporting an issue with a wrong fee charged", "score": 1.0, "prompt_tokens": 656, "output_tokens": 24, "finish_reason": "length"}
+{"id": "banking77-test-2921", "output": " card_about_to_expire", "score": 1.0, "prompt_tokens": 656, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "banking77-test-2922", "output": " card_about_to_expire", "score": 1.0, "prompt_tokens": 660, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "banking77-test-2923", "output": " getting_physical_card\n\nExplanation: The customer is asking about the cost and time required to", "score": 0.0, "prompt_tokens": 656, "output_tokens": 24, "finish_reason": "length"}
+{"id": "banking77-test-2931", "output": " card_about_to_expire", "score": 1.0, "prompt_tokens": 659, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "banking77-test-2939", "output": " card_arrival or getting_physical_card", "score": 0.0, "prompt_tokens": 660, "output_tokens": 13, "finish_reason": "stop"}
+{"id": "banking77-test-2946", "output": " card_about_to_expire", "score": 1.0, "prompt_tokens": 655, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "banking77-test-2947", "output": " card_arrival or get_physical_card", "score": 0.0, "prompt_tokens": 665, "output_tokens": 13, "finish_reason": "stop"}
+{"id": "banking77-test-2962", "output": " topping_up_by_google_pay", "score": 0.0, "prompt_tokens": 656, "output_tokens": 11, "finish_reason": "stop"}
+{"id": "banking77-test-2965", "output": " apple_pay_or_google_pay", "score": 1.0, "prompt_tokens": 654, "output_tokens": 10, "finish_reason": "stop"}
+{"id": "banking77-test-2968", "output": " apple_pay_or_google_pay", "score": 1.0, "prompt_tokens": 673, "output_tokens": 10, "finish_reason": "stop"}
+{"id": "banking77-test-2974", "output": " apple_pay_or_google_pay", "score": 1.0, "prompt_tokens": 664, "output_tokens": 10, "finish_reason": "stop"}
+{"id": "banking77-test-2976", "output": " apple_pay_or_google_pay", "score": 1.0, "prompt_tokens": 654, "output_tokens": 10, "finish_reason": "stop"}
+{"id": "banking77-test-2985", "output": " topping_up_by_apple_pay_or_google_pay", "score": 0.0, "prompt_tokens": 658, "output_tokens": 17, "finish_reason": "stop"}
+{"id": "banking77-test-2986", "output": " top_up_by_apple_pay or apple_pay_or_google_pay", "score": 0.0, "prompt_tokens": 659, "output_tokens": 20, "finish_reason": "stop"}
+{"id": "banking77-test-2989", "output": " apple_pay_or_google_pay", "score": 1.0, "prompt_tokens": 656, "output_tokens": 10, "finish_reason": "stop"}
+{"id": "banking77-test-2991", "output": " top_up_not_recognised or topping_up_by_card\n\nExplanation: The", "score": 0.0, "prompt_tokens": 656, "output_tokens": 24, "finish_reason": "length"}
+{"id": "banking77-test-2995", "output": " apple_pay_or_google_pay", "score": 1.0, "prompt_tokens": 660, "output_tokens": 10, "finish_reason": "stop"}
+{"id": "banking77-test-2998", "output": " verify_identity", "score": 0.0, "prompt_tokens": 659, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-2999", "output": " verify_identity", "score": 0.0, "prompt_tokens": 653, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-3013", "output": " verify_identity", "score": 0.0, "prompt_tokens": 654, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-3041", "output": " country_support", "score": 1.0, "prompt_tokens": 654, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-3044", "output": " getting_physical_card or getting_virtual_card (depending on the specific card type they want", "score": 0.0, "prompt_tokens": 659, "output_tokens": 24, "finish_reason": "length"}
+{"id": "banking77-test-3052", "output": " country_support", "score": 1.0, "prompt_tokens": 649, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-3055", "output": " country_support", "score": 1.0, "prompt_tokens": 658, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-3057", "output": " country_support", "score": 1.0, "prompt_tokens": 661, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "banking77-test-3065", "output": " country_support", "score": 1.0, "prompt_tokens": 653, "output_tokens": 4, "finish_reason": "stop"}

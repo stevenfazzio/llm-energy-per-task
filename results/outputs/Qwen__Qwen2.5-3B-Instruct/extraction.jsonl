@@ -1,0 +1,500 @@
+{"id": "56be4db0acb8001400a502ed", "output": "Carolina Panthers", "score": 1.0, "prompt_tokens": 244, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "56be4db0acb8001400a502ef", "output": "Denver Broncos", "score": 1.0, "prompt_tokens": 241, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "56bf10f43aeaaa14008c94ff", "output": "Levi's Stadium", "score": 1.0, "prompt_tokens": 243, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "56d20362e7d4791d009025eb", "output": "Denver Broncos", "score": 1.0, "prompt_tokens": 239, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "56bead5a3aeaaa14008c91ec", "output": "four", "score": 1.0, "prompt_tokens": 211, "output_tokens": 2, "finish_reason": "stop"}
+{"id": "56be4eafacb8001400a50302", "output": "Von Miller", "score": 1.0, "prompt_tokens": 142, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "56d6ee6e0d65d21400198256", "output": "Sun Life Stadium", "score": 1.0, "prompt_tokens": 108, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "56bf21b43aeaaa14008c9526", "output": "The passage does not provide information about the last Super Bowl that took place at Sun Life Stadium in Miami.", "score": 0.1904761904761905, "prompt_tokens": 231, "output_tokens": 22, "finish_reason": "stop"}
+{"id": "56be5523acb8001400a50330", "output": "San Diego", "score": 1.0, "prompt_tokens": 161, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "56beb3083aeaaa14008c9241", "output": "Kelvin Benjamin", "score": 1.0, "prompt_tokens": 266, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "56beb3a03aeaaa14008c9247", "output": "six", "score": 1.0, "prompt_tokens": 394, "output_tokens": 2, "finish_reason": "stop"}
+{"id": "56d6f2960d65d2140019828a", "output": "6", "score": 0.0, "prompt_tokens": 396, "output_tokens": 2, "finish_reason": "stop"}
+{"id": "56d997cddc89441400fdb589", "output": "99.4", "score": 1.0, "prompt_tokens": 396, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "56d6f3500d65d21400198290", "output": "24", "score": 1.0, "prompt_tokens": 334, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "56beb4e43aeaaa14008c9265", "output": "Gary Kubiak", "score": 1.0, "prompt_tokens": 502, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "56d99b7bdc89441400fdb5c8", "output": "John Fox", "score": 1.0, "prompt_tokens": 509, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "56beb6f23aeaaa14008c92a2", "output": "The Panthers faced the Arizona Cardinals in the NFC Championship Game.", "score": 0.4, "prompt_tokens": 155, "output_tokens": 13, "finish_reason": "stop"}
+{"id": "56beb7fd3aeaaa14008c92b6", "output": "a broken arm", "score": 1.0, "prompt_tokens": 134, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "56bf3fd53aeaaa14008c9594", "output": "John Elway", "score": 0.0, "prompt_tokens": 153, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "56d704430d65d214001982e0", "output": "John Elway", "score": 0.0, "prompt_tokens": 149, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "56d7096b0d65d214001982fd", "output": "2011", "score": 1.0, "prompt_tokens": 191, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "56bf4e1b3aeaaa14008c95bd", "output": "2014", "score": 1.0, "prompt_tokens": 251, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "56bf52483aeaaa14008c95c8", "output": "gold", "score": 1.0, "prompt_tokens": 199, "output_tokens": 2, "finish_reason": "stop"}
+{"id": "56bebec43aeaaa14008c934a", "output": "the 50 fund", "score": 1.0, "prompt_tokens": 142, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "56bf5e7b3aeaaa14008c95f8", "output": "on the sidelines", "score": 0.6666666666666666, "prompt_tokens": 223, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "56d9b7dcdc89441400fdb744", "output": "pylon cameras", "score": 0.6666666666666666, "prompt_tokens": 220, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "56d720c70d65d21400198397", "output": "a special episode of The Late Late Show with James Corden.", "score": 0.16666666666666666, "prompt_tokens": 139, "output_tokens": 14, "finish_reason": "stop"}
+{"id": "56bec3153aeaaa14008c938a", "output": "Anheuser-Busch InBev", "score": 1.0, "prompt_tokens": 281, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "56d9bdc1dc89441400fdb76a", "output": "\"Crash the Super Bowl\"", "score": 1.0, "prompt_tokens": 278, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "56bec4a33aeaaa14008c93b1", "output": "Westwood One", "score": 1.0, "prompt_tokens": 124, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "56d9c049dc89441400fdb792", "output": "North America", "score": 1.0, "prompt_tokens": 126, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "56bec5233aeaaa14008c93d2", "output": "Chester, South Carolina", "score": 1.0, "prompt_tokens": 279, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "56bec5ff3aeaaa14008c93e3", "output": "BBC Radio 5 Live", "score": 1.0, "prompt_tokens": 116, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "56bec6ac3aeaaa14008c93fd", "output": "Six-time Grammy winner", "score": 0.0, "prompt_tokens": 101, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "56bec6ac3aeaaa14008c93ff", "output": "Academy Award", "score": 1.0, "prompt_tokens": 101, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "56bec6ac3aeaaa14008c9400", "output": "American Sign Language (ASL)", "score": 0.0, "prompt_tokens": 100, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "56bec7353aeaaa14008c940d", "output": "On December 3, 2015", "score": 0.6666666666666666, "prompt_tokens": 198, "output_tokens": 11, "finish_reason": "stop"}
+{"id": "56bec7a63aeaaa14008c9418", "output": "Owen Daniels", "score": 0.0, "prompt_tokens": 229, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "56bec7a63aeaaa14008c9419", "output": "Ronnie Hillman", "score": 1.0, "prompt_tokens": 225, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "56d728a10d65d21400198414", "output": "Shaq Thompson", "score": 1.0, "prompt_tokens": 224, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "56bec98e3aeaaa14008c9455", "output": "Ted Ginn Jr.", "score": 1.0, "prompt_tokens": 289, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "56d7282f0d65d2140019840a", "output": "T. J. Ward", "score": 1.0, "prompt_tokens": 286, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "56beca913aeaaa14008c946d", "output": "24-yard line", "score": 0.0, "prompt_tokens": 292, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "56d7270c0d65d214001983f8", "output": "Thomas Davis", "score": 1.0, "prompt_tokens": 356, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "57336755d058e614000b5a3f", "output": "The Krasiński Palace Garden", "score": 1.0, "prompt_tokens": 457, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "57332f81d058e614000b5778", "output": "typical buildings of an Eastern Bloc city", "score": 0.6666666666666666, "prompt_tokens": 202, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "573368044776f41900660a2a", "output": "New Orangery", "score": 1.0, "prompt_tokens": 295, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "573368044776f41900660a2b", "output": "Pole Mokotowskie", "score": 1.0, "prompt_tokens": 288, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "57338007d058e614000b5bde", "output": "in the aftermath of the Warsaw Uprising of 1944.", "score": 0.25, "prompt_tokens": 253, "output_tokens": 16, "finish_reason": "stop"}
+{"id": "573380e0d058e614000b5bea", "output": "powiats", "score": 0.5, "prompt_tokens": 344, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "57338255d058e614000b5c11", "output": "Centrum", "score": 1.0, "prompt_tokens": 272, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "573383d0d058e614000b5c39", "output": "The license for the production of the Aveo expired in February 2011.", "score": 0.19999999999999998, "prompt_tokens": 276, "output_tokens": 19, "finish_reason": "stop"}
+{"id": "56dde3aa9a695914005b9661", "output": "William of Apulia tells that, in 1016,", "score": 0.0, "prompt_tokens": 270, "output_tokens": 15, "finish_reason": "stop"}
+{"id": "56de0daecffd8e1900b4b596", "output": "William Iron Arm", "score": 1.0, "prompt_tokens": 272, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "56de0ffd4396321400ee258e", "output": "In the 1060s, Robert Crispin led the Normans of Edessa against the Turks.", "score": 0.33333333333333337, "prompt_tokens": 206, "output_tokens": 25, "finish_reason": "stop"}
+{"id": "56de3ebc4396321400ee26e8", "output": "The conquest of Jerusalem", "score": 0.5, "prompt_tokens": 193, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "56de49a8cffd8e1900b4b7a7", "output": "Bethencourt", "score": 1.0, "prompt_tokens": 131, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "56de4c324396321400ee27ad", "output": "Odo, the Bishop of Bayeux and first Earl of Kent", "score": 0.19999999999999998, "prompt_tokens": 135, "output_tokens": 15, "finish_reason": "stop"}
+{"id": "56df9ee138dc42170015210b", "output": "New York City", "score": 1.0, "prompt_tokens": 189, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "56e0bcc0231d4119001ac36d", "output": "Đuka Tesla", "score": 1.0, "prompt_tokens": 209, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "56dfa1d44a1a83140091ebd6", "output": "German", "score": 1.0, "prompt_tokens": 196, "output_tokens": 2, "finish_reason": "stop"}
+{"id": "56dfa3c338dc421700152157", "output": "became addicted to gambling", "score": 0.4, "prompt_tokens": 394, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "56dfb0c8231d4119001abc84", "output": "France", "score": 1.0, "prompt_tokens": 154, "output_tokens": 2, "finish_reason": "stop"}
+{"id": "56dfb5777aa994140058e025", "output": "electrical arc light based illumination systems", "score": 1.0, "prompt_tokens": 147, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "56e0d6cf231d4119001ac423", "output": "Installed electrical arc light based illumination systems designed by Tesla and also had designs for dynamo electric machine commutators, the first patents issued to Tesla in the US.", "score": 0.8444444444444443, "prompt_tokens": 146, "output_tokens": 34, "finish_reason": "stop"}
+{"id": "56dfb5f5231d4119001abcb8", "output": "he even as a ditch digger for $2 per day.", "score": 0.3636363636363636, "prompt_tokens": 199, "output_tokens": 14, "finish_reason": "stop"}
+{"id": "56e0d810231d4119001ac433", "output": "Western Union superintendent", "score": 1.0, "prompt_tokens": 211, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "56e057e1231d4119001ac047", "output": "Thomas Commerford Martin", "score": 1.0, "prompt_tokens": 218, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "56e0e518231d4119001ac444", "output": "a 60-cycle AC current system Tesla proposed", "score": 0.0, "prompt_tokens": 184, "output_tokens": 11, "finish_reason": "stop"}
+{"id": "56e05a78231d4119001ac063", "output": "a competition between rival lighting systems", "score": 1.0, "prompt_tokens": 330, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "56e0ecd37aa994140058e7d8", "output": "alternating current", "score": 1.0, "prompt_tokens": 228, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "56e0812c231d4119001ac213", "output": "Richard Dean Adams", "score": 1.0, "prompt_tokens": 280, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "56e0f32d231d4119001ac4cb", "output": "X-ray image", "score": 1.0, "prompt_tokens": 312, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "56e0fde0cd28a01900c673ec", "output": "The earth had a resonant frequency.", "score": 1.0, "prompt_tokens": 116, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "56e10043e3433e1400422a88", "output": "July 1899", "score": 1.0, "prompt_tokens": 314, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "56e10179cd28a01900c67413", "output": "Wardenclyffe", "score": 1.0, "prompt_tokens": 98, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "56e101f4e3433e1400422a91", "output": "Morgan was shocked by the reminder of his part in the stock market crash and by Tesla's breach of contract by asking for more funds.", "score": 0.8205128205128205, "prompt_tokens": 184, "output_tokens": 29, "finish_reason": "stop"}
+{"id": "56e10296cd28a01900c67424", "output": "Tesla wrote over 50 letters to Morgan, pleading for and demanding additional funding to complete the construction of Wardenclyffe.", "score": 0.4347826086956522, "prompt_tokens": 251, "output_tokens": 27, "finish_reason": "stop"}
+{"id": "56e1097dcd28a01900c67491", "output": "Any rumor that a person has not been given a Nobel Prize because he has made known his intention to refuse the reward", "score": 0.07692307692307691, "prompt_tokens": 234, "output_tokens": 24, "finish_reason": "stop"}
+{"id": "56e10b6ee3433e1400422b25", "output": "U.S. Patent 1,655,114 was granted for a biplane capable of taking off vertically (VTOL aircraft).", "score": 0.6, "prompt_tokens": 213, "output_tokens": 31, "finish_reason": "stop"}
+{"id": "56e10e73cd28a01900c674ec", "output": "Van de Graaff generator", "score": 1.0, "prompt_tokens": 132, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "56e11afbcd28a01900c675c8", "output": "In an interview with newspaper editor Arthur Brisbane, Tesla said.", "score": 0.3636363636363636, "prompt_tokens": 150, "output_tokens": 13, "finish_reason": "stop"}
+{"id": "56e11ba9cd28a01900c675d9", "output": "What was wrong with the pigeon? Answer: broken wing and leg", "score": 0.5714285714285715, "prompt_tokens": 150, "output_tokens": 14, "finish_reason": "stop"}
+{"id": "56e11d8ecd28a01900c675f1", "output": "sometimes spending more than 48 hours", "score": 0.8, "prompt_tokens": 247, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "56e11f05e3433e1400422c30", "output": "Tesla was asocial and prone to seclude himself with his work.", "score": 0.625, "prompt_tokens": 224, "output_tokens": 15, "finish_reason": "stop"}
+{"id": "56e120a1e3433e1400422c3b", "output": "19th century", "score": 0.6666666666666666, "prompt_tokens": 197, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "56e121b7e3433e1400422c53", "output": "81", "score": 1.0, "prompt_tokens": 193, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "56e122dacd28a01900c67639", "output": "imposed selective breeding version of eugenics", "score": 1.0, "prompt_tokens": 162, "output_tokens": 10, "finish_reason": "stop"}
+{"id": "56e1239acd28a01900c67641", "output": "Queen Bees", "score": 0.0, "prompt_tokens": 129, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "56e124f1cd28a01900c67651", "output": "Buddhism and Christianity", "score": 1.0, "prompt_tokens": 116, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "56e19724cd28a01900c679f7", "output": "A single output", "score": 1.0, "prompt_tokens": 134, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "56e19724cd28a01900c679f9", "output": "integer factorization problem", "score": 1.0, "prompt_tokens": 138, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "56e1c2eee3433e1400423136", "output": "single-tape Turing machine", "score": 0.6666666666666666, "prompt_tokens": 230, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "56e1c4fce3433e140042314e", "output": "BPP, ZPP, RP", "score": 0.8571428571428571, "prompt_tokens": 160, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "56e748a200c9c71400d76f37", "output": "A teacher's role may vary among cultures.", "score": 0.2857142857142857, "prompt_tokens": 108, "output_tokens": 10, "finish_reason": "stop"}
+{"id": "56e748a200c9c71400d76f39", "output": "craftsmanship", "score": 1.0, "prompt_tokens": 105, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "56e748a200c9c71400d76f3a", "output": "life skills", "score": 1.0, "prompt_tokens": 110, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "56e749dd00c9c71400d76f54", "output": "transient", "score": 1.0, "prompt_tokens": 118, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "56e74bf937bdd419002c3e34", "output": "paid professionals", "score": 1.0, "prompt_tokens": 130, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "56e74d1f00c9c71400d76f6e", "output": "school functions", "score": 1.0, "prompt_tokens": 126, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "56e74d1f00c9c71400d76f6f", "output": "extracurricular activities", "score": 0.6666666666666666, "prompt_tokens": 134, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "56e751fb00c9c71400d76fa9", "output": "pedagogy", "score": 1.0, "prompt_tokens": 199, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "56e751fb00c9c71400d76faa", "output": "pedagogy", "score": 0.0, "prompt_tokens": 202, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "56e7578a37bdd419002c3ea9", "output": "corporal punishment", "score": 1.0, "prompt_tokens": 115, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "56e7591b00c9c71400d76fef", "output": "a specially made wooden paddle.", "score": 1.0, "prompt_tokens": 187, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "56e7683d00c9c71400d770ce", "output": "The AAUW study covered subjects in 80,000 schools.", "score": 0.4444444444444445, "prompt_tokens": 305, "output_tokens": 18, "finish_reason": "stop"}
+{"id": "56e769dc00c9c71400d770ec", "output": "sex offenders register", "score": 1.0, "prompt_tokens": 186, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "56e76abf37bdd419002c3f76", "output": "working environment", "score": 0.23529411764705882, "prompt_tokens": 154, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "56e76b8337bdd419002c3f81", "output": "twice", "score": 1.0, "prompt_tokens": 130, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "56e77b8c00c9c71400d77197", "output": "no", "score": 0.0, "prompt_tokens": 487, "output_tokens": 2, "finish_reason": "stop"}
+{"id": "56e77cee00c9c71400d771aa", "output": "disciples", "score": 1.0, "prompt_tokens": 120, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "56e77da237bdd419002c403e", "output": "many times", "score": 1.0, "prompt_tokens": 125, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "56f7e9caaef2371900625c59", "output": "a day of rote learning and often wearying spiritual exercises.", "score": 1.0, "prompt_tokens": 146, "output_tokens": 14, "finish_reason": "stop"}
+{"id": "56f7f15aa6d7ea1400e172eb", "output": "1507", "score": 1.0, "prompt_tokens": 154, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "56f802c6a6d7ea1400e17377", "output": "God", "score": 1.0, "prompt_tokens": 125, "output_tokens": 2, "finish_reason": "stop"}
+{"id": "56f8225ea6d7ea1400e173f2", "output": "On 18 April 1521", "score": 0.8571428571428571, "prompt_tokens": 185, "output_tokens": 11, "finish_reason": "stop"}
+{"id": "56f826a7a6d7ea1400e17427", "output": "refuse to recant his writings", "score": 0.7499999999999999, "prompt_tokens": 163, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "56f827caa6d7ea1400e1743d", "output": "permit anyone to kill Luther without legal consequence.", "score": 0.4, "prompt_tokens": 167, "output_tokens": 10, "finish_reason": "stop"}
+{"id": "56f84d33aef2371900625fb5", "output": "many upper classes", "score": 0.8, "prompt_tokens": 277, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "56f867e3a6d7ea1400e175d9", "output": "The Small Catechism", "score": 0.6666666666666666, "prompt_tokens": 203, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "56f86b44a6d7ea1400e175f7", "output": "his translation", "score": 0.6666666666666666, "prompt_tokens": 278, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "56f87392aef2371900626099", "output": "1524", "score": 1.0, "prompt_tokens": 244, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "56f87392aef237190062609a", "output": "Luther's 1524 creedal hymn \"Wir glauben all an einen Gott\" (\"We All Believe in One True God\") presaged Luther's 1529 three-part explanation of the Apostles'", "score": 0.2857142857142857, "prompt_tokens": 239, "output_tokens": 48, "finish_reason": "length"}
+{"id": "56f87531a6d7ea1400e17672", "output": "multiple revisions", "score": 1.0, "prompt_tokens": 216, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "56f879bdaef23719006260e1", "output": "Dies sind die heilgen Zehn Gebot", "score": 0.0, "prompt_tokens": 384, "output_tokens": 12, "finish_reason": "stop"}
+{"id": "56f87e95aef237190062610a", "output": "Christ unser Herr zum Jordan kam", "score": 0.0, "prompt_tokens": 234, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "56f88690a6d7ea1400e17723", "output": "the soul does not sleep (anima non sic dormit), but wakes (sed vigilat) and experiences visions", "score": 0.0, "prompt_tokens": 216, "output_tokens": 24, "finish_reason": "stop"}
+{"id": "56f88c37aef2371900626176", "output": "October 1529", "score": 1.0, "prompt_tokens": 158, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "56f89a959b226e1400dd0ca1", "output": "wanting it exposed to scrutiny", "score": 1.0, "prompt_tokens": 175, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "56f8aa749b226e1400dd0da8", "output": "The Ten Commandments", "score": 1.0, "prompt_tokens": 173, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "56f8b2499b226e1400dd0e3e", "output": "Josel asked the city of Strasbourg to forbid the sale of Luther's anti-Jewish works.", "score": 0.4, "prompt_tokens": 246, "output_tokens": 21, "finish_reason": "stop"}
+{"id": "56f8b4d79b226e1400dd0e77", "output": "On the Jews and their Lies", "score": 0.5, "prompt_tokens": 337, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "56f8c2ee9b226e1400dd0f47", "output": "kidney and bladder stones, and arthritis, and an ear infection ruptured an ear drum.", "score": 0.6666666666666666, "prompt_tokens": 223, "output_tokens": 20, "finish_reason": "stop"}
+{"id": "56f8c5909b226e1400dd0f7e", "output": "15 February 1546", "score": 1.0, "prompt_tokens": 227, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "56f8ce779b226e1400dd1040", "output": "Episcopal (United States)", "score": 0.0, "prompt_tokens": 117, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "5705e33f52bb89140068964f", "output": "Mexican border", "score": 0.6666666666666666, "prompt_tokens": 139, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "5705eb3375f01819005e7764", "output": "Hollywood", "score": 1.0, "prompt_tokens": 166, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "5705f13d52bb8914006896f2", "output": "1999", "score": 1.0, "prompt_tokens": 129, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "5705fec152bb89140068977c", "output": "magnitude 6.7", "score": 0.6666666666666666, "prompt_tokens": 187, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "570603c475f01819005e7885", "output": "tech-oriented", "score": 1.0, "prompt_tokens": 173, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "570603c475f01819005e7886", "output": "Greater Sacramento region", "score": 0.8, "prompt_tokens": 171, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "5706111a52bb89140068984d", "output": "Six", "score": 0.0, "prompt_tokens": 123, "output_tokens": 2, "finish_reason": "stop"}
+{"id": "5706149552bb891400689882", "output": "2014", "score": 1.0, "prompt_tokens": 149, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "5709686c200fba1400367f79", "output": "Thomson", "score": 1.0, "prompt_tokens": 255, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "570d2556fed7b91900d45c4b", "output": "Cramped and unsanitary", "score": 1.0, "prompt_tokens": 203, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "570d2c20fed7b91900d45ca7", "output": "Koori", "score": 1.0, "prompt_tokens": 309, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "570d2f5bfed7b91900d45cd1", "output": "the Parliament of Victoria", "score": 1.0, "prompt_tokens": 183, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "570d391fb3d812140066d579", "output": "−11.7 °C (10.9 °F)", "score": 1.0, "prompt_tokens": 206, "output_tokens": 16, "finish_reason": "stop"}
+{"id": "570d4030fed7b91900d45da2", "output": "freight services", "score": 1.0, "prompt_tokens": 180, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "570d4a6bfed7b91900d45e13", "output": "1788", "score": 1.0, "prompt_tokens": 261, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "570d50a5fed7b91900d45e81", "output": "more than 60% of the state's total land surface.", "score": 0.2222222222222222, "prompt_tokens": 206, "output_tokens": 15, "finish_reason": "stop"}
+{"id": "571077ecb654c5140001f90c", "output": "Dutch East India Company", "score": 1.0, "prompt_tokens": 284, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "57107e6ca58dae1900cd69f2", "output": "The Catholic Church in France and many of its members", "score": 0.6153846153846153, "prompt_tokens": 192, "output_tokens": 11, "finish_reason": "stop"}
+{"id": "57108073b654c5140001f929", "output": "Louis XIII", "score": 1.0, "prompt_tokens": 248, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "57108d69b654c5140001f985", "output": "ca. 2 million", "score": 1.0, "prompt_tokens": 265, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "57109180a58dae1900cd6a44", "output": "1696", "score": 1.0, "prompt_tokens": 226, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "57109275b654c5140001f99f", "output": "exodus", "score": 0.0, "prompt_tokens": 220, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "571094b7a58dae1900cd6a66", "output": "required education of children as Catholics", "score": 1.0, "prompt_tokens": 219, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "571097baa58dae1900cd6a98", "output": "Jack Jouett", "score": 0.0, "prompt_tokens": 228, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "571098f8a58dae1900cd6ab3", "output": "'Bucks Point'", "score": 1.0, "prompt_tokens": 265, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "5710f2e2a58dae1900cd6b72", "output": "Williamite war in Ireland", "score": 0.6666666666666666, "prompt_tokens": 216, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "57111ab8a58dae1900cd6c3c", "output": "Lutheran and Reformed", "score": 1.0, "prompt_tokens": 385, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "57111ab8a58dae1900cd6c3d", "output": "Lutheran and Reformed states in Germany and Scandinavia", "score": 0.5454545454545454, "prompt_tokens": 378, "output_tokens": 13, "finish_reason": "stop"}
+{"id": "57111b95a58dae1900cd6c54", "output": "German Federal Minister of the Interior", "score": 0.888888888888889, "prompt_tokens": 240, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "571127a5a58dae1900cd6cc7", "output": "south Wales", "score": 1.0, "prompt_tokens": 224, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "571142b3a58dae1900cd6d5d", "output": "90%", "score": 1.0, "prompt_tokens": 237, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "571144d1a58dae1900cd6d71", "output": "electric heating element", "score": 1.0, "prompt_tokens": 166, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "57114b1a2419e31400955578", "output": "ships", "score": 1.0, "prompt_tokens": 184, "output_tokens": 2, "finish_reason": "stop"}
+{"id": "57114dfb50c2381900b54a55", "output": "Mercury", "score": 1.0, "prompt_tokens": 186, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "5711541350c2381900b54a70", "output": "British", "score": 1.0, "prompt_tokens": 245, "output_tokens": 2, "finish_reason": "stop"}
+{"id": "57115ac550c2381900b54a79", "output": "turbine type steam engines", "score": 0.6666666666666666, "prompt_tokens": 178, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "57115b2850c2381900b54a83", "output": "John Smeaton", "score": 1.0, "prompt_tokens": 261, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "57115dbe2419e314009555a8", "output": "operations requiring constant speed", "score": 1.0, "prompt_tokens": 242, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "57115f0a50c2381900b54aaa", "output": "fixed length", "score": 0.6666666666666666, "prompt_tokens": 215, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "5711651050c2381900b54acd", "output": "superheaters", "score": 1.0, "prompt_tokens": 183, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "571c3e8cdd7acb1400e4c0a9", "output": "respiration", "score": 1.0, "prompt_tokens": 206, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "571cebc05efbb31900334e4b", "output": "the basis for in combustion is the chemical energy released", "score": 0.4, "prompt_tokens": 181, "output_tokens": 11, "finish_reason": "stop"}
+{"id": "571a53d410f8ca1400304fe5", "output": "mantle", "score": 1.0, "prompt_tokens": 222, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "571c8539dd7acb1400e4c0e3", "output": "1774", "score": 1.0, "prompt_tokens": 278, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "571c91c8dd7acb1400e4c10a", "output": "dioxygen, O\n2", "score": 0.5, "prompt_tokens": 216, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "571c9348dd7acb1400e4c115", "output": "1891", "score": 1.0, "prompt_tokens": 199, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "571cac5d5efbb31900334dd4", "output": "Sun", "score": 0.0, "prompt_tokens": 209, "output_tokens": 2, "finish_reason": "stop"}
+{"id": "571cb27fdd7acb1400e4c132", "output": "Paleoclimatologists", "score": 1.0, "prompt_tokens": 257, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "571cbe35dd7acb1400e4c13d", "output": "monitoring the carbon cycle", "score": 0.8, "prompt_tokens": 198, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "571cbe35dd7acb1400e4c140", "output": "remote sensing", "score": 1.0, "prompt_tokens": 200, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "571cc6f85efbb31900334de4", "output": "90.20 K (−182.95 °C, −297.31 °F)", "score": 1.0, "prompt_tokens": 230, "output_tokens": 28, "finish_reason": "stop"}
+{"id": "571ccd9b5efbb31900334dfb", "output": "pressure swing adsorption", "score": 0.0, "prompt_tokens": 240, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "571cda1bdd7acb1400e4c197", "output": "liquid", "score": 1.0, "prompt_tokens": 227, "output_tokens": 2, "finish_reason": "stop"}
+{"id": "5725b56589a1e219009abd20", "output": "1961 to 1972", "score": 1.0, "prompt_tokens": 201, "output_tokens": 11, "finish_reason": "stop"}
+{"id": "5725bd4b38643c19005acc32", "output": "Lyndon B. Johnson", "score": 1.0, "prompt_tokens": 168, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "5725cb4a89a1e219009abecb", "output": "Parachutes were carried to slow its descent to splashdown.", "score": 0.19999999999999998, "prompt_tokens": 232, "output_tokens": 14, "finish_reason": "stop"}
+{"id": "5725ceb989a1e219009abf0d", "output": "15100", "score": 1.0, "prompt_tokens": 258, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "5725d0e3271a42140099d235", "output": "dummy upper stages filled with water", "score": 1.0, "prompt_tokens": 199, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "5725d2ef271a42140099d258", "output": "40,000 pounds (18,100 kg)", "score": 1.0, "prompt_tokens": 277, "output_tokens": 17, "finish_reason": "stop"}
+{"id": "5725d94bec44d21400f3d69e", "output": "Apollo 1 backup crew", "score": 1.0, "prompt_tokens": 226, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "5725dd1689a1e219009abfe3", "output": "deficiencies existed in Command Module design, workmanship and quality control.", "score": 1.0, "prompt_tokens": 172, "output_tokens": 15, "finish_reason": "stop"}
+{"id": "5725e152271a42140099d2cd", "output": "Apollo 1", "score": 0.5, "prompt_tokens": 209, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "5725cc38ec44d21400f3d5bc", "output": "Treaty of Rome 1957 and the Maastricht Treaty 1992", "score": 1.0, "prompt_tokens": 384, "output_tokens": 23, "finish_reason": "stop"}
+{"id": "5725cc38ec44d21400f3d5bf", "output": "Greenland", "score": 1.0, "prompt_tokens": 389, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "57268e2bf1498d1400e8e3b3", "output": "1972", "score": 1.0, "prompt_tokens": 379, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "572695285951b619008f774e", "output": "Conciliation Committee", "score": 1.0, "prompt_tokens": 420, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "57269cc3dd62a815002e8b15", "output": "in the early 1990s", "score": 0.8, "prompt_tokens": 320, "output_tokens": 10, "finish_reason": "stop"}
+{"id": "57269f3ef1498d1400e8e534", "output": "national courts", "score": 1.0, "prompt_tokens": 380, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "5726a5525951b619008f78de", "output": "1997", "score": 1.0, "prompt_tokens": 240, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "5726a638dd62a815002e8bf7", "output": "1951", "score": 1.0, "prompt_tokens": 373, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "5726a7ecf1498d1400e8e657", "output": "Article 139/2004/EC", "score": 0.5, "prompt_tokens": 351, "output_tokens": 13, "finish_reason": "stop"}
+{"id": "5726b58f5951b619008f7b58", "output": "the specific goals of free trade are underpinned by the general aims of the treaty for improvement of people's well being.", "score": 0.19999999999999998, "prompt_tokens": 518, "output_tokens": 26, "finish_reason": "stop"}
+{"id": "5726b718dd62a815002e8dbe", "output": "The principle of non-discrimination and a customs union.", "score": 1.0, "prompt_tokens": 695, "output_tokens": 12, "finish_reason": "stop"}
+{"id": "5726b718dd62a815002e8dc0", "output": "states can be responsible for private actors.", "score": 0.4444444444444445, "prompt_tokens": 697, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "5726b929f1498d1400e8e8ea", "output": "2009", "score": 0.0, "prompt_tokens": 715, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "5726baf2dd62a815002e8e74", "output": "Since its foundation, the Treaties sought to enable people to pursue their life goals in any country through free movement.", "score": 0.8484848484848484, "prompt_tokens": 510, "output_tokens": 24, "finish_reason": "stop"}
+{"id": "5726c002708984140094d077", "output": "Commission v Italy", "score": 1.0, "prompt_tokens": 536, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "5725d16aec44d21400f3d61e", "output": "2,200", "score": 1.0, "prompt_tokens": 229, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "5729fd56af94a219006aa730", "output": "early 1960s", "score": 1.0, "prompt_tokens": 242, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "5729feaf6aef05140015518a", "output": "most of the lost forest becoming pasture for cattle.", "score": 0.5454545454545454, "prompt_tokens": 268, "output_tokens": 11, "finish_reason": "stop"}
+{"id": "57263eaa38643c19005ad374", "output": "ktéis kteis 'comb'", "score": 0.4444444444444444, "prompt_tokens": 333, "output_tokens": 10, "finish_reason": "stop"}
+{"id": "5725c337271a42140099d167", "output": "groups of large, stiffened cilia", "score": 1.0, "prompt_tokens": 322, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "5725bc0338643c19005acc11", "output": "hermaphrodites", "score": 1.0, "prompt_tokens": 308, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "572647d0708984140094c14e", "output": "ctenophores", "score": 0.0, "prompt_tokens": 217, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "572655e5f1498d1400e8dc61", "output": "The main component of the aboral organ is a statocyst.", "score": 0.25, "prompt_tokens": 226, "output_tokens": 15, "finish_reason": "stop"}
+{"id": "572659ea5951b619008f7053", "output": "spaced evenly round the body", "score": 0.8571428571428571, "prompt_tokens": 183, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "57265e97708984140094c3c3", "output": "Cestum veneris (\"Venus' girdle\")", "score": 0.0, "prompt_tokens": 269, "output_tokens": 14, "finish_reason": "stop"}
+{"id": "5725db98ec44d21400f3d6c7", "output": "The passage states that \"Sunnyside is largely developed in the 1950s through the 1970s.\"", "score": 0.42857142857142855, "prompt_tokens": 192, "output_tokens": 30, "finish_reason": "stop"}
+{"id": "5725dd7d89a1e219009abfeb", "output": "1939", "score": 1.0, "prompt_tokens": 272, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "5725edfe38643c19005acea3", "output": "Southwest Fresno", "score": 0.0, "prompt_tokens": 192, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "5725f00938643c19005aced8", "output": "tall palm trees", "score": 1.0, "prompt_tokens": 256, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "5725f00938643c19005acedb", "output": "the southern edge of the West Side south of Jensen and west of Elm", "score": 0.0, "prompt_tokens": 260, "output_tokens": 15, "finish_reason": "stop"}
+{"id": "5725f2c838643c19005aceef", "output": "2,500", "score": 1.0, "prompt_tokens": 499, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "5725f5b1271a42140099d375", "output": "December, January and February", "score": 1.0, "prompt_tokens": 462, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "5725f6e138643c19005acf19", "output": "115 °F (46.1 °C)", "score": 1.0, "prompt_tokens": 403, "output_tokens": 14, "finish_reason": "stop"}
+{"id": "5725d34089a1e219009abf50", "output": "Distributed Adaptive Message Block Switching", "score": 1.0, "prompt_tokens": 244, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "5726219489a1e219009ac2d0", "output": "according to a multiple access scheme.", "score": 1.0, "prompt_tokens": 173, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "5726472bdd62a815002e8044", "output": "Abilene", "score": 1.0, "prompt_tokens": 216, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "572647935951b619008f6ecd", "output": "25 million", "score": 1.0, "prompt_tokens": 315, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "572648ed5951b619008f6f07", "output": "1349", "score": 1.0, "prompt_tokens": 216, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "57264a74708984140094c18c", "output": "atra mors", "score": 1.0, "prompt_tokens": 203, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "57264c42dd62a815002e80c6", "output": "Yersinia pestis", "score": 1.0, "prompt_tokens": 348, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "57264cc6dd62a815002e80e7", "output": "rats and fleas", "score": 1.0, "prompt_tokens": 190, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "57264cc6dd62a815002e80e8", "output": "bubonic plague", "score": 0.5, "prompt_tokens": 191, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "57264d58f1498d1400e8db7c", "output": "80 percent", "score": 1.0, "prompt_tokens": 303, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "57264f18f1498d1400e8dbb1", "output": "around November 1347", "score": 0.6666666666666666, "prompt_tokens": 331, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "572663a9f1498d1400e8ddf6", "output": "P", "score": 0.0, "prompt_tokens": 240, "output_tokens": 2, "finish_reason": "stop"}
+{"id": "572673f5708984140094c69e", "output": "Continual motion along the fault maintains topographic gradients.", "score": 0.7272727272727273, "prompt_tokens": 275, "output_tokens": 12, "finish_reason": "stop"}
+{"id": "57267640f1498d1400e8e074", "output": "layered basaltic lava flows", "score": 1.0, "prompt_tokens": 329, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "57267d52708984140094c7db", "output": "plot and combine measurements", "score": 0.8571428571428571, "prompt_tokens": 168, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "57268066708984140094c824", "output": "computer programs", "score": 1.0, "prompt_tokens": 198, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "572666d9dd62a815002e83b8", "output": "three", "score": 1.0, "prompt_tokens": 220, "output_tokens": 2, "finish_reason": "stop"}
+{"id": "57266dd4f1498d1400e8df7b", "output": "modern buildings as well as structures dating from the 15th–18th centuries", "score": 1.0, "prompt_tokens": 239, "output_tokens": 19, "finish_reason": "stop"}
+{"id": "57267076708984140094c603", "output": "Norman Foster designed The Sage Gateshead music center.", "score": 0.4444444444444445, "prompt_tokens": 245, "output_tokens": 12, "finish_reason": "stop"}
+{"id": "572674f6f1498d1400e8e03d", "output": "The Bainbridge’s official ledgers reported revenue by department.", "score": 0.4444444444444445, "prompt_tokens": 347, "output_tokens": 13, "finish_reason": "stop"}
+{"id": "57267b65dd62a815002e86a8", "output": "many elements of the old language", "score": 1.0, "prompt_tokens": 297, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "572680865951b619008f74e8", "output": "8000", "score": 1.0, "prompt_tokens": 204, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "57268341f1498d1400e8e23e", "output": "Temperance Movement", "score": 1.0, "prompt_tokens": 238, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "572687e1dd62a815002e8854", "output": "Newcastle Diamonds", "score": 1.0, "prompt_tokens": 274, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "572689b6dd62a815002e8892", "output": "Edinburgh", "score": 1.0, "prompt_tokens": 180, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "57268bb25951b619008f7649", "output": "trams", "score": 1.0, "prompt_tokens": 242, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "57269c26f1498d1400e8e4cb", "output": "The Watermark business park next to the MetroCentre in Gateshead.", "score": 0.5454545454545454, "prompt_tokens": 223, "output_tokens": 15, "finish_reason": "stop"}
+{"id": "572680ac708984140094c841", "output": "2001", "score": 1.0, "prompt_tokens": 241, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "572685cd5951b619008f7574", "output": "Henry Cole", "score": 1.0, "prompt_tokens": 273, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "57269c06708984140094cba5", "output": "Titian", "score": 1.0, "prompt_tokens": 542, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "57269d68708984140094cbd8", "output": "William Morris", "score": 0.0, "prompt_tokens": 357, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "57269d68708984140094cbd9", "output": "James Gamble", "score": 1.0, "prompt_tokens": 355, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "5726a0205951b619008f781f", "output": "2008", "score": 1.0, "prompt_tokens": 262, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "5726a2445951b619008f7864", "output": "on the south side of the garden", "score": 0.888888888888889, "prompt_tokens": 385, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "5726ace8dd62a815002e8ca2", "output": "a new entrance building was constructed on the site of the former boiler house", "score": 0.0, "prompt_tokens": 380, "output_tokens": 15, "finish_reason": "stop"}
+{"id": "5726b2fcf1498d1400e8e7e4", "output": "2004", "score": 1.0, "prompt_tokens": 209, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "5726b2fcf1498d1400e8e7e8", "output": "over 700,000", "score": 1.0, "prompt_tokens": 205, "output_tokens": 10, "finish_reason": "stop"}
+{"id": "5726ba83dd62a815002e8e6e", "output": "a column from the Alhambra.", "score": 0.5, "prompt_tokens": 274, "output_tokens": 10, "finish_reason": "stop"}
+{"id": "5726c4b5dd62a815002e8fdb", "output": "1550 to 1900", "score": 1.0, "prompt_tokens": 311, "output_tokens": 11, "finish_reason": "stop"}
+{"id": "5726c9a4708984140094d16f", "output": "Leonardo da Vinci", "score": 1.0, "prompt_tokens": 311, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "5726ce11f1498d1400e8ebc6", "output": "Encoded Archival Description (EAD)", "score": 1.0, "prompt_tokens": 233, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "5726de7a5951b619008f80ab", "output": "4000", "score": 1.0, "prompt_tokens": 341, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "5726e834dd62a815002e94a8", "output": "Charles and Ray Eames", "score": 1.0, "prompt_tokens": 292, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "5726f2bcf1498d1400e8f0bd", "output": "650", "score": 1.0, "prompt_tokens": 282, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "57270817708984140094d8c7", "output": "The Theatre Museum", "score": 1.0, "prompt_tokens": 180, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "57269260dd62a815002e89ed", "output": "ABC International", "score": 1.0, "prompt_tokens": 303, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "5726e860708984140094d579", "output": "Frank Marx", "score": 1.0, "prompt_tokens": 205, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "5726efdbdd62a815002e95c8", "output": "William Hanna and Joseph Barbera", "score": 1.0, "prompt_tokens": 228, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "57273ef15951b619008f8751", "output": "May 1, 1953", "score": 1.0, "prompt_tokens": 230, "output_tokens": 10, "finish_reason": "stop"}
+{"id": "57273f9d708984140094db52", "output": "DuMont Television Network", "score": 1.0, "prompt_tokens": 327, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "572741aaf1498d1400e8f53f", "output": "$500,000", "score": 1.0, "prompt_tokens": 214, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "5727436af1498d1400e8f558", "output": "1969", "score": 1.0, "prompt_tokens": 232, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "5727436af1498d1400e8f559", "output": "Duel", "score": 1.0, "prompt_tokens": 235, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "57274633dd62a815002e9a4f", "output": "1972", "score": 1.0, "prompt_tokens": 203, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "57274baff1498d1400e8f5de", "output": "Barbara Walters", "score": 1.0, "prompt_tokens": 237, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "57274e6a5951b619008f87f4", "output": "iTunes", "score": 1.0, "prompt_tokens": 217, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "57276576dd62a815002e9c1b", "output": "WLQP-LP", "score": 1.0, "prompt_tokens": 235, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "5727678e5951b619008f8973", "output": "Times Square Studios", "score": 1.0, "prompt_tokens": 226, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "57276c64f1498d1400e8f7b4", "output": "All-Channel Receiver Act", "score": 1.0, "prompt_tokens": 340, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "57277585708984140094de2c", "output": "Roseanne", "score": 0.0, "prompt_tokens": 269, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "57277944f1498d1400e8f90b", "output": "Zorro", "score": 1.0, "prompt_tokens": 255, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "57277cf6dd62a815002e9e76", "output": "\"Start Here\"", "score": 1.0, "prompt_tokens": 239, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "57277de9dd62a815002e9ea7", "output": "WTSP", "score": 1.0, "prompt_tokens": 298, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "5726acc1f1498d1400e8e6cd", "output": "Battle of Dalan Balzhut", "score": 1.0, "prompt_tokens": 364, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "5726bf135951b619008f7cea", "output": "west of Kashgar", "score": 1.0, "prompt_tokens": 222, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "5726c20fdd62a815002e8fa7", "output": "three", "score": 1.0, "prompt_tokens": 205, "output_tokens": 2, "finish_reason": "stop"}
+{"id": "5726c3b3708984140094d0d1", "output": "molten silver", "score": 1.0, "prompt_tokens": 272, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "572732f8f1498d1400e8f475", "output": "Onon River and the Burkhan Khaldun mountain", "score": 0.0, "prompt_tokens": 198, "output_tokens": 12, "finish_reason": "stop"}
+{"id": "57273eecf1498d1400e8f51e", "output": "Silk Road", "score": 1.0, "prompt_tokens": 180, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "57273eecf1498d1400e8f520", "output": "was tolerant of religions", "score": 0.8571428571428571, "prompt_tokens": 179, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "5727404b708984140094db5c", "output": "his butchery", "score": 1.0, "prompt_tokens": 264, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "5726d9935951b619008f7ff1", "output": "The passage does not explicitly state what types of preparation pharmacists have.", "score": 0.0, "prompt_tokens": 159, "output_tokens": 15, "finish_reason": "stop"}
+{"id": "5726db5add62a815002e92d4", "output": "Diocles of Carystus", "score": 1.0, "prompt_tokens": 205, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "5726db5add62a815002e92d8", "output": "many middle eastern scientists", "score": 1.0, "prompt_tokens": 206, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "5726e985dd62a815002e94dd", "output": "Board Certified Ambulatory Care Pharmacist", "score": 1.0, "prompt_tokens": 188, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "5726e985dd62a815002e94de", "output": "In the U.S. federal health care system (including the VA, the Indian Health Service, and NIH)", "score": 0.631578947368421, "prompt_tokens": 185, "output_tokens": 23, "finish_reason": "stop"}
+{"id": "5726f48df1498d1400e8f0de", "output": "only pharmacists may supply scheduled pharmaceuticals to the public, and that pharmacists cannot form business partnerships with physicians or give them \"kickback\" payments.", "score": 0.7058823529411764, "prompt_tokens": 187, "output_tokens": 32, "finish_reason": "stop"}
+{"id": "5726f96ddd62a815002e9699", "output": "Australian Government", "score": 1.0, "prompt_tokens": 326, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "572a135daf94a219006aa7a2", "output": "adaptive (or acquired) immunity", "score": 1.0, "prompt_tokens": 258, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "5728f6446aef0514001548e4", "output": "innate immune systems", "score": 1.0, "prompt_tokens": 231, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "5728fb002ca10214002dab6b", "output": "The waxy cuticle of many leaves", "score": 0.5714285714285715, "prompt_tokens": 218, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "5729f39a6aef05140015514e", "output": "CD8", "score": 1.0, "prompt_tokens": 318, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "5729f4b41d0469140077968e", "output": "cytokines", "score": 1.0, "prompt_tokens": 341, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "5729f8516aef05140015516d", "output": "IgG", "score": 1.0, "prompt_tokens": 244, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "5729fefbaf94a219006aa73b", "output": "around 50 years of age", "score": 1.0, "prompt_tokens": 229, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "572a03086aef0514001551a3", "output": "cytotoxic or immunosuppressive drugs", "score": 1.0, "prompt_tokens": 236, "output_tokens": 10, "finish_reason": "stop"}
+{"id": "57271c235951b619008f860b", "output": "Civil disobedience", "score": 1.0, "prompt_tokens": 228, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "5728dc2d3acd2414000e0081", "output": "a larger challenge to the legal system that permits those decisions to be taken", "score": 0.9565217391304348, "prompt_tokens": 158, "output_tokens": 15, "finish_reason": "stop"}
+{"id": "572818f54b864d190016446e", "output": "Think of the dilemma faced by German citizens when Hitler's secret police demanded to know if they were hiding a Jew in their house.", "score": 0.37037037037037035, "prompt_tokens": 309, "output_tokens": 27, "finish_reason": "stop"}
+{"id": "5728dddc2ca10214002da9d6", "output": "Exodus", "score": 1.0, "prompt_tokens": 297, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "5728e5224b864d1900165036", "output": "Julia Butterfly Hill lived in Luna, a 180-foot (55 m)-tall, 600-year-old California Redwood tree for 738 days, successfully preventing it from being cut down.", "score": 0.23076923076923078, "prompt_tokens": 329, "output_tokens": 48, "finish_reason": "stop"}
+{"id": "5728284e3acd2414000df5d1", "output": "1978", "score": 1.0, "prompt_tokens": 194, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "57282dfb4b864d190016466a", "output": "by padlocking the gates", "score": 0.0, "prompt_tokens": 210, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "5728ebcb3acd2414000e01db", "output": "It has been argued that either choice is compatible with the spirit of civil disobedience.", "score": 0.23529411764705882, "prompt_tokens": 337, "output_tokens": 18, "finish_reason": "stop"}
+{"id": "5728f50baf94a219006a9e57", "output": "because her statement suggested a lack of remorse, an attempt to avoid responsibility for her actions, and even a likelihood of repeating her illegal actions.", "score": 0.37037037037037035, "prompt_tokens": 238, "output_tokens": 29, "finish_reason": "stop"}
+{"id": "57273f27dd62a815002e9a0a", "output": "building construction, heavy and civil engineering construction, and specialty trade contractors.", "score": 1.0, "prompt_tokens": 166, "output_tokens": 15, "finish_reason": "stop"}
+{"id": "57273f27dd62a815002e9a0d", "output": "construction managers (firms engaged in managing construction projects without assuming direct financial responsibility for completion of the construction project)", "score": 0.9411764705882353, "prompt_tokens": 162, "output_tokens": 23, "finish_reason": "stop"}
+{"id": "572750e8dd62a815002e9af4", "output": "an attorney may seek changes or exemptions", "score": 0.2857142857142857, "prompt_tokens": 237, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "5727526cdd62a815002e9b10", "output": "Public-Private Partnering (PPPs)", "score": 0.0, "prompt_tokens": 181, "output_tokens": 10, "finish_reason": "stop"}
+{"id": "572753335951b619008f8855", "output": "There are direct contractual links between the architect's client and the main contractor.", "score": 0.625, "prompt_tokens": 171, "output_tokens": 16, "finish_reason": "stop"}
+{"id": "57275411dd62a815002e9b30", "output": "The owner", "score": 1.0, "prompt_tokens": 206, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "57274e145951b619008f87e8", "output": "The private 'un-aided' schools are fully funded by private parties.", "score": 0.7142857142857143, "prompt_tokens": 244, "output_tokens": 17, "finish_reason": "stop"}
+{"id": "572758e0f1498d1400e8f6b1", "output": "charter status", "score": 0.6666666666666666, "prompt_tokens": 183, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "5727aec03acd2414000de992", "output": "$37.6 billion", "score": 1.0, "prompt_tokens": 192, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "5727b0892ca10214002d93e9", "output": "English university model", "score": 1.0, "prompt_tokens": 196, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "5727cd7dff5b5019007d958f", "output": "golf", "score": 1.0, "prompt_tokens": 208, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "57280e1aff5b5019007d9bf0", "output": "Ossachite", "score": 1.0, "prompt_tokens": 247, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "57281bb84b864d190016449d", "output": "Voters outside the city limits", "score": 1.0, "prompt_tokens": 181, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "57281edd3acd2414000df4ec", "output": "Hans Tanzler", "score": 1.0, "prompt_tokens": 255, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "5728223cff5b5019007d9dc7", "output": "Due to Jacksonville's low latitude and coastal location", "score": 0.4, "prompt_tokens": 191, "output_tokens": 10, "finish_reason": "stop"}
+{"id": "5729d36b1d0469140077960a", "output": "the wealthiest 1 percent will own more than half of the global wealth by 2016.", "score": 0.8181818181818181, "prompt_tokens": 581, "output_tokens": 22, "finish_reason": "stop"}
+{"id": "5727e8424b864d1900163fc1", "output": "New York Times", "score": 1.0, "prompt_tokens": 209, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "5729d44b1d04691400779614", "output": "over 60 percent", "score": 1.0, "prompt_tokens": 203, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "5729d44b1d04691400779615", "output": "Institute for Policy Studies", "score": 1.0, "prompt_tokens": 208, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "5727ed2e3acd2414000df004", "output": "Members may also receive higher wages through collective bargaining, political influence, or corruption.", "score": 0.631578947368421, "prompt_tokens": 300, "output_tokens": 17, "finish_reason": "stop"}
+{"id": "5727ef664b864d1900164060", "output": "progressive tax", "score": 1.0, "prompt_tokens": 217, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "5729e1e36aef0514001550ba", "output": "In 2014", "score": 0.6666666666666666, "prompt_tokens": 196, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "5729f4e46aef05140015515a", "output": "rent-seeking", "score": 1.0, "prompt_tokens": 244, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "572a05eb3f37b31900478654", "output": "rising inequality", "score": 1.0, "prompt_tokens": 201, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "572a06866aef0514001551be", "output": "British", "score": 1.0, "prompt_tokens": 221, "output_tokens": 2, "finish_reason": "stop"}
+{"id": "572a0d21af94a219006aa787", "output": "easier credit", "score": 1.0, "prompt_tokens": 209, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "5727f3193acd2414000df0a6", "output": "The Master", "score": 1.0, "prompt_tokens": 204, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "5727f44c2ca10214002d9a32", "output": "23 November 1963", "score": 1.0, "prompt_tokens": 517, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "572801823acd2414000df1fc", "output": "60 minutes with adverts", "score": 0.6666666666666666, "prompt_tokens": 229, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "572801823acd2414000df1ff", "output": "2010", "score": 1.0, "prompt_tokens": 221, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "572805363acd2414000df271", "output": "November 2006", "score": 1.0, "prompt_tokens": 221, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "572808bf4b864d190016429c", "output": "\"The Time of the Doctor\"", "score": 1.0, "prompt_tokens": 212, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "5728103eff5b5019007d9c34", "output": "human", "score": 0.0, "prompt_tokens": 337, "output_tokens": 2, "finish_reason": "stop"}
+{"id": "572814882ca10214002d9d76", "output": "Michelle Gomez", "score": 1.0, "prompt_tokens": 185, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "5728185f3acd2414000df45f", "output": "Gold", "score": 1.0, "prompt_tokens": 248, "output_tokens": 2, "finish_reason": "stop"}
+{"id": "572819864b864d190016447e", "output": "Jon Pertwee", "score": 1.0, "prompt_tokens": 426, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "57281a952ca10214002d9dec", "output": "1960s and 1970s", "score": 1.0, "prompt_tokens": 223, "output_tokens": 13, "finish_reason": "stop"}
+{"id": "57281f203acd2414000df4f9", "output": "Eleventh Doctor", "score": 1.0, "prompt_tokens": 360, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "5728245b2ca10214002d9ed7", "output": "partial funding for the 20th anniversary special The Five Doctors in 1983.", "score": 0.33333333333333337, "prompt_tokens": 248, "output_tokens": 21, "finish_reason": "stop"}
+{"id": "5728245b2ca10214002d9ed9", "output": "The ABC has periodically repeated episodes; of note were the weekly screenings of all available classic episodes starting in 2003, for the show's 40th anniversary.", "score": 0.4827586206896552, "prompt_tokens": 249, "output_tokens": 37, "finish_reason": "stop"}
+{"id": "5728303e4b864d19001646aa", "output": "Dimensions in Time", "score": 1.0, "prompt_tokens": 205, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "572833662ca10214002da087", "output": "\"Blue Harvest\" and \"420\"", "score": 1.0, "prompt_tokens": 280, "output_tokens": 11, "finish_reason": "stop"}
+{"id": "572834524b864d1900164718", "output": "Doctor Who and the Pescatons", "score": 1.0, "prompt_tokens": 189, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "57283f014b864d19001647ec", "output": "1892", "score": 1.0, "prompt_tokens": 214, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "572843304b864d190016484a", "output": "The university agreed to grant a degree to any graduating senior from an affiliated school who made a grade of A for all four years.", "score": 0.5185185185185185, "prompt_tokens": 407, "output_tokens": 27, "finish_reason": "stop"}
+{"id": "572847ff3acd2414000df86a", "output": "The university's off-campus rental policies", "score": 1.0, "prompt_tokens": 240, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "57284b904b864d19001648e3", "output": "six", "score": 1.0, "prompt_tokens": 229, "output_tokens": 2, "finish_reason": "stop"}
+{"id": "57284e9fff5b5019007da153", "output": "Renmin University", "score": 1.0, "prompt_tokens": 205, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "57285213ff5b5019007da181", "output": "28", "score": 1.0, "prompt_tokens": 177, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "5728683b3acd2414000df9af", "output": "Every May since 1987, the University of Chicago has held the University of Chicago Scavenger Hunt, in which large teams of students compete to obtain notoriously esoteric items from a list.", "score": 0.0689655172413793, "prompt_tokens": 260, "output_tokens": 42, "finish_reason": "stop"}
+{"id": "57286ab72ca10214002da322", "output": "Eliot Ness", "score": 1.0, "prompt_tokens": 208, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "57286bf84b864d19001649d4", "output": "Allan Bloom", "score": 1.0, "prompt_tokens": 194, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "572870b2ff5b5019007da222", "output": "Thomas Sowell", "score": 0.0, "prompt_tokens": 218, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "572870b2ff5b5019007da224", "output": "Paul Samuelson", "score": 1.0, "prompt_tokens": 218, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "5728742cff5b5019007da249", "output": "Glenn T. Seaborg", "score": 1.0, "prompt_tokens": 198, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "572864dd4b864d1900164978", "output": "Shi Tianze", "score": 0.6666666666666666, "prompt_tokens": 287, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "572867212ca10214002da2f4", "output": "1259", "score": 1.0, "prompt_tokens": 323, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "572869b84b864d19001649af", "output": "salt and iron", "score": 1.0, "prompt_tokens": 212, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "57286b003acd2414000df9c3", "output": "1264", "score": 1.0, "prompt_tokens": 321, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "57287338ff5b5019007da236", "output": "1368–1644", "score": 1.0, "prompt_tokens": 346, "output_tokens": 10, "finish_reason": "stop"}
+{"id": "57287ccb2ca10214002da3da", "output": "non-native Chinese people", "score": 1.0, "prompt_tokens": 355, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "57287e512ca10214002da3fb", "output": "Tugh Temur", "score": 1.0, "prompt_tokens": 267, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "57287f6a3acd2414000dfa51", "output": "painting, mathematics, calligraphy, poetry, and theater", "score": 1.0, "prompt_tokens": 460, "output_tokens": 13, "finish_reason": "stop"}
+{"id": "572881d34b864d1900164a5b", "output": "Jesus the Interpreter", "score": 1.0, "prompt_tokens": 205, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "572883153acd2414000dfa73", "output": "Persians", "score": 0.0, "prompt_tokens": 382, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "57288428ff5b5019007da292", "output": "Muslims", "score": 0.4, "prompt_tokens": 298, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "5728f9cf4b864d1900165169", "output": "June and September", "score": 1.0, "prompt_tokens": 238, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "572916f16aef051400154a59", "output": "frontier market or occasionally an emerging market", "score": 1.0, "prompt_tokens": 213, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "57291beb1d04691400779053", "output": "Kenya", "score": 1.0, "prompt_tokens": 226, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "57291fb4af94a219006aa0b5", "output": "recent suspension of the railway project", "score": 0.0, "prompt_tokens": 319, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "572925491d046914007790c7", "output": "15 million", "score": 1.0, "prompt_tokens": 244, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "572926086aef051400154ac2", "output": "commissioned to look at both the possibilities of setting up a second university in Kenya as well as the reforming of the entire education system.", "score": 0.9500000000000001, "prompt_tokens": 235, "output_tokens": 29, "finish_reason": "stop"}
+{"id": "572926086aef051400154ac4", "output": "8–4–4", "score": 0.6666666666666666, "prompt_tokens": 230, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "572926d23f37b31900478084", "output": "Basic formal education starts at age six years and lasts 12 years comprising eight years in primary school and four years in high school or secondary school.", "score": 0.6829268292682926, "prompt_tokens": 275, "output_tokens": 31, "finish_reason": "stop"}
+{"id": "572928bf6aef051400154af4", "output": "Most of these defections occur because of economic or financial factors.", "score": 0.5333333333333333, "prompt_tokens": 304, "output_tokens": 14, "finish_reason": "stop"}
+{"id": "57293c246aef051400154bba", "output": "government officials and climate change experts", "score": 1.0, "prompt_tokens": 205, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "57293d116aef051400154bca", "output": "non-peer-reviewed sources", "score": 1.0, "prompt_tokens": 183, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "57293e221d046914007791d9", "output": "0.3 to 0.6 °C", "score": 1.0, "prompt_tokens": 246, "output_tokens": 11, "finish_reason": "stop"}
+{"id": "57294209af94a219006aa202", "output": "Michael E. Mann, Raymond S. Bradley and Malcolm K. Hughes", "score": 1.0, "prompt_tokens": 378, "output_tokens": 15, "finish_reason": "stop"}
+{"id": "572944e03f37b319004781e2", "output": "2001", "score": 1.0, "prompt_tokens": 260, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "57294e6b1d04691400779277", "output": "states and governments", "score": 1.0, "prompt_tokens": 192, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "5729517d6aef051400154cc9", "output": "any significant new evidence or events", "score": 0.6666666666666667, "prompt_tokens": 215, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "57295a116aef051400154d48", "output": "floridean", "score": 0.0, "prompt_tokens": 277, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "5729645b3f37b31900478322", "output": "apicomplexan-related diseases", "score": 1.0, "prompt_tokens": 290, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "572966ebaf94a219006aa395", "output": "in granules in the dinophyte host's cytoplasm", "score": 0.9090909090909091, "prompt_tokens": 311, "output_tokens": 14, "finish_reason": "stop"}
+{"id": "57296c5c3f37b3190047837f", "output": "cytosol", "score": 0.0, "prompt_tokens": 205, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "57296f3caf94a219006aa3fe", "output": "In old or stressed chloroplasts, plastoglobuli tend to occur in linked groups or chains.", "score": 0.5263157894736842, "prompt_tokens": 195, "output_tokens": 21, "finish_reason": "stop"}
+{"id": "57296f85af94a219006aa407", "output": "Pyrenoids can divide to form new pyrenoids, or be produced \"de novo\".", "score": 0.9090909090909091, "prompt_tokens": 199, "output_tokens": 20, "finish_reason": "stop"}
+{"id": "5729729a1d0469140077948b", "output": "All green parts of a plant", "score": 0.7499999999999999, "prompt_tokens": 195, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "5729729a1d0469140077948e", "output": "in collenchyma tissue.", "score": 1.0, "prompt_tokens": 195, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "57297427af94a219006aa456", "output": "signals from the chloroplast that regulate gene expression in the nucleus.", "score": 1.0, "prompt_tokens": 177, "output_tokens": 14, "finish_reason": "stop"}
+{"id": "572974923f37b3190047840c", "output": "photosynthesis", "score": 1.0, "prompt_tokens": 213, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "57297725af94a219006aa49e", "output": "starch-storing amyloplasts", "score": 1.0, "prompt_tokens": 197, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "5729784b1d046914007794cb", "output": "a Z-ring within the chloroplast's stroma.", "score": 0.4, "prompt_tokens": 218, "output_tokens": 12, "finish_reason": "stop"}
+{"id": "5729789b6aef051400154f6d", "output": "In a few species like Cyanidioschyzon merolæ, chloroplasts have a third plastid-dividing ring located in the chloroplast's intermembrane space.", "score": 0.0, "prompt_tokens": 202, "output_tokens": 38, "finish_reason": "stop"}
+{"id": "57296f293f37b319004783a3", "output": "The property of being prime (or not)", "score": 0.0, "prompt_tokens": 244, "output_tokens": 10, "finish_reason": "stop"}
+{"id": "57296f293f37b319004783a4", "output": "trial division", "score": 1.0, "prompt_tokens": 243, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "57296f293f37b319004783a6", "output": "Miller–Rabin primality test", "score": 0.6666666666666666, "prompt_tokens": 245, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "57297d421d046914007794e5", "output": "two", "score": 1.0, "prompt_tokens": 296, "output_tokens": 2, "finish_reason": "stop"}
+{"id": "572985011d04691400779502", "output": "Chebyshev", "score": 1.0, "prompt_tokens": 191, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "57299ec43f37b3190047850e", "output": "Prime ideals", "score": 1.0, "prompt_tokens": 208, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "572fe288a23a5019007fcada", "output": "Rijn", "score": 1.0, "prompt_tokens": 315, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "572f57c704bcaa1900d7686d", "output": "Lake Constance", "score": 1.0, "prompt_tokens": 207, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "572f5875947a6a140053c89d", "output": "into the lake.", "score": 1.0, "prompt_tokens": 207, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "572fe53104bcaa1900d76e6a", "output": "near Diepoldsau", "score": 1.0, "prompt_tokens": 200, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "572fe60fb2c2fd140056858d", "output": "Alps", "score": 1.0, "prompt_tokens": 245, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "572feddda23a5019007fcb5e", "output": "The ground water level fell significantly.", "score": 0.5714285714285715, "prompt_tokens": 184, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "572ff07304bcaa1900d76ef7", "output": "The Moselle", "score": 1.0, "prompt_tokens": 242, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "572f7b33947a6a140053c9a4", "output": "the Lek", "score": 1.0, "prompt_tokens": 201, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "572f7b33947a6a140053c9a5", "output": "the Noord River into the Nieuwe Maas and to the North Sea.", "score": 0.3636363636363636, "prompt_tokens": 197, "output_tokens": 18, "finish_reason": "stop"}
+{"id": "572ff5fcb2c2fd140056865b", "output": "Oude Rijn (\"Old Rhine\")", "score": 0.6666666666666666, "prompt_tokens": 267, "output_tokens": 10, "finish_reason": "stop"}
+{"id": "572ff890a23a5019007fcbcd", "output": "dammed", "score": 1.0, "prompt_tokens": 220, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "572ffb02b2c2fd14005686b7", "output": "N–S rift system", "score": 1.0, "prompt_tokens": 201, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "572ffce5a23a5019007fcc16", "output": "six", "score": 1.0, "prompt_tokens": 303, "output_tokens": 2, "finish_reason": "stop"}
+{"id": "573009a004bcaa1900d77051", "output": "Lower Lorraine", "score": 1.0, "prompt_tokens": 287, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "572facb0a23a5019007fc864", "output": "three hundred", "score": 1.0, "prompt_tokens": 274, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "572fad30a23a5019007fc86e", "output": "\"It's Scotland's oil\"", "score": 1.0, "prompt_tokens": 195, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "572fc41f947a6a140053cc84", "output": "Scots, Gaelic", "score": 0.6666666666666666, "prompt_tokens": 254, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "572fce13a23a5019007fca12", "output": "Explanatory Notes, a Policy Memorandum, and a Financial Memorandum", "score": 0.3333333333333333, "prompt_tokens": 231, "output_tokens": 16, "finish_reason": "stop"}
+{"id": "572fd1c4947a6a140053cd05", "output": "wrecking amendments", "score": 1.0, "prompt_tokens": 190, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "572fd1c4947a6a140053cd06", "output": "After a general debate on the final form of the bill", "score": 1.0, "prompt_tokens": 193, "output_tokens": 12, "finish_reason": "stop"}
+{"id": "572fd7b8947a6a140053cd3d", "output": "Issues under their jurisdiction.", "score": 1.0, "prompt_tokens": 284, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "572fd8efb2c2fd14005684fc", "output": "55,000", "score": 1.0, "prompt_tokens": 337, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "572fdc34a23a5019007fca96", "output": "Annabel Goldie", "score": 1.0, "prompt_tokens": 174, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "572ff626947a6a140053ce92", "output": "revolution or invasion", "score": 1.0, "prompt_tokens": 241, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "572ff760b2c2fd1400568677", "output": "democratic process", "score": 1.0, "prompt_tokens": 221, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "572ff86004bcaa1900d76f68", "output": "democracy", "score": 1.0, "prompt_tokens": 284, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "572ffee1947a6a140053cf16", "output": "1908", "score": 1.0, "prompt_tokens": 233, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "5730005db2c2fd1400568704", "output": "journalism", "score": 1.0, "prompt_tokens": 237, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "5730131c947a6a140053d055", "output": "2003", "score": 1.0, "prompt_tokens": 260, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "5730285a04bcaa1900d77271", "output": "military coup d'état", "score": 1.0, "prompt_tokens": 256, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "573028fa04bcaa1900d77287", "output": "justice and prosperity", "score": 1.0, "prompt_tokens": 215, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "573028fa04bcaa1900d77289", "output": "one of the poorest countries on earth", "score": 1.0, "prompt_tokens": 202, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "57302a3aa23a5019007fced2", "output": "an idealized and systematized version of conservative tribal village customs", "score": 1.0, "prompt_tokens": 185, "output_tokens": 14, "finish_reason": "stop"}
+{"id": "57302faa04bcaa1900d77314", "output": "Londonistan", "score": 1.0, "prompt_tokens": 236, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "573083dc2461fd1900a9ce6d", "output": "colonialism", "score": 1.0, "prompt_tokens": 301, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "57308ddc396df919000961a8", "output": "Terra nullius", "score": 0.0, "prompt_tokens": 175, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "57308f6b8ab72b1400f9c583", "output": "The discourse of Orientalism", "score": 0.5, "prompt_tokens": 292, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "573092088ab72b1400f9c595", "output": "pre-Columbian", "score": 1.0, "prompt_tokens": 241, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "57309446396df919000961b8", "output": "around 1700", "score": 1.0, "prompt_tokens": 200, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "573098f38ab72b1400f9c5d5", "output": "the political weakness of the Mughal state", "score": 0.5714285714285715, "prompt_tokens": 227, "output_tokens": 10, "finish_reason": "stop"}
+{"id": "5730a40f396df91900096234", "output": "1599", "score": 0.0, "prompt_tokens": 177, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "5730a951069b531400832217", "output": "Algeria", "score": 1.0, "prompt_tokens": 196, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "5730aef38ab72b1400f9c685", "output": "1884", "score": 1.0, "prompt_tokens": 175, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "5730aef38ab72b1400f9c686", "output": "Hamburg merchants and traders", "score": 1.0, "prompt_tokens": 176, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "5730b4282461fd1900a9cfc8", "output": "Nikita Khrushchev", "score": 1.0, "prompt_tokens": 444, "output_tokens": 9, "finish_reason": "stop"}
+{"id": "5730bb522461fd1900a9d013", "output": "12 to 15 million", "score": 1.0, "prompt_tokens": 353, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "5730bc308ab72b1400f9c740", "output": "16th and 17th centuries", "score": 1.0, "prompt_tokens": 203, "output_tokens": 10, "finish_reason": "stop"}
+{"id": "573098c12461fd1900a9cee7", "output": "the largest mainline Protestant denomination", "score": 0.8571428571428571, "prompt_tokens": 244, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "57309adb396df919000961ff", "output": "a sail loft on Dock Street", "score": 1.0, "prompt_tokens": 209, "output_tokens": 7, "finish_reason": "stop"}
+{"id": "57309cd6069b5314008321c4", "output": "St. George's Church", "score": 1.0, "prompt_tokens": 231, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "5730a9fa2461fd1900a9cf6f", "output": "the concept of the \"visible and invisible Church\"", "score": 0.28571428571428575, "prompt_tokens": 213, "output_tokens": 11, "finish_reason": "stop"}
+{"id": "5730cb0fb7151e1900c0154a", "output": "The Annual Conference", "score": 1.0, "prompt_tokens": 218, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "5730d77ef6cb411900e244de", "output": "through transfer from another Christian denomination.", "score": 0.9090909090909091, "prompt_tokens": 174, "output_tokens": 8, "finish_reason": "stop"}
+{"id": "5730de74f6cb411900e244fc", "output": "Baptism", "score": 1.0, "prompt_tokens": 204, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "5730e9f4aca1c71400fe5b73", "output": "The United Methodist Church", "score": 1.0, "prompt_tokens": 187, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "5733d3cb4776f419006612ed", "output": "Fourth Intercolonial War\nGreat War for the Empire", "score": 0.9333333333333333, "prompt_tokens": 239, "output_tokens": 12, "finish_reason": "stop"}
+{"id": "5733dd4f4776f419006613ac", "output": "William Shirley, the expansionist governor of the Province of Massachusetts Bay, was particularly forceful, stating that British colonists would not be safe as long as the French were present.", "score": 0.631578947368421, "prompt_tokens": 227, "output_tokens": 37, "finish_reason": "stop"}
+{"id": "5733ef47d058e614000b662c", "output": "Major George Washington", "score": 1.0, "prompt_tokens": 215, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "5733f410d058e614000b6665", "output": "King Louis XV dispatched six regiments to New France under the command of Baron Dieskau in 1755.", "score": 0.896551724137931, "prompt_tokens": 215, "output_tokens": 26, "finish_reason": "stop"}
+{"id": "5733ffa7d058e614000b674f", "output": "French irregular forces", "score": 1.0, "prompt_tokens": 257, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "57373a9fc3c5551400e51e7e", "output": "gravitational", "score": 1.0, "prompt_tokens": 196, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "57373f80c3c5551400e51e93", "output": "friction", "score": 1.0, "prompt_tokens": 190, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "5737477bc3c5551400e51ea4", "output": "curving parabolic path", "score": 1.0, "prompt_tokens": 307, "output_tokens": 6, "finish_reason": "stop"}
+{"id": "5737534ec3c5551400e51eab", "output": "Newton's Third Law", "score": 1.0, "prompt_tokens": 216, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "5737534ec3c5551400e51eac", "output": "Newton's Third Law", "score": 1.0, "prompt_tokens": 211, "output_tokens": 5, "finish_reason": "stop"}
+{"id": "57377862c3c5551400e51ef3", "output": "kinetic friction", "score": 0.0, "prompt_tokens": 182, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "57377ec7c3c5551400e51f06", "output": "force", "score": 1.0, "prompt_tokens": 420, "output_tokens": 2, "finish_reason": "stop"}
+{"id": "5737821cc3c5551400e51f19", "output": "Isaac Newton", "score": 1.0, "prompt_tokens": 369, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "5737898f1c45671900574499", "output": "Albert Einstein", "score": 1.0, "prompt_tokens": 198, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "57378b141c456719005744a2", "output": "From the perspective of the object, all motion occurs as if there were no gravitation whatsoever.", "score": 0.35294117647058826, "prompt_tokens": 300, "output_tokens": 20, "finish_reason": "stop"}
+{"id": "573792ee1c456719005744b9", "output": "attempting to reconcile electromagnetic theory with two observations, the photoelectric effect, and the nonexistence of the ultraviolet catastrophe", "score": 0.23529411764705882, "prompt_tokens": 190, "output_tokens": 25, "finish_reason": "stop"}
+{"id": "573792ee1c456719005744bc", "output": "photons", "score": 1.0, "prompt_tokens": 187, "output_tokens": 3, "finish_reason": "stop"}
+{"id": "5737a7351c456719005744f3", "output": "net mechanical energy", "score": 1.0, "prompt_tokens": 187, "output_tokens": 4, "finish_reason": "stop"}
+{"id": "5737aafd1c456719005744fc", "output": "kilogram-force (kgf)", "score": 0.0, "prompt_tokens": 254, "output_tokens": 8, "finish_reason": "stop"}
