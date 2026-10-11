@@ -1,4 +1,8 @@
 import json
+import os
+import signal
+import sys
+import time
 from dataclasses import replace
 
 from test_run import MODEL
@@ -31,6 +35,34 @@ def test_skip_reasons(tmp_path, monkeypatch):
     (tmp_path / "runs").mkdir()
     (tmp_path / "runs" / f"{MODEL.slug}.json").write_text("{}")
     assert run_all.skip_reason(MODEL, tmp_path, limit, True) == "already measured"
+
+
+def test_a_timeout_takes_the_whole_process_tree_with_it(tmp_path):
+    log = tmp_path / "model.log"
+    shared_blobs = "import os; print(os.environ['HF_HUB_DISABLE_SHARED_BLOBS'])"
+    assert run_all.run_model([sys.executable, "-c", shared_blobs], log, 30) == 0
+    assert log.read_text() == "1\n"  # or weights_dir() is not where the weights are
+
+    # A stand-in for run.py with vLLM's engine process under it: a parent that
+    # starts a child of its own and then hangs.
+    hangs = (
+        "import subprocess, sys, time\n"
+        "child = subprocess.Popen([sys.executable, '-c', 'import time; time.sleep(60)'])\n"
+        "print(child.pid, flush=True)\n"
+        "time.sleep(60)\n"
+    )
+    assert run_all.run_model([sys.executable, "-c", hangs], log, 2) == "timeout"
+
+    child = int(log.read_text())
+    deadline = time.monotonic() + 5
+    while time.monotonic() < deadline:
+        try:
+            os.kill(child, 0)
+        except ProcessLookupError:
+            return
+        time.sleep(0.05)
+    os.kill(child, signal.SIGKILL)
+    raise AssertionError("the hung model's child process outlived the timeout")
 
 
 def test_weights_dir_follows_the_hub_cache_layout(monkeypatch):

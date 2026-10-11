@@ -76,6 +76,9 @@ def test_measure_builds_a_complete_record(fake_gpu):
 
     assert FakeLLM.engine_args["enable_prefix_caching"] is False
     assert FakeLLM.engine_args["revision"] == "abc123"
+    # The batch limits are set, not left to the engine, and the record says what they were.
+    for limit in ("max_num_seqs", "max_num_batched_tokens"):
+        assert FakeLLM.engine_args[limit] == record["environment"][limit] > 0
     assert all(kwargs == {"enable_thinking": False} for _, _, kwargs in FakeLLM.calls)
 
     json.dumps(record)  # everything in it must be writable

@@ -5,7 +5,7 @@
 #   uv run python -m llm_energy_per_task.models
 #
 # Optional keys:
-#   pilot = true               part of the three-model pilot
+#   pilot = true               part of the pilot
 #   released = 2025-03-12      when the repo's creation date is not the launch date
 #   params = 6_740_000_000     when the repo publishes no parameter count
 #   trust_remote_code = true   when the engine cannot load the model without it
@@ -54,6 +54,7 @@ id = "microsoft/Phi-3-mini-4k-instruct"
 id = "microsoft/Phi-3-medium-4k-instruct"
 [[model]]
 id = "mistralai/Mistral-7B-Instruct-v0.3"
+pilot = true
 [[model]]
 id = "Qwen/Qwen2-0.5B-Instruct"
 [[model]]

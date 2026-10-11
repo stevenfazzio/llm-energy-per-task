@@ -11,8 +11,10 @@ than ending the run, and stays passed over until --retry-failed.
 from __future__ import annotations
 
 import argparse
+import contextlib
 import os
 import shutil
+import signal
 import subprocess
 import sys
 import time
@@ -29,6 +31,31 @@ MAX_PARAMS = 15_000_000_000
 def weights_dir(model: Model) -> Path:
     home = Path(os.environ.get("HF_HOME", "~/.cache/huggingface")).expanduser()
     return home / "hub" / f"models--{model.id.replace('/', '--')}"
+
+
+def run_model(command: list[str], log: Path, timeout_s: float) -> int | str:
+    """Run one measurement in a process group of its own and leave none of it behind.
+
+    vLLM serves from a child process of its own. Killing only run.py on a timeout
+    could leave that child holding the GPU, and every model after it would fail
+    to load.
+    """
+    # Without this, huggingface_hub keeps weights in a store shared by every repo,
+    # where deleting weights_dir() does not reach them and the disk fills.
+    env = {**os.environ, "HF_HUB_DISABLE_SHARED_BLOBS": "1"}
+    with log.open("w") as stream:
+        process = subprocess.Popen(
+            command, stdout=stream, stderr=subprocess.STDOUT, start_new_session=True, env=env
+        )
+        try:
+            return process.wait(timeout=timeout_s)
+        except subprocess.TimeoutExpired:
+            return "timeout"
+        finally:
+            # After a clean exit the group is already empty and there is nothing to find.
+            with contextlib.suppress(ProcessLookupError):
+                os.killpg(process.pid, signal.SIGKILL)
+            process.wait()
 
 
 def skip_reason(model: Model, root: Path, max_params: int, retry_failed: bool) -> str | None:
@@ -94,13 +121,7 @@ def main() -> None:
         log = root / "logs" / f"{model.slug}.log"
         log.parent.mkdir(parents=True, exist_ok=True)
         started = time.monotonic()
-        with log.open("w") as stream:
-            try:
-                code = subprocess.run(
-                    command, stdout=stream, stderr=subprocess.STDOUT, timeout=args.timeout_min * 60
-                ).returncode
-            except subprocess.TimeoutExpired:
-                code = "timeout"
+        code = run_model(command, log, args.timeout_min * 60)
         minutes = (time.monotonic() - started) / 60
 
         if code == 0:

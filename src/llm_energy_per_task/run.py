@@ -26,6 +26,11 @@ from .tasks import TASKS, load_items, strip_thinking
 DTYPE = "bfloat16"
 # The shortest context window among the models listed; every prompt fits in it.
 MAX_MODEL_LEN = 2048
+# How many items the engine works on at once, and how many tokens it takes per
+# step. Left unset, vLLM picks both from the card's memory; these are what it
+# picks for a 48 GB card, set here so a different card cannot change them.
+MAX_NUM_SEQS = 256
+MAX_NUM_BATCHED_TOKENS = 8192
 # A tiny model clears a task in a second or two, too short to meter. The batch
 # is repeated until the window is at least this long.
 MIN_WINDOW_S = 30.0
@@ -78,6 +83,8 @@ def measure(
         revision=model.revision,
         dtype=DTYPE,
         max_model_len=MAX_MODEL_LEN,
+        max_num_seqs=MAX_NUM_SEQS,
+        max_num_batched_tokens=MAX_NUM_BATCHED_TOKENS,
         # On by default, and it would make every repeated pass nearly free.
         enable_prefix_caching=False,
         trust_remote_code=model.trust_remote_code,
@@ -162,6 +169,8 @@ def measure(
             "torch": torch.__version__,
             "dtype": DTYPE,
             "max_model_len": MAX_MODEL_LEN,
+            "max_num_seqs": MAX_NUM_SEQS,
+            "max_num_batched_tokens": MAX_NUM_BATCHED_TOKENS,
             "prefix_caching": False,
             "min_window_s": min_window_s,
         },
