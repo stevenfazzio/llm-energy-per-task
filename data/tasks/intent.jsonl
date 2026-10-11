@@ -1,0 +1,500 @@
+{"id": "banking77-test-0", "text": "How do I locate my card?", "label": "card_arrival"}
+{"id": "banking77-test-4", "text": "My card has not arrived yet.", "label": "card_arrival"}
+{"id": "banking77-test-6", "text": "Do you know if there is a tracking number for the new card you sent me?", "label": "card_arrival"}
+{"id": "banking77-test-9", "text": "Is it normal to have to wait over a week for my new card?", "label": "card_arrival"}
+{"id": "banking77-test-13", "text": "still waiting on my new card", "label": "card_arrival"}
+{"id": "banking77-test-32", "text": "How do I know when my card will arrive?", "label": "card_arrival"}
+{"id": "banking77-test-36", "text": "I'm starting to think my card is lost because it still hasn't arrived, can you help?", "label": "card_arrival"}
+{"id": "banking77-test-39", "text": "Where is the tracking number for the card you sent me?", "label": "card_arrival"}
+{"id": "banking77-test-50", "text": "How do I link a new card?", "label": "card_linking"}
+{"id": "banking77-test-54", "text": "Can I link my new card?", "label": "card_linking"}
+{"id": "banking77-test-57", "text": "How do I view the card I received in the app?", "label": "card_linking"}
+{"id": "banking77-test-58", "text": "Where on the website do I go to link my card?", "label": "card_linking"}
+{"id": "banking77-test-60", "text": "How do I link to my credit card with you?", "label": "card_linking"}
+{"id": "banking77-test-66", "text": "The app doesn't show the card I received.", "label": "card_linking"}
+{"id": "banking77-test-76", "text": "Could you help me reactivate my card? It was previously lost, but I found it this morning in my jacket.", "label": "card_linking"}
+{"id": "banking77-test-88", "text": "How are exchange rates calculated?", "label": "exchange_rate"}
+{"id": "banking77-test-89", "text": "what are exchange rates based on", "label": "exchange_rate"}
+{"id": "banking77-test-93", "text": "Is it a good time to exchange?", "label": "exchange_rate"}
+{"id": "banking77-test-109", "text": "what is the exchange rate?", "label": "exchange_rate"}
+{"id": "banking77-test-113", "text": "From where are you getting your exchange rates?", "label": "exchange_rate"}
+{"id": "banking77-test-129", "text": "My exchange went wrong. I swapped Russian Ruble for UK pounds and was charged too much.", "label": "card_payment_wrong_exchange_rate"}
+{"id": "banking77-test-135", "text": "I bought something overseas and the wrong exchange rate is on my statement.", "label": "card_payment_wrong_exchange_rate"}
+{"id": "banking77-test-145", "text": "The exchange rate seems off on this transaction", "label": "card_payment_wrong_exchange_rate"}
+{"id": "banking77-test-146", "text": "The exchange rate given to me wasn't correct, after i purchased an item", "label": "card_payment_wrong_exchange_rate"}
+{"id": "banking77-test-149", "text": "I wasn't applied the correct exchange rate for an item I bought", "label": "card_payment_wrong_exchange_rate"}
+{"id": "banking77-test-154", "text": "Why was the exchange rate incorrect for an item I recently bought?", "label": "card_payment_wrong_exchange_rate"}
+{"id": "banking77-test-158", "text": "The wrong rate was applied to an item I bought in a currency different from mine. Can this be changed?", "label": "card_payment_wrong_exchange_rate"}
+{"id": "banking77-test-159", "text": "I go the wrong exchange rate applied to my purchase in a foreign country.", "label": "card_payment_wrong_exchange_rate"}
+{"id": "banking77-test-161", "text": "Why is there a fee for an extra pound in my statement?", "label": "extra_charge_on_statement"}
+{"id": "banking77-test-165", "text": "I would like a refund on the extra pound I was charged.", "label": "extra_charge_on_statement"}
+{"id": "banking77-test-166", "text": "Can you explain what this random $1 charge is?", "label": "extra_charge_on_statement"}
+{"id": "banking77-test-168", "text": "Why does my statement have these extra charges?", "label": "extra_charge_on_statement"}
+{"id": "banking77-test-172", "text": "When will the $1 transaction be credited to me?", "label": "extra_charge_on_statement"}
+{"id": "banking77-test-173", "text": "Where did this fee come from?", "label": "extra_charge_on_statement"}
+{"id": "banking77-test-185", "text": "Where did the extra fee on my statement come from?", "label": "extra_charge_on_statement"}
+{"id": "banking77-test-187", "text": "I am seeing an extra fee on my statement what is that for?", "label": "extra_charge_on_statement"}
+{"id": "banking77-test-191", "text": "There is a transaction for $1 and I don't know why it was charged.", "label": "extra_charge_on_statement"}
+{"id": "banking77-test-197", "text": "What is the €1 fee for?", "label": "extra_charge_on_statement"}
+{"id": "banking77-test-204", "text": "How long does the cash withdrawal take to pend?", "label": "pending_cash_withdrawal"}
+{"id": "banking77-test-237", "text": "how long does it take to post atm with drawl", "label": "pending_cash_withdrawal"}
+{"id": "banking77-test-250", "text": "Where can I exchange my money for EUR?", "label": "fiat_currency_support"}
+{"id": "banking77-test-254", "text": "Do you offer additional currency options?", "label": "fiat_currency_support"}
+{"id": "banking77-test-255", "text": "How do I change currencies to euros?", "label": "fiat_currency_support"}
+{"id": "banking77-test-257", "text": "When considering currency holdings and exchanges, what fiat currencies are supported?", "label": "fiat_currency_support"}
+{"id": "banking77-test-261", "text": "Do you happen to do exchanges of EUR?", "label": "fiat_currency_support"}
+{"id": "banking77-test-269", "text": "Can I exchange and hold all fiat currencies?", "label": "fiat_currency_support"}
+{"id": "banking77-test-282", "text": "i need my card quick", "label": "card_delivery_estimate"}
+{"id": "banking77-test-286", "text": "How long will it take to deliver something to US?", "label": "card_delivery_estimate"}
+{"id": "banking77-test-290", "text": "Does delivery to the US take long?", "label": "card_delivery_estimate"}
+{"id": "banking77-test-294", "text": "Can it be delivered by a specific date?", "label": "card_delivery_estimate"}
+{"id": "banking77-test-302", "text": "How long should I expect for the card to arrive?", "label": "card_delivery_estimate"}
+{"id": "banking77-test-303", "text": "Whats the delivery time to the United States?", "label": "card_delivery_estimate"}
+{"id": "banking77-test-323", "text": "I'm running out of money, can I  auto top up?", "label": "automatic_top_up"}
+{"id": "banking77-test-328", "text": "Can I have it add money at certain time intervals when I travel?", "label": "automatic_top_up"}
+{"id": "banking77-test-329", "text": "I'm going to be away for awhile, can I have it add money automatically in certain intervals?", "label": "automatic_top_up"}
+{"id": "banking77-test-330", "text": "Where can I find the \"auto-top\" feature?", "label": "automatic_top_up"}
+{"id": "banking77-test-333", "text": "where is theft-top option?", "label": "automatic_top_up"}
+{"id": "banking77-test-337", "text": "Why are there limits on auto top-up?", "label": "automatic_top_up"}
+{"id": "banking77-test-341", "text": "If I will be traveling, is there a way to auto top-up my card on certain days?", "label": "automatic_top_up"}
+{"id": "banking77-test-342", "text": "Where is the auto top-up option?", "label": "automatic_top_up"}
+{"id": "banking77-test-346", "text": "Will it automatically top-up money if there isn't a lot left?", "label": "automatic_top_up"}
+{"id": "banking77-test-356", "text": "Is there a way to top-up automatically?", "label": "automatic_top_up"}
+{"id": "banking77-test-367", "text": "Can you please identify the problem with my bank card?", "label": "card_not_working"}
+{"id": "banking77-test-373", "text": "Can a card stop working?", "label": "card_not_working"}
+{"id": "banking77-test-374", "text": "I think my card is broken", "label": "card_not_working"}
+{"id": "banking77-test-375", "text": "Why isn't my card working?", "label": "card_not_working"}
+{"id": "banking77-test-382", "text": "I broke my card", "label": "card_not_working"}
+{"id": "banking77-test-383", "text": "My card stopped working", "label": "card_not_working"}
+{"id": "banking77-test-388", "text": "Need help with my card. It's not working.", "label": "card_not_working"}
+{"id": "banking77-test-400", "text": "May I exchange currencies with this?", "label": "exchange_via_app"}
+{"id": "banking77-test-401", "text": "Tell me how I can exchange between different currency.", "label": "exchange_via_app"}
+{"id": "banking77-test-404", "text": "Will this app exchange currencies?", "label": "exchange_via_app"}
+{"id": "banking77-test-407", "text": "Can I exchange currencies with this app?", "label": "exchange_via_app"}
+{"id": "banking77-test-410", "text": "What all currencies can be exchanged?", "label": "exchange_via_app"}
+{"id": "banking77-test-412", "text": "If I wanted to make a change from GBP to AUD what is the process?", "label": "exchange_via_app"}
+{"id": "banking77-test-413", "text": "Can I get some money exchanged?", "label": "exchange_via_app"}
+{"id": "banking77-test-415", "text": "How do I exchange my GBP to AUD?", "label": "exchange_via_app"}
+{"id": "banking77-test-428", "text": "What currencies will this app exchange?", "label": "exchange_via_app"}
+{"id": "banking77-test-429", "text": "Can this app help me exchange currencies?", "label": "exchange_via_app"}
+{"id": "banking77-test-445", "text": "Oh no!  I lost my card!  Help!", "label": "lost_or_stolen_card"}
+{"id": "banking77-test-446", "text": "I believe my card has been stolen, what can I do about this situation? It's urgent.", "label": "lost_or_stolen_card"}
+{"id": "banking77-test-470", "text": "My card is lost! What do I do now?", "label": "lost_or_stolen_card"}
+{"id": "banking77-test-471", "text": "I'm in Spain and my stuff has been stolen. My card was with it and I need a new one shipped and the old one frozen.", "label": "lost_or_stolen_card"}
+{"id": "banking77-test-472", "text": "I believe my credit card was stolen.", "label": "lost_or_stolen_card"}
+{"id": "banking77-test-474", "text": "Somebody has stolen my card, I need help please.", "label": "lost_or_stolen_card"}
+{"id": "banking77-test-475", "text": "I cannot find my credit card.", "label": "lost_or_stolen_card"}
+{"id": "banking77-test-479", "text": "how old do i need to be to get an account for myself", "label": "age_limit"}
+{"id": "banking77-test-480", "text": "How young can I be to open my own account?", "label": "age_limit"}
+{"id": "banking77-test-487", "text": "What age do I have to be?", "label": "age_limit"}
+{"id": "banking77-test-490", "text": "What is the minimum age?", "label": "age_limit"}
+{"id": "banking77-test-507", "text": "Is there an age limit?", "label": "age_limit"}
+{"id": "banking77-test-509", "text": "will i be able to open an account for my daughter", "label": "age_limit"}
+{"id": "banking77-test-511", "text": "What age can sign up for services?", "label": "age_limit"}
+{"id": "banking77-test-531", "text": "I have exceeded the number of times I can try my PIN", "label": "pin_blocked"}
+{"id": "banking77-test-533", "text": "What do I do if the bank machine won't accept my PIN attempts anymore?", "label": "pin_blocked"}
+{"id": "banking77-test-534", "text": "Can you unlock my pin? I think I entered the wrong pin too many times.", "label": "pin_blocked"}
+{"id": "banking77-test-542", "text": "Why did I get blocked?", "label": "pin_blocked"}
+{"id": "banking77-test-546", "text": "My pins seems to be blocked, can you unblock it please", "label": "pin_blocked"}
+{"id": "banking77-test-552", "text": "Can I unblock my pin?", "label": "pin_blocked"}
+{"id": "banking77-test-567", "text": "My contactless payments have not been completed successfully.", "label": "contactless_not_working"}
+{"id": "banking77-test-570", "text": "I couldn't use my contactless this morning, it wasn't accepted.", "label": "contactless_not_working"}
+{"id": "banking77-test-572", "text": "Why wouldn't the contactless payment work when I tried to pay at the bus today?", "label": "contactless_not_working"}
+{"id": "banking77-test-583", "text": "I wanted to use my card contactless but it doesn't seem to be working, what could be the problem?", "label": "contactless_not_working"}
+{"id": "banking77-test-599", "text": "how much do you charge to accept transfers", "label": "top_up_by_bank_transfer_charge"}
+{"id": "banking77-test-601", "text": "I need to make a transfer, what will the fee be?", "label": "top_up_by_bank_transfer_charge"}
+{"id": "banking77-test-607", "text": "Are there any sort of fees involved for top of transfers?", "label": "top_up_by_bank_transfer_charge"}
+{"id": "banking77-test-612", "text": "Will there be any charges for money received?", "label": "top_up_by_bank_transfer_charge"}
+{"id": "banking77-test-618", "text": "Will topping up by transfer lead to a charge on my account?", "label": "top_up_by_bank_transfer_charge"}
+{"id": "banking77-test-619", "text": "What are the charges for receiving money?", "label": "top_up_by_bank_transfer_charge"}
+{"id": "banking77-test-628", "text": "is there a fee for a transfer? if so how much will it be?", "label": "top_up_by_bank_transfer_charge"}
+{"id": "banking77-test-632", "text": "Is a SWIFT transfer okay?", "label": "top_up_by_bank_transfer_charge"}
+{"id": "banking77-test-637", "text": "Can you tell me the total cost of a transfer?", "label": "top_up_by_bank_transfer_charge"}
+{"id": "banking77-test-638", "text": "can i do a transfer with swift", "label": "top_up_by_bank_transfer_charge"}
+{"id": "banking77-test-645", "text": "Could you explain why my top-up has gone through yet?", "label": "pending_top_up"}
+{"id": "banking77-test-648", "text": "I  do not see a top-up processed.", "label": "pending_top_up"}
+{"id": "banking77-test-655", "text": "why hasn't my top up gone through yet", "label": "pending_top_up"}
+{"id": "banking77-test-663", "text": "Your top-up function isn't working, it still says pending even though I know my card works.", "label": "pending_top_up"}
+{"id": "banking77-test-671", "text": "Why does my top up say still pending when I used my card to do it.", "label": "pending_top_up"}
+{"id": "banking77-test-678", "text": "I tried topping up but my funds seem to be pending. I want to buy something right now, what do I do?", "label": "pending_top_up"}
+{"id": "banking77-test-682", "text": "I made a transaction but did it to the wrong account.", "label": "cancel_transfer"}
+{"id": "banking77-test-693", "text": "This is URGENT, I typed the wrong payment information for a payment I needed to make and have clicked send, I need to reverse the transaction immediately.", "label": "cancel_transfer"}
+{"id": "banking77-test-698", "text": "Can I cancel a transfer if is already processed?", "label": "cancel_transfer"}
+{"id": "banking77-test-716", "text": "I don't want the transaction to go through now", "label": "cancel_transfer"}
+{"id": "banking77-test-730", "text": "How can I tell what the limit is to top-ups?", "label": "top_up_limits"}
+{"id": "banking77-test-735", "text": "Tell me if there are any top-up limits?", "label": "top_up_limits"}
+{"id": "banking77-test-738", "text": "Can I top-up as much as I want?", "label": "top_up_limits"}
+{"id": "banking77-test-746", "text": "What's the top up limit?", "label": "top_up_limits"}
+{"id": "banking77-test-753", "text": "Is there a limit for top-ups?", "label": "top_up_limits"}
+{"id": "banking77-test-757", "text": "As for limits are top ups included?", "label": "top_up_limits"}
+{"id": "banking77-test-764", "text": "The amount of cash I received was incorrect", "label": "wrong_amount_of_cash_received"}
+{"id": "banking77-test-770", "text": "I did not get as much cash as I requested at the ATM.", "label": "wrong_amount_of_cash_received"}
+{"id": "banking77-test-772", "text": "Where is the money I pushed it's on my mobile app as being withdrawn.", "label": "wrong_amount_of_cash_received"}
+{"id": "banking77-test-775", "text": "Why did I only get $20 when I tried to get $100", "label": "wrong_amount_of_cash_received"}
+{"id": "banking77-test-779", "text": "I have not received the amount of cash i was supposed to.", "label": "wrong_amount_of_cash_received"}
+{"id": "banking77-test-780", "text": "I asked for $100 cash but only got $20?", "label": "wrong_amount_of_cash_received"}
+{"id": "banking77-test-782", "text": "I withdrew money but the full amount wasn't dispensed.", "label": "wrong_amount_of_cash_received"}
+{"id": "banking77-test-786", "text": "I didn't receive the right amount of cash back", "label": "wrong_amount_of_cash_received"}
+{"id": "banking77-test-787", "text": "The ATM gave me less cash than I requested", "label": "wrong_amount_of_cash_received"}
+{"id": "banking77-test-797", "text": "did not receive correct cash upon withdrawal", "label": "wrong_amount_of_cash_received"}
+{"id": "banking77-test-810", "text": "Why are there fees for card usage?", "label": "card_payment_fee_charged"}
+{"id": "banking77-test-811", "text": "im not sure what this charge is for", "label": "card_payment_fee_charged"}
+{"id": "banking77-test-813", "text": "When would my card be charged an extra fee for a transaction?", "label": "card_payment_fee_charged"}
+{"id": "banking77-test-816", "text": "I have been charged a fee for paying with card", "label": "card_payment_fee_charged"}
+{"id": "banking77-test-826", "text": "I have been charged with a fee for paying with my card.", "label": "card_payment_fee_charged"}
+{"id": "banking77-test-827", "text": "For the first time I got a fee on my account. How do I know when you charge these fees?", "label": "card_payment_fee_charged"}
+{"id": "banking77-test-832", "text": "Why do you charge for payments? Why aren't your charges clearly laid out in the agreement?", "label": "card_payment_fee_charged"}
+{"id": "banking77-test-833", "text": "Why was I charged a fee when I paid with card?", "label": "card_payment_fee_charged"}
+{"id": "banking77-test-837", "text": "Why was a charged a fee for using the card?", "label": "card_payment_fee_charged"}
+{"id": "banking77-test-842", "text": "I made a money transaction but the recipient can't see it", "label": "transfer_not_received_by_recipient"}
+{"id": "banking77-test-848", "text": "how long do money transfers take?", "label": "transfer_not_received_by_recipient"}
+{"id": "banking77-test-851", "text": "I just finished sending money, but it's not logging on the recipient side.", "label": "transfer_not_received_by_recipient"}
+{"id": "banking77-test-862", "text": "Where is the transaction I made to a friend?", "label": "transfer_not_received_by_recipient"}
+{"id": "banking77-test-874", "text": "How long until my friend receives my transaction?", "label": "transfer_not_received_by_recipient"}
+{"id": "banking77-test-881", "text": "What are the cards and currencies that are supported?", "label": "supported_cards_and_currencies"}
+{"id": "banking77-test-884", "text": "I only own one other credit card from the USA. Will it be accepted?", "label": "supported_cards_and_currencies"}
+{"id": "banking77-test-889", "text": "Will you accept my other card from the U.S.?", "label": "supported_cards_and_currencies"}
+{"id": "banking77-test-894", "text": "What credit cards are supported?", "label": "supported_cards_and_currencies"}
+{"id": "banking77-test-896", "text": "How do I transfer funds from my American Express into my account?", "label": "supported_cards_and_currencies"}
+{"id": "banking77-test-901", "text": "I want to add money but don't know what currencies you accept, can you tell me?", "label": "supported_cards_and_currencies"}
+{"id": "banking77-test-903", "text": "Tell me which cards and what currency is supported.", "label": "supported_cards_and_currencies"}
+{"id": "banking77-test-904", "text": "Do you support all cards and currencies?", "label": "supported_cards_and_currencies"}
+{"id": "banking77-test-905", "text": "Which credit or debit cards can I use to top up?", "label": "supported_cards_and_currencies"}
+{"id": "banking77-test-908", "text": "What are all the currencies and cards supported to use this?", "label": "supported_cards_and_currencies"}
+{"id": "banking77-test-913", "text": "What cards and currencies will suffice?", "label": "supported_cards_and_currencies"}
+{"id": "banking77-test-964", "text": "Are there any limits on where I can use my card?", "label": "card_acceptance"}
+{"id": "banking77-test-977", "text": "I am traveling to Germany, Will I be able to use my card there?", "label": "card_acceptance"}
+{"id": "banking77-test-980", "text": "Will I be able to use my card anywhere?", "label": "card_acceptance"}
+{"id": "banking77-test-981", "text": "Is my card usable anywhere?", "label": "card_acceptance"}
+{"id": "banking77-test-983", "text": "Can I use my card everywhere?", "label": "card_acceptance"}
+{"id": "banking77-test-991", "text": "What places will accept my card?", "label": "card_acceptance"}
+{"id": "banking77-test-995", "text": "Where am I able to use the card?", "label": "card_acceptance"}
+{"id": "banking77-test-999", "text": "How do I fix a reverted top up?", "label": "top_up_reverted"}
+{"id": "banking77-test-1026", "text": "Was my top up reversed?", "label": "top_up_reverted"}
+{"id": "banking77-test-1027", "text": "I see my top-up was canceled, but why?", "label": "top_up_reverted"}
+{"id": "banking77-test-1050", "text": "I made a deposit this morning but it is still pending?", "label": "balance_not_updated_after_cheque_or_cash_deposit"}
+{"id": "banking77-test-1052", "text": "I have paid money into my account but it doesn't show.", "label": "balance_not_updated_after_cheque_or_cash_deposit"}
+{"id": "banking77-test-1060", "text": "My cash deposit from a week ago hasn't shown up. I need the money - how quickly can you sort this out?", "label": "balance_not_updated_after_cheque_or_cash_deposit"}
+{"id": "banking77-test-1061", "text": "Why didn't my balance update after my cash or checque deposit?", "label": "balance_not_updated_after_cheque_or_cash_deposit"}
+{"id": "banking77-test-1063", "text": "I made a deposit of cash and check that has not been added to my balance.", "label": "balance_not_updated_after_cheque_or_cash_deposit"}
+{"id": "banking77-test-1064", "text": "Why hasn't my balance increased after depositing a check?", "label": "balance_not_updated_after_cheque_or_cash_deposit"}
+{"id": "banking77-test-1065", "text": "Why does my account not accept cash deposits?", "label": "balance_not_updated_after_cheque_or_cash_deposit"}
+{"id": "banking77-test-1066", "text": "What happened to the cash that I tried to deposit into my account? It's gone!", "label": "balance_not_updated_after_cheque_or_cash_deposit"}
+{"id": "banking77-test-1068", "text": "A cheque deposit hasn't posted to my account, when will my balance update?", "label": "balance_not_updated_after_cheque_or_cash_deposit"}
+{"id": "banking77-test-1104", "text": "I'm not familiar with a card payment.", "label": "card_payment_not_recognised"}
+{"id": "banking77-test-1110", "text": "Somebody used my card to make a purchase", "label": "card_payment_not_recognised"}
+{"id": "banking77-test-1111", "text": "There's a recent charge on my card that I know I didn't make because I've never seen the name before. Can we investigate this?", "label": "card_payment_not_recognised"}
+{"id": "banking77-test-1125", "text": "I want to change my personal details.", "label": "edit_personal_details"}
+{"id": "banking77-test-1127", "text": "I need to edit the personal details section of my account", "label": "edit_personal_details"}
+{"id": "banking77-test-1128", "text": "Where can I change my personal information after I move?", "label": "edit_personal_details"}
+{"id": "banking77-test-1140", "text": "Where can I go to update my personal profile?", "label": "edit_personal_details"}
+{"id": "banking77-test-1146", "text": "I need to change my name since I got married", "label": "edit_personal_details"}
+{"id": "banking77-test-1150", "text": "I need to update my current address", "label": "edit_personal_details"}
+{"id": "banking77-test-1154", "text": "I need to change my name what do I do?", "label": "edit_personal_details"}
+{"id": "banking77-test-1178", "text": "Why am I required to do an identity check?", "label": "why_verify_identity"}
+{"id": "banking77-test-1179", "text": "Why am I being asked to have an identity check", "label": "why_verify_identity"}
+{"id": "banking77-test-1185", "text": "I won't verify my identity.", "label": "why_verify_identity"}
+{"id": "banking77-test-1187", "text": "I do not wish to verify my identity.", "label": "why_verify_identity"}
+{"id": "banking77-test-1189", "text": "what is the identity check?", "label": "why_verify_identity"}
+{"id": "banking77-test-1192", "text": "Do I need to verify my identity each time I wish to use my account?", "label": "why_verify_identity"}
+{"id": "banking77-test-1201", "text": "I am having trouble verifying my identity.", "label": "unable_to_verify_identity"}
+{"id": "banking77-test-1225", "text": "How do I show this stupid system that this is really my identity?", "label": "unable_to_verify_identity"}
+{"id": "banking77-test-1233", "text": "I am having issues with identity verification", "label": "unable_to_verify_identity"}
+{"id": "banking77-test-1234", "text": "The app won't let me log in as myself.", "label": "unable_to_verify_identity"}
+{"id": "banking77-test-1236", "text": "Why can't I verify my id?", "label": "unable_to_verify_identity"}
+{"id": "banking77-test-1238", "text": "What do I do with my card PIN?", "label": "get_physical_card"}
+{"id": "banking77-test-1239", "text": "Is the PIN delivered separately?", "label": "get_physical_card"}
+{"id": "banking77-test-1242", "text": "I cannot seem to find my PIN. Where is it?", "label": "get_physical_card"}
+{"id": "banking77-test-1261", "text": "Is my PIN located on my account somewhere?", "label": "get_physical_card"}
+{"id": "banking77-test-1270", "text": "Help me find my card pin!", "label": "get_physical_card"}
+{"id": "banking77-test-1275", "text": "Where is the card PIN?", "label": "get_physical_card"}
+{"id": "banking77-test-1278", "text": "I like to Mastercard rather than Visa.", "label": "visa_or_mastercard"}
+{"id": "banking77-test-1289", "text": "I'd rather get a Mastercard", "label": "visa_or_mastercard"}
+{"id": "banking77-test-1295", "text": "What are the available cards?", "label": "visa_or_mastercard"}
+{"id": "banking77-test-1298", "text": "are both visa and mastercard available to me?", "label": "visa_or_mastercard"}
+{"id": "banking77-test-1303", "text": "We need both a visa and a Mastercard.", "label": "visa_or_mastercard"}
+{"id": "banking77-test-1310", "text": "I would rather the Mastercard.", "label": "visa_or_mastercard"}
+{"id": "banking77-test-1318", "text": "How can I top up my account with a card?", "label": "topping_up_by_card"}
+{"id": "banking77-test-1320", "text": "How can I top up by card?", "label": "topping_up_by_card"}
+{"id": "banking77-test-1328", "text": "I followed the instructions to transfer money using my card, but then the money disappeared and I don't know what happened.", "label": "topping_up_by_card"}
+{"id": "banking77-test-1332", "text": "I have friends that would like to top-up my account is that possible?", "label": "topping_up_by_card"}
+{"id": "banking77-test-1335", "text": "I did a top-up, but I'm not seeing it in my wallet yet.", "label": "topping_up_by_card"}
+{"id": "banking77-test-1345", "text": "Cannot access my top up.", "label": "topping_up_by_card"}
+{"id": "banking77-test-1352", "text": "Who can top up my accounts?", "label": "topping_up_by_card"}
+{"id": "banking77-test-1362", "text": "Can I have more than one disposable card?", "label": "disposable_card_limits"}
+{"id": "banking77-test-1364", "text": "What's the most disposable cards I can have?", "label": "disposable_card_limits"}
+{"id": "banking77-test-1365", "text": "Do these virtual cards have any caps on using them?", "label": "disposable_card_limits"}
+{"id": "banking77-test-1369", "text": "How many card payments can I use on a disposable card?", "label": "disposable_card_limits"}
+{"id": "banking77-test-1372", "text": "Are you able to explain the restrictions of the disposable cards?", "label": "disposable_card_limits"}
+{"id": "banking77-test-1373", "text": "What is the maximum number of transactions I can make with one card?", "label": "disposable_card_limits"}
+{"id": "banking77-test-1375", "text": "How many disposable cards is the limit?", "label": "disposable_card_limits"}
+{"id": "banking77-test-1380", "text": "Is it possible to make several disposable cards in a day?", "label": "disposable_card_limits"}
+{"id": "banking77-test-1382", "text": "Is there a limit to how many transactions I can make on one disposable card?", "label": "disposable_card_limits"}
+{"id": "banking77-test-1385", "text": "How many disposable virtual cards can I have?", "label": "disposable_card_limits"}
+{"id": "banking77-test-1393", "text": "Do you know what the restriction of the disposable cards are?", "label": "disposable_card_limits"}
+{"id": "banking77-test-1402", "text": "Can I freeze my card right now?", "label": "compromised_card"}
+{"id": "banking77-test-1407", "text": "Someone else may be using my card.  There are transactions I don't recognize.", "label": "compromised_card"}
+{"id": "banking77-test-1421", "text": "What should I do if I think that someone else may be using my card.", "label": "compromised_card"}
+{"id": "banking77-test-1434", "text": "I think someone copied the numbers on my card and is using them.", "label": "compromised_card"}
+{"id": "banking77-test-1442", "text": "Are there any specific ATMs that this card can be used at?", "label": "atm_support"}
+{"id": "banking77-test-1449", "text": "What ATMs is the card okay to use at?", "label": "atm_support"}
+{"id": "banking77-test-1462", "text": "What type of ATMs accept this card?", "label": "atm_support"}
+{"id": "banking77-test-1463", "text": "Where can I use this card at an ATM?", "label": "atm_support"}
+{"id": "banking77-test-1466", "text": "I want to withdraw money, where can I go?", "label": "atm_support"}
+{"id": "banking77-test-1468", "text": "What are the ATMs that will accept this card?", "label": "atm_support"}
+{"id": "banking77-test-1471", "text": "At which ATMs can I use this card?", "label": "atm_support"}
+{"id": "banking77-test-1478", "text": "There is a direct debit that's not mine.", "label": "direct_debit_payment_not_recognised"}
+{"id": "banking77-test-1481", "text": "what is this charge on my account", "label": "direct_debit_payment_not_recognised"}
+{"id": "banking77-test-1502", "text": "It seems there is an incorrect listing of a direct debit payment on my app that I did not make", "label": "direct_debit_payment_not_recognised"}
+{"id": "banking77-test-1504", "text": "I have a direct debit charge that I do not recognize", "label": "direct_debit_payment_not_recognised"}
+{"id": "banking77-test-1508", "text": "I don't recognize a debit payment that was made and would like to find out about the payment.", "label": "direct_debit_payment_not_recognised"}
+{"id": "banking77-test-1516", "text": "Why was my account deducted from a seller when I didn't approve of it?", "label": "direct_debit_payment_not_recognised"}
+{"id": "banking77-test-1523", "text": "Something is wrong with my password.", "label": "passcode_forgotten"}
+{"id": "banking77-test-1525", "text": "How do I reset a forgotten passcode, please?", "label": "passcode_forgotten"}
+{"id": "banking77-test-1538", "text": "I do not remember the code, what should I do?", "label": "passcode_forgotten"}
+{"id": "banking77-test-1548", "text": "Can I reset my password?  I don't know what it is.", "label": "passcode_forgotten"}
+{"id": "banking77-test-1550", "text": "What should I do if I forgot my passcode?", "label": "passcode_forgotten"}
+{"id": "banking77-test-1576", "text": "Why did the ATM machine fail to give me a cash withdrawal?", "label": "declined_cash_withdrawal"}
+{"id": "banking77-test-1577", "text": "My ATM transaction was unsuccessful.", "label": "declined_cash_withdrawal"}
+{"id": "banking77-test-1589", "text": "Why was I declined getting cash?", "label": "declined_cash_withdrawal"}
+{"id": "banking77-test-1591", "text": "Oh my goodness, my card has been declined twice at ATM! I tried two different ATM, but each one declined my card! Can you tell me what's going on with my account?", "label": "declined_cash_withdrawal"}
+{"id": "banking77-test-1602", "text": "Why has my payment not gone through?", "label": "pending_card_payment"}
+{"id": "banking77-test-1613", "text": "What is a pending payment?", "label": "pending_card_payment"}
+{"id": "banking77-test-1617", "text": "Why is a payment showing up on my card as pending?", "label": "pending_card_payment"}
+{"id": "banking77-test-1624", "text": "I have waited 15 days, but my payment still hasn't cleared.", "label": "pending_card_payment"}
+{"id": "banking77-test-1630", "text": "I bought some things this morning but the payment shows that it is pending", "label": "pending_card_payment"}
+{"id": "banking77-test-1633", "text": "What does a pending transaction mean?", "label": "pending_card_payment"}
+{"id": "banking77-test-1645", "text": "Can I used my card even if my phone has been stolen?", "label": "lost_or_stolen_phone"}
+{"id": "banking77-test-1647", "text": "lost my phone, dont want others to use it.", "label": "lost_or_stolen_phone"}
+{"id": "banking77-test-1651", "text": "My phone is not on me.  How can I use the app?", "label": "lost_or_stolen_phone"}
+{"id": "banking77-test-1658", "text": "Someone stole my phone yesterday :( is there anything I need to do?", "label": "lost_or_stolen_phone"}
+{"id": "banking77-test-1662", "text": "Someone attacked me yesterday and took my things, so I am unable to use the app.  I am in need of some help.", "label": "lost_or_stolen_phone"}
+{"id": "banking77-test-1678", "text": "Can I receive a refund for my item?", "label": "request_refund"}
+{"id": "banking77-test-1697", "text": "How do I get refunded?", "label": "request_refund"}
+{"id": "banking77-test-1698", "text": "Can you cancel my purchase?", "label": "request_refund"}
+{"id": "banking77-test-1700", "text": "I would appreciate it if I could get an item refunded", "label": "request_refund"}
+{"id": "banking77-test-1710", "text": "I bought this item and was charged the wrong amount can I get a refund?", "label": "request_refund"}
+{"id": "banking77-test-1713", "text": "I want a refund for my purchase", "label": "request_refund"}
+{"id": "banking77-test-1717", "text": "I tried to make a transfer and it was declined. Why?", "label": "declined_transfer"}
+{"id": "banking77-test-1722", "text": "Why do you keep declining my transfers?it was always been working really well so far but when I tried to buy something just now the card got declined . I tried couple of times already  but same thing is happening.", "label": "declined_transfer"}
+{"id": "banking77-test-1732", "text": "You keep declining my transfers? It's always been working really well so far, but when I tried to buy something just now the card got declined. I tried couple times already but same thing.", "label": "declined_transfer"}
+{"id": "banking77-test-1733", "text": "Why was I unable to do a transfer?", "label": "declined_transfer"}
+{"id": "banking77-test-1743", "text": "I tired to move my money, but my transfer was declined.", "label": "declined_transfer"}
+{"id": "banking77-test-1745", "text": "I tried to make a transfer, but it was declined. Can you tell me why?", "label": "declined_transfer"}
+{"id": "banking77-test-1747", "text": "My transfer has been declined and I know it should have went through.", "label": "declined_transfer"}
+{"id": "banking77-test-1766", "text": "Can you tell me why my refund is not showing in my statement?", "label": "Refund_not_showing_up"}
+{"id": "banking77-test-1778", "text": "The refund has not appeared in my account", "label": "Refund_not_showing_up"}
+{"id": "banking77-test-1783", "text": "I am missing a refund.", "label": "Refund_not_showing_up"}
+{"id": "banking77-test-1786", "text": "Why can't I see a recent refund in my statement?", "label": "Refund_not_showing_up"}
+{"id": "banking77-test-1811", "text": "Why doesn't the card payment work", "label": "declined_card_payment"}
+{"id": "banking77-test-1813", "text": "I have a card payment that was declined, but why?", "label": "declined_card_payment"}
+{"id": "banking77-test-1822", "text": "My card payment didn't work, can you help?", "label": "declined_card_payment"}
+{"id": "banking77-test-1824", "text": "Please explain why my card was declined?", "label": "declined_card_payment"}
+{"id": "banking77-test-1828", "text": "They declined my card payment.", "label": "declined_card_payment"}
+{"id": "banking77-test-1834", "text": "I tried using my card and it kept getting declined, Why?", "label": "declined_card_payment"}
+{"id": "banking77-test-1835", "text": "How do you fix  my card payment?", "label": "declined_card_payment"}
+{"id": "banking77-test-1837", "text": "I did transfer, why is it pending", "label": "pending_transfer"}
+{"id": "banking77-test-1845", "text": "I had made a transfer but its still pending.", "label": "pending_transfer"}
+{"id": "banking77-test-1849", "text": "My transfer is still coming up as pending.", "label": "pending_transfer"}
+{"id": "banking77-test-1855", "text": "Why hasn't my transfer gone through yet?", "label": "pending_transfer"}
+{"id": "banking77-test-1875", "text": "How long does it take for a money transfer to show?", "label": "pending_transfer"}
+{"id": "banking77-test-1877", "text": "i want to close an account but im not sure about setting up a new one in the future, what do you recommend", "label": "terminate_account"}
+{"id": "banking77-test-1878", "text": "My account needs to be deleted.", "label": "terminate_account"}
+{"id": "banking77-test-1912", "text": "Please delete my account, this company is not working for me!", "label": "terminate_account"}
+{"id": "banking77-test-1913", "text": "I want to delete my account. I'm unhappy with the service you're providing.", "label": "terminate_account"}
+{"id": "banking77-test-1926", "text": "The atm won't give my card back!", "label": "card_swallowed"}
+{"id": "banking77-test-1931", "text": "The ATM ate my card.", "label": "card_swallowed"}
+{"id": "banking77-test-1933", "text": "My card was confiscated by an ATM. How do I get my card back?", "label": "card_swallowed"}
+{"id": "banking77-test-1941", "text": "My card was taken by the ATM.", "label": "card_swallowed"}
+{"id": "banking77-test-1948", "text": "My card has been swallowed by an ATM", "label": "card_swallowed"}
+{"id": "banking77-test-1951", "text": "The ATM at Metro bank on High St. Kensington didn't return my card. What should I do now that the bank is closed?", "label": "card_swallowed"}
+{"id": "banking77-test-1952", "text": "The ATM won't give back my card", "label": "card_swallowed"}
+{"id": "banking77-test-1953", "text": "I was at an ATM and it swallowed my card.", "label": "card_swallowed"}
+{"id": "banking77-test-1958", "text": "Why am I being charged twice fro a restaurant?", "label": "transaction_charged_twice"}
+{"id": "banking77-test-1962", "text": "Why is there more then one charge on my card I only paid for one not twice how can I fix this?", "label": "transaction_charged_twice"}
+{"id": "banking77-test-1970", "text": "I noticed after looking over my transactions that I have been charged twice from an earlier restaurant visit this week. Is it possible that one of these can be removed so I get the money back for the one that is not accurate?", "label": "transaction_charged_twice"}
+{"id": "banking77-test-1973", "text": "I see what looks like duplicate charges on account.", "label": "transaction_charged_twice"}
+{"id": "banking77-test-1990", "text": "I have a transaction that shows several times", "label": "transaction_charged_twice"}
+{"id": "banking77-test-1992", "text": "There is more than one of the same transaction on my account.", "label": "transaction_charged_twice"}
+{"id": "banking77-test-1995", "text": "What are my remedies if I think I was charged twice for the same expense?", "label": "transaction_charged_twice"}
+{"id": "banking77-test-1998", "text": "Where are my funds being sourced from?", "label": "verify_source_of_funds"}
+{"id": "banking77-test-2001", "text": "What is the source of my funds.", "label": "verify_source_of_funds"}
+{"id": "banking77-test-2004", "text": "Why do you need all this information about my Source of Funds?", "label": "verify_source_of_funds"}
+{"id": "banking77-test-2017", "text": "How can I lookup where funds came from?", "label": "verify_source_of_funds"}
+{"id": "banking77-test-2021", "text": "Why does my money come from?", "label": "verify_source_of_funds"}
+{"id": "banking77-test-2025", "text": "Why do you need to know where my money is coming from?", "label": "verify_source_of_funds"}
+{"id": "banking77-test-2029", "text": "what is source of my funds, need to verify", "label": "verify_source_of_funds"}
+{"id": "banking77-test-2036", "text": "What is the number of days I have to wait for my Europe transfer?", "label": "transfer_timing"}
+{"id": "banking77-test-2038", "text": "I need a fast transfer from China?  How fast will it be?", "label": "transfer_timing"}
+{"id": "banking77-test-2041", "text": "How long until my transfer goes through?", "label": "transfer_timing"}
+{"id": "banking77-test-2042", "text": "Do transfers from Europe take longer?", "label": "transfer_timing"}
+{"id": "banking77-test-2062", "text": "Approximately how long will an urgent transfer from China take?", "label": "transfer_timing"}
+{"id": "banking77-test-2067", "text": "I have to transfer something to China as fast as I can. How long will it take to arrive in China?", "label": "transfer_timing"}
+{"id": "banking77-test-2080", "text": "Why was my payment cancelled?", "label": "reverted_card_payment?"}
+{"id": "banking77-test-2083", "text": "Hello, My money went through for my purchase but now I got contacted from the seller noting that they didn't receive it. Then the money was returned to my account and I'm not sure why this occurred. So if you can resolve this issue please.", "label": "reverted_card_payment?"}
+{"id": "banking77-test-2094", "text": "I have a payment listed as cancelled.", "label": "reverted_card_payment?"}
+{"id": "banking77-test-2125", "text": "I desperately need to change my PIN, but I'm overseas on vacation right now. How can I do this?", "label": "change_pin"}
+{"id": "banking77-test-2133", "text": "My new pin needs to be set.", "label": "change_pin"}
+{"id": "banking77-test-2134", "text": "I want to choose a different PIN.", "label": "change_pin"}
+{"id": "banking77-test-2135", "text": "I would like to change my pin.", "label": "change_pin"}
+{"id": "banking77-test-2137", "text": "I am travelling for two more weeks but really need to change my PIN asap. What do I do?", "label": "change_pin"}
+{"id": "banking77-test-2142", "text": "May I receive a different card pin", "label": "change_pin"}
+{"id": "banking77-test-2148", "text": "I need to change my pin but I am on the road.", "label": "change_pin"}
+{"id": "banking77-test-2150", "text": "I need a new PIN.", "label": "change_pin"}
+{"id": "banking77-test-2153", "text": "What steps do I need to take to change my card PIN?", "label": "change_pin"}
+{"id": "banking77-test-2160", "text": "I had a transfer blocked", "label": "beneficiary_not_allowed"}
+{"id": "banking77-test-2164", "text": "Hey I want to buy some crypto but the app doesn't allow me to! What's the issue, I really want to exchange this", "label": "beneficiary_not_allowed"}
+{"id": "banking77-test-2168", "text": "What's the deal with no cryptocurrency on your app?", "label": "beneficiary_not_allowed"}
+{"id": "banking77-test-2181", "text": "My transfer to beneficiary didn't go through", "label": "beneficiary_not_allowed"}
+{"id": "banking77-test-2188", "text": "Why couldn't I do a transfer to a beneficiary?", "label": "beneficiary_not_allowed"}
+{"id": "banking77-test-2203", "text": "im not paying this transfer fee", "label": "transfer_fee_charged"}
+{"id": "banking77-test-2213", "text": "I was charged more when I transferred!", "label": "transfer_fee_charged"}
+{"id": "banking77-test-2214", "text": "Is there a transfer fee?", "label": "transfer_fee_charged"}
+{"id": "banking77-test-2223", "text": "I was charge a fee for my transfer, why?", "label": "transfer_fee_charged"}
+{"id": "banking77-test-2224", "text": "Why was there a fee for my transfer?", "label": "transfer_fee_charged"}
+{"id": "banking77-test-2229", "text": "What extra charges are there?", "label": "transfer_fee_charged"}
+{"id": "banking77-test-2238", "text": "Can I receive my salary in a currency other than what it is deposited in?", "label": "receiving_money"}
+{"id": "banking77-test-2241", "text": "Is there a problem with receiving my salary in GBP?", "label": "receiving_money"}
+{"id": "banking77-test-2242", "text": "Do I need to choose GBP to get my salary deposited properly?", "label": "receiving_money"}
+{"id": "banking77-test-2246", "text": "My salary is received in the form of GBP. Do I need to do anything specific to configure this?", "label": "receiving_money"}
+{"id": "banking77-test-2247", "text": "How do people send me money?", "label": "receiving_money"}
+{"id": "banking77-test-2257", "text": "Can this be used to receive my salary?", "label": "receiving_money"}
+{"id": "banking77-test-2263", "text": "Can I use this account to receive my salary?", "label": "receiving_money"}
+{"id": "banking77-test-2279", "text": "Fix your system. I can't make transfers, I've tried like 5 times already.", "label": "failed_transfer"}
+{"id": "banking77-test-2287", "text": "how come my transfer didn't work", "label": "failed_transfer"}
+{"id": "banking77-test-2292", "text": "My transfer will not go through.", "label": "failed_transfer"}
+{"id": "banking77-test-2296", "text": "What are your policies for card transfers?", "label": "failed_transfer"}
+{"id": "banking77-test-2297", "text": "Is the system down? I've been trying to do a transfer and have failed?", "label": "failed_transfer"}
+{"id": "banking77-test-2299", "text": "Why couldn't I complete a transfer?", "label": "failed_transfer"}
+{"id": "banking77-test-2309", "text": "help me with my transfer", "label": "failed_transfer"}
+{"id": "banking77-test-2312", "text": "Why didn't my transfer go through?", "label": "failed_transfer"}
+{"id": "banking77-test-2324", "text": "Can I add funds to the card directly from my bank account?", "label": "transfer_into_account"}
+{"id": "banking77-test-2327", "text": "I would like to transfer some money from my other bank account into this one.", "label": "transfer_into_account"}
+{"id": "banking77-test-2331", "text": "How can I transfer funds from my bank to my top up account?", "label": "transfer_into_account"}
+{"id": "banking77-test-2333", "text": "How to I transfer my funds into my account?", "label": "transfer_into_account"}
+{"id": "banking77-test-2350", "text": "I checked my account today and it said I was out of money. How do I transfer money into my account?", "label": "transfer_into_account"}
+{"id": "banking77-test-2357", "text": "It wants me to verify the top up. Why?", "label": "verify_top_up"}
+{"id": "banking77-test-2359", "text": "Why do I have to verify the top-up that I started?", "label": "verify_top_up"}
+{"id": "banking77-test-2374", "text": "Where's the verification code for the top-up card?", "label": "verify_top_up"}
+{"id": "banking77-test-2389", "text": "The top-up verification code is missing", "label": "verify_top_up"}
+{"id": "banking77-test-2395", "text": "What is the necessity of verifying the top up?", "label": "verify_top_up"}
+{"id": "banking77-test-2397", "text": "How many cards can I have for one account?", "label": "getting_spare_card"}
+{"id": "banking77-test-2404", "text": "How would I go about getting a second card?", "label": "getting_spare_card"}
+{"id": "banking77-test-2406", "text": "If I need more cards, are there any fees?", "label": "getting_spare_card"}
+{"id": "banking77-test-2415", "text": "May I have another card?", "label": "getting_spare_card"}
+{"id": "banking77-test-2417", "text": "Can I order extra cards?", "label": "getting_spare_card"}
+{"id": "banking77-test-2435", "text": "my daughter needs a card, how do i add her?", "label": "getting_spare_card"}
+{"id": "banking77-test-2442", "text": "Need to deposit a cheque into my account", "label": "top_up_by_cash_or_cheque"}
+{"id": "banking77-test-2443", "text": "I'm looking for the cash deposit top up option but can't find it. Can you help me?", "label": "top_up_by_cash_or_cheque"}
+{"id": "banking77-test-2444", "text": "How do I top up my account with a cash payment?", "label": "top_up_by_cash_or_cheque"}
+{"id": "banking77-test-2465", "text": "What can I pay with? Does cash work?", "label": "top_up_by_cash_or_cheque"}
+{"id": "banking77-test-2466", "text": "How do I deposit cash into my account?", "label": "top_up_by_cash_or_cheque"}
+{"id": "banking77-test-2468", "text": "Can I send a cheque to do my top ups?", "label": "top_up_by_cash_or_cheque"}
+{"id": "banking77-test-2470", "text": "I want to do a cash top-up", "label": "top_up_by_cash_or_cheque"}
+{"id": "banking77-test-2473", "text": "How can I top-up my card?", "label": "top_up_by_cash_or_cheque"}
+{"id": "banking77-test-2480", "text": "price of physical card", "label": "order_physical_card"}
+{"id": "banking77-test-2483", "text": "I want to order a card. Where do you deliver to?", "label": "order_physical_card"}
+{"id": "banking77-test-2488", "text": "For physical cards, do you charge?", "label": "order_physical_card"}
+{"id": "banking77-test-2491", "text": "Where can you deliver cards?", "label": "order_physical_card"}
+{"id": "banking77-test-2497", "text": "How can I get a physical card", "label": "order_physical_card"}
+{"id": "banking77-test-2499", "text": "can I have a non virtual card?", "label": "order_physical_card"}
+{"id": "banking77-test-2502", "text": "Where can my card be delivered?", "label": "order_physical_card"}
+{"id": "banking77-test-2506", "text": "Where can I receive my card?", "label": "order_physical_card"}
+{"id": "banking77-test-2507", "text": "Where do you deliver cards by mail?", "label": "order_physical_card"}
+{"id": "banking77-test-2509", "text": "Where will I find my card?", "label": "order_physical_card"}
+{"id": "banking77-test-2532", "text": "I cannot make transactions with my virtual card.", "label": "virtual_card_not_working"}
+{"id": "banking77-test-2541", "text": "My disposable card seems not to be working am I doing something wrong?", "label": "virtual_card_not_working"}
+{"id": "banking77-test-2543", "text": "My disposable virtual card is not working when I try to use it at a point of sale transaction. What do I do now?", "label": "virtual_card_not_working"}
+{"id": "banking77-test-2553", "text": "I was trying to use my virtual card at a merchant and it was rejected. How can I fix this?", "label": "virtual_card_not_working"}
+{"id": "banking77-test-2561", "text": "Hello. I'm on holiday and didn't bring any cash with me. I need to withdrawal my home currency from one of your machines. Do you have any that will do this and is there a charge?", "label": "wrong_exchange_rate_for_cash_withdrawal"}
+{"id": "banking77-test-2567", "text": "Is there a fee for exchanging cash?", "label": "wrong_exchange_rate_for_cash_withdrawal"}
+{"id": "banking77-test-2570", "text": "When I got cash, my exchange rate was wrong.", "label": "wrong_exchange_rate_for_cash_withdrawal"}
+{"id": "banking77-test-2581", "text": "why is the exchange rate for a Foreign ATM different", "label": "wrong_exchange_rate_for_cash_withdrawal"}
+{"id": "banking77-test-2593", "text": "I used the ATM machine to get money out for Holiday shopping and saw the outrageous charges. Why is that? I would not have used the ATM if I had known!", "label": "wrong_exchange_rate_for_cash_withdrawal"}
+{"id": "banking77-test-2595", "text": "Is there a local ATM that will provide British pounds, I have no money for my homeward journey and do not feel comfortable waiting until  I arrive in Britain. Will a withdrawal involve extra charges?", "label": "wrong_exchange_rate_for_cash_withdrawal"}
+{"id": "banking77-test-2597", "text": "Can I create a disposable virtual card?", "label": "get_disposable_virtual_card"}
+{"id": "banking77-test-2598", "text": "What can you tell me about getting a virtual disposable card?", "label": "get_disposable_virtual_card"}
+{"id": "banking77-test-2600", "text": "how do VR cards work", "label": "get_disposable_virtual_card"}
+{"id": "banking77-test-2610", "text": "What do I do to get a disposable virtual card?", "label": "get_disposable_virtual_card"}
+{"id": "banking77-test-2616", "text": "I would like to create a disposable virtual card. How do I go about doing that?", "label": "get_disposable_virtual_card"}
+{"id": "banking77-test-2622", "text": "Is it possible to also get a disposable virtual card?", "label": "get_disposable_virtual_card"}
+{"id": "banking77-test-2623", "text": "How do I obtain a disposable virtual card?", "label": "get_disposable_virtual_card"}
+{"id": "banking77-test-2626", "text": "How do disposable cards work?", "label": "get_disposable_virtual_card"}
+{"id": "banking77-test-2638", "text": "I have a top up that didn't go through.  Why?", "label": "top_up_failed"}
+{"id": "banking77-test-2641", "text": "please tell me why my top-up failed.", "label": "top_up_failed"}
+{"id": "banking77-test-2649", "text": "Why would my topup not go through?", "label": "top_up_failed"}
+{"id": "banking77-test-2655", "text": "I topped up but the app did not accept it.", "label": "top_up_failed"}
+{"id": "banking77-test-2658", "text": "My top up was denied in the app.", "label": "top_up_failed"}
+{"id": "banking77-test-2659", "text": "Can you tell me if my pop-up went through?", "label": "top_up_failed"}
+{"id": "banking77-test-2665", "text": "I don't think my top up is working correctly", "label": "top_up_failed"}
+{"id": "banking77-test-2677", "text": "the balance on my account didnt change when i transferred money", "label": "balance_not_updated_after_bank_transfer"}
+{"id": "banking77-test-2684", "text": "I didn't get the money I transferred", "label": "balance_not_updated_after_bank_transfer"}
+{"id": "banking77-test-2689", "text": "I made a transfer and am still waiting.", "label": "balance_not_updated_after_bank_transfer"}
+{"id": "banking77-test-2693", "text": "I had cash transferred but the balance did not change.", "label": "balance_not_updated_after_bank_transfer"}
+{"id": "banking77-test-2704", "text": "How long until my transfer will be available to me", "label": "balance_not_updated_after_bank_transfer"}
+{"id": "banking77-test-2709", "text": "Where is my transfer from [country]?", "label": "balance_not_updated_after_bank_transfer"}
+{"id": "banking77-test-2712", "text": "I need to know the time frame that is typical for a transfer from a UK account. I just made a transfer and it doesn't appear. I want to make sure everything is okay.", "label": "balance_not_updated_after_bank_transfer"}
+{"id": "banking77-test-2721", "text": "Why is there a random withdrawal in my app?", "label": "cash_withdrawal_not_recognised"}
+{"id": "banking77-test-2726", "text": "How do I freeze my bank card, as there has been a strange withdrawal?", "label": "cash_withdrawal_not_recognised"}
+{"id": "banking77-test-2733", "text": "My account has a weird withdrawal.", "label": "cash_withdrawal_not_recognised"}
+{"id": "banking77-test-2736", "text": "I think I see a withdraw I did not make.", "label": "cash_withdrawal_not_recognised"}
+{"id": "banking77-test-2740", "text": "There is a odd withdrawal on my account.", "label": "cash_withdrawal_not_recognised"}
+{"id": "banking77-test-2755", "text": "The app made a mistake and said I made a cash withdrawal.", "label": "cash_withdrawal_not_recognised"}
+{"id": "banking77-test-2756", "text": "Is there an exchange fee?", "label": "exchange_charge"}
+{"id": "banking77-test-2758", "text": "What are your currency exchange fees?", "label": "exchange_charge"}
+{"id": "banking77-test-2759", "text": "Where do I find the exchange rate?", "label": "exchange_charge"}
+{"id": "banking77-test-2769", "text": "Does it cost extra to exchange currencies?", "label": "exchange_charge"}
+{"id": "banking77-test-2772", "text": "How much is a cross currency exchange, and can I check to see if I have any discounts available?", "label": "exchange_charge"}
+{"id": "banking77-test-2779", "text": "What is the exchange fee?", "label": "exchange_charge"}
+{"id": "banking77-test-2780", "text": "Does it cost to exchange currencies with this card?", "label": "exchange_charge"}
+{"id": "banking77-test-2782", "text": "Are there any extra hidden fees for exchanging currencies?", "label": "exchange_charge"}
+{"id": "banking77-test-2783", "text": "When I travel, what will it cost to switch for my currency?", "label": "exchange_charge"}
+{"id": "banking77-test-2787", "text": "I will need to exchange currencies frequently, will I be able to get a discount?", "label": "exchange_charge"}
+{"id": "banking77-test-2789", "text": "Is there a discount for frequently exchanging currencies?", "label": "exchange_charge"}
+{"id": "banking77-test-2790", "text": "What is the cost for an exchange fee?", "label": "exchange_charge"}
+{"id": "banking77-test-2795", "text": "does it cost to exchange currencies?", "label": "exchange_charge"}
+{"id": "banking77-test-2799", "text": "Any hidden fees associated with the international card if money is added?", "label": "top_up_by_card_charge"}
+{"id": "banking77-test-2801", "text": "Are there charges for topping up US cards?", "label": "top_up_by_card_charge"}
+{"id": "banking77-test-2812", "text": "What fee is included if I top up by card?", "label": "top_up_by_card_charge"}
+{"id": "banking77-test-2813", "text": "If I use a European bank card for top up, Do I get charged?", "label": "top_up_by_card_charge"}
+{"id": "banking77-test-2829", "text": "Is there a charge or discount if I use a European bank in a top up?", "label": "top_up_by_card_charge"}
+{"id": "banking77-test-2857", "text": "Assist me please with card activation.", "label": "activate_my_card"}
+{"id": "banking77-test-2864", "text": "How do I go about activating my new card?", "label": "activate_my_card"}
+{"id": "banking77-test-2868", "text": "How do I use my new card?", "label": "activate_my_card"}
+{"id": "banking77-test-2878", "text": "Why am I being charged when I withdraw cash?", "label": "cash_withdrawal_charge"}
+{"id": "banking77-test-2882", "text": "It looks like I was charged a withdrawal fee for going to my ATM. Why is that because I haven't been charged previously for doing so?", "label": "cash_withdrawal_charge"}
+{"id": "banking77-test-2888", "text": "Why did I have to pay a fee when I got cash?", "label": "cash_withdrawal_charge"}
+{"id": "banking77-test-2889", "text": "Hi, I am calling about a recent transaction that has happened on my account.  I recently went to the ATM, and tried to make a withdrawal on my account.  I just happened to check my transaction slip and noticed a fee for my withdrawal.  How can I resolve this, I didn't know fees were charged for this type of action.", "label": "cash_withdrawal_charge"}
+{"id": "banking77-test-2891", "text": "I got a fee for an ATM withdrawal.", "label": "cash_withdrawal_charge"}
+{"id": "banking77-test-2894", "text": "Is there a fee for withdrawing cash?", "label": "cash_withdrawal_charge"}
+{"id": "banking77-test-2896", "text": "Why was my account charged for using an ATM?", "label": "cash_withdrawal_charge"}
+{"id": "banking77-test-2903", "text": "I was charged extra for a withdrawal", "label": "cash_withdrawal_charge"}
+{"id": "banking77-test-2906", "text": "More fees, this time for withdrawing my own cash. Why are you robbing me?", "label": "cash_withdrawal_charge"}
+{"id": "banking77-test-2909", "text": "Why did you charge me for a cash withdrawal?", "label": "cash_withdrawal_charge"}
+{"id": "banking77-test-2912", "text": "I had a wrong fee charged at this ATM.", "label": "cash_withdrawal_charge"}
+{"id": "banking77-test-2921", "text": "My card's expiring, what happens now?", "label": "card_about_to_expire"}
+{"id": "banking77-test-2922", "text": "My card is about to expire. What do I need to do?", "label": "card_about_to_expire"}
+{"id": "banking77-test-2923", "text": "how long and how much does it cost for new card", "label": "card_about_to_expire"}
+{"id": "banking77-test-2931", "text": "I need a new card, my current card is nearly expired.", "label": "card_about_to_expire"}
+{"id": "banking77-test-2939", "text": "Do you have to order a new card before your current card expires?", "label": "card_about_to_expire"}
+{"id": "banking77-test-2946", "text": "The expiration date of my card is approaching .", "label": "card_about_to_expire"}
+{"id": "banking77-test-2947", "text": "How can I get a new card ASAP to replace an old, soon to expire one?", "label": "card_about_to_expire"}
+{"id": "banking77-test-2962", "text": "Top up on my Google Pay isn't working.", "label": "apple_pay_or_google_pay"}
+{"id": "banking77-test-2965", "text": "Can I use Apple Pay to top up?", "label": "apple_pay_or_google_pay"}
+{"id": "banking77-test-2968", "text": "I received my American Express card, but I am having problems making it work with Apple pay.  Can you help me with this problem?", "label": "apple_pay_or_google_pay"}
+{"id": "banking77-test-2974", "text": "My American express is experiencing a problem with apple play with top up, can you fix it?", "label": "apple_pay_or_google_pay"}
+{"id": "banking77-test-2976", "text": "Is Apple Pay a possible top up option?", "label": "apple_pay_or_google_pay"}
+{"id": "banking77-test-2985", "text": "How do I top up? Can I use my apple watch?", "label": "apple_pay_or_google_pay"}
+{"id": "banking77-test-2986", "text": "Is it possible to use Apple Pay to put money in my account?", "label": "apple_pay_or_google_pay"}
+{"id": "banking77-test-2989", "text": "can google pay be used to make a top-up", "label": "apple_pay_or_google_pay"}
+{"id": "banking77-test-2991", "text": "How do I troubleshoot Google pay top up?", "label": "apple_pay_or_google_pay"}
+{"id": "banking77-test-2995", "text": "Google pay and top up, I want it, can I get it?", "label": "apple_pay_or_google_pay"}
+{"id": "banking77-test-2998", "text": "I need to verify my identity, but how do I do that?", "label": "verify_my_identity"}
+{"id": "banking77-test-2999", "text": "How can I verify my indentity?", "label": "verify_my_identity"}
+{"id": "banking77-test-3013", "text": "Let me know the steps for the identity checks", "label": "verify_my_identity"}
+{"id": "banking77-test-3041", "text": "Can I get a card outside the UK?", "label": "country_support"}
+{"id": "banking77-test-3044", "text": "Now that I live in the US how can I get a card?", "label": "country_support"}
+{"id": "banking77-test-3052", "text": "Is my country supported", "label": "country_support"}
+{"id": "banking77-test-3055", "text": "Can I get a card even if I live outside the UK?", "label": "country_support"}
+{"id": "banking77-test-3057", "text": "I would like to receive and use the card in Europe, is that possible?", "label": "country_support"}
+{"id": "banking77-test-3065", "text": "In what countries do you do business?", "label": "country_support"}

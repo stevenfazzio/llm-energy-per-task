@@ -1,0 +1,650 @@
+{
+ "HuggingFaceH4/zephyr-7b-beta": {
+  "created": "2023-10-26",
+  "params": 7241732096,
+  "revision": "892b3d7a7b1cf10c7a701c60881cd93df615734c",
+  "gated": false,
+  "chat_template": true,
+  "license": "mit"
+ },
+ "HuggingFaceTB/SmolLM-1.7B-Instruct": {
+  "created": "2024-07-15",
+  "params": 1711376384,
+  "revision": "69f49d9c36434d6a3f319dadc5bd3b812752b98b",
+  "gated": false,
+  "chat_template": true,
+  "license": "apache-2.0"
+ },
+ "HuggingFaceTB/SmolLM-135M-Instruct": {
+  "created": "2024-07-15",
+  "params": 134515008,
+  "revision": "fcc320f490e08fdb4b99d935b2c58d40bf35b0d0",
+  "gated": false,
+  "chat_template": true,
+  "license": "apache-2.0"
+ },
+ "HuggingFaceTB/SmolLM-360M-Instruct": {
+  "created": "2024-07-15",
+  "params": 361821120,
+  "revision": "73b7144f76331266f5f45d5642fd8da653583b13",
+  "gated": false,
+  "chat_template": true,
+  "license": "apache-2.0"
+ },
+ "HuggingFaceTB/SmolLM2-1.7B-Instruct": {
+  "created": "2024-10-31",
+  "params": 1711376384,
+  "revision": "31b70e2e869a7173562077fd711b654946d38674",
+  "gated": false,
+  "chat_template": true,
+  "license": "apache-2.0"
+ },
+ "HuggingFaceTB/SmolLM2-135M-Instruct": {
+  "created": "2024-10-31",
+  "params": 134515008,
+  "revision": "12fd25f77366fa6b3b4b768ec3050bf629380bac",
+  "gated": false,
+  "chat_template": true,
+  "license": "apache-2.0"
+ },
+ "HuggingFaceTB/SmolLM2-360M-Instruct": {
+  "created": "2024-10-31",
+  "params": 361821120,
+  "revision": "a10cc1512eabd3dde888204e902eca88bddb4951",
+  "gated": false,
+  "chat_template": true,
+  "license": "apache-2.0"
+ },
+ "HuggingFaceTB/SmolLM3-3B": {
+  "created": "2025-07-08",
+  "params": 3075098624,
+  "revision": "a07cc9a04f16550a088caea529712d1d335b0ac1",
+  "gated": false,
+  "chat_template": true,
+  "license": "apache-2.0"
+ },
+ "LiquidAI/LFM2-1.2B": {
+  "created": "2025-07-10",
+  "params": 1170340608,
+  "revision": "40f3da0d0164913923aee9462c23077868b816a3",
+  "gated": false,
+  "chat_template": true,
+  "license": "other"
+ },
+ "LiquidAI/LFM2-2.6B": {
+  "created": "2025-09-22",
+  "params": 2569272320,
+  "revision": "36ed799f7024ef169ba92ffe184821835e15cc66",
+  "gated": false,
+  "chat_template": true,
+  "license": "other"
+ },
+ "LiquidAI/LFM2-350M": {
+  "created": "2025-07-10",
+  "params": 354483968,
+  "revision": "f37d3f5c8c5484bc01dad379a595cf4c68c4e70e",
+  "gated": false,
+  "chat_template": true,
+  "license": "other"
+ },
+ "LiquidAI/LFM2-700M": {
+  "created": "2025-07-10",
+  "params": 742489344,
+  "revision": "86f49fc9a3800c3a325b7320bde179c318062583",
+  "gated": false,
+  "chat_template": true,
+  "license": "other"
+ },
+ "LiquidAI/LFM2.5-2.6B": {
+  "created": "2026-07-28",
+  "params": 2697198592,
+  "revision": "654f9463ce32b05d0429d76fe1f580b27d4c1ac0",
+  "gated": false,
+  "chat_template": true,
+  "license": "other"
+ },
+ "LiquidAI/LFM2.5-230M": {
+  "created": "2026-06-24",
+  "params": 229693184,
+  "revision": "40cb2ad3b3044d5a41eee083a6103c8b523afa45",
+  "gated": false,
+  "chat_template": true,
+  "license": "other"
+ },
+ "LiquidAI/LFM2.5-350M": {
+  "created": "2026-03-31",
+  "params": 354483968,
+  "revision": "9e6c6ccf47cd318696e137d381a7ded8fe4df09f",
+  "gated": false,
+  "chat_template": true,
+  "license": "other"
+ },
+ "LiquidAI/LFM2.5-8B-A1B": {
+  "created": "2026-05-28",
+  "params": 8467856832,
+  "revision": "5dd22602c2e9f6a097b1de4c4efe0658b605015c",
+  "gated": false,
+  "chat_template": true,
+  "license": "other"
+ },
+ "Qwen/Qwen1.5-0.5B-Chat": {
+  "created": "2024-01-31",
+  "params": 619570176,
+  "revision": "4d14e384a4b037942bb3f3016665157c8bcb70ea",
+  "gated": false,
+  "chat_template": true,
+  "license": "other"
+ },
+ "Qwen/Qwen1.5-1.8B-Chat": {
+  "created": "2024-01-30",
+  "params": 1836828672,
+  "revision": "e482ee3f73c375a627a16fdf66fd0c8279743ca6",
+  "gated": false,
+  "chat_template": true,
+  "license": "other"
+ },
+ "Qwen/Qwen1.5-14B-Chat": {
+  "created": "2024-01-30",
+  "params": 14167290880,
+  "revision": "9492b22871f43e975435455f5c616c77fe7a50ec",
+  "gated": false,
+  "chat_template": true,
+  "license": "other"
+ },
+ "Qwen/Qwen1.5-4B-Chat": {
+  "created": "2024-01-30",
+  "params": 3950369280,
+  "revision": "a7a4d4945d28bac955554c9abd2f74a71ebbf22f",
+  "gated": false,
+  "chat_template": true,
+  "license": "other"
+ },
+ "Qwen/Qwen1.5-7B-Chat": {
+  "created": "2024-01-30",
+  "params": 7721324544,
+  "revision": "5f4f5e69ac7f1d508f8369e977de208b4803444b",
+  "gated": false,
+  "chat_template": true,
+  "license": "other"
+ },
+ "Qwen/Qwen2-0.5B-Instruct": {
+  "created": "2024-06-03",
+  "params": 494032768,
+  "revision": "c540970f9e29518b1d8f06ab8b24cba66ad77b6d",
+  "gated": false,
+  "chat_template": true,
+  "license": "apache-2.0"
+ },
+ "Qwen/Qwen2-1.5B-Instruct": {
+  "created": "2024-06-03",
+  "params": 1543714304,
+  "revision": "ba1cf1846d7df0a0591d6c00649f57e798519da8",
+  "gated": false,
+  "chat_template": true,
+  "license": "apache-2.0"
+ },
+ "Qwen/Qwen2-7B-Instruct": {
+  "created": "2024-06-04",
+  "params": 7615616512,
+  "revision": "f2826a00ceef68f0f2b946d945ecc0477ce4450c",
+  "gated": false,
+  "chat_template": true,
+  "license": "apache-2.0"
+ },
+ "Qwen/Qwen2.5-0.5B-Instruct": {
+  "created": "2024-09-16",
+  "params": 494032768,
+  "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "gated": false,
+  "chat_template": true,
+  "license": "apache-2.0"
+ },
+ "Qwen/Qwen2.5-1.5B-Instruct": {
+  "created": "2024-09-17",
+  "params": 1543714304,
+  "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "gated": false,
+  "chat_template": true,
+  "license": "apache-2.0"
+ },
+ "Qwen/Qwen2.5-14B-Instruct": {
+  "created": "2024-09-16",
+  "params": 14770033664,
+  "revision": "cf98f3b3bbb457ad9e2bb7baf9a0125b6b88caa8",
+  "gated": false,
+  "chat_template": true,
+  "license": "apache-2.0"
+ },
+ "Qwen/Qwen2.5-3B-Instruct": {
+  "created": "2024-09-17",
+  "params": 3085938688,
+  "revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "gated": false,
+  "chat_template": true,
+  "license": "other"
+ },
+ "Qwen/Qwen2.5-7B-Instruct": {
+  "created": "2024-09-16",
+  "params": 7615616512,
+  "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "gated": false,
+  "chat_template": true,
+  "license": "apache-2.0"
+ },
+ "Qwen/Qwen3-0.6B": {
+  "created": "2025-04-27",
+  "params": 751632384,
+  "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+  "gated": false,
+  "chat_template": true,
+  "license": "apache-2.0"
+ },
+ "Qwen/Qwen3-1.7B": {
+  "created": "2025-04-27",
+  "params": 2031739904,
+  "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+  "gated": false,
+  "chat_template": true,
+  "license": "apache-2.0"
+ },
+ "Qwen/Qwen3-14B": {
+  "created": "2025-04-27",
+  "params": 14768307200,
+  "revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+  "gated": false,
+  "chat_template": true,
+  "license": "apache-2.0"
+ },
+ "Qwen/Qwen3-4B": {
+  "created": "2025-04-27",
+  "params": 4022468096,
+  "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+  "gated": false,
+  "chat_template": true,
+  "license": "apache-2.0"
+ },
+ "Qwen/Qwen3-8B": {
+  "created": "2025-04-27",
+  "params": 8190735360,
+  "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "gated": false,
+  "chat_template": true,
+  "license": "apache-2.0"
+ },
+ "Qwen/Qwen3.5-0.8B": {
+  "created": "2026-02-28",
+  "params": 873438784,
+  "revision": "2fc06364715b967f1860aea9cf38778875588b17",
+  "gated": false,
+  "chat_template": true,
+  "license": "apache-2.0"
+ },
+ "Qwen/Qwen3.5-2B": {
+  "created": "2026-02-28",
+  "params": 2274069824,
+  "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "gated": false,
+  "chat_template": true,
+  "license": "apache-2.0"
+ },
+ "Qwen/Qwen3.5-4B": {
+  "created": "2026-02-27",
+  "params": 4659865088,
+  "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "gated": false,
+  "chat_template": true,
+  "license": "apache-2.0"
+ },
+ "Qwen/Qwen3.5-9B": {
+  "created": "2026-02-27",
+  "params": 9653104368,
+  "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+  "gated": false,
+  "chat_template": true,
+  "license": "apache-2.0"
+ },
+ "TinyLlama/TinyLlama-1.1B-Chat-v1.0": {
+  "created": "2023-12-30",
+  "params": 1100048384,
+  "revision": "fe8a4ea1ffedaf415f4da2f062534de366a451e6",
+  "gated": false,
+  "chat_template": true,
+  "license": "apache-2.0"
+ },
+ "allenai/Olmo-3-7B-Instruct": {
+  "created": "2025-11-19",
+  "params": 7298011136,
+  "revision": "6e5971d9eba42665f5bd5a0fcf047f299ce1dccc",
+  "gated": false,
+  "chat_template": true,
+  "license": "apache-2.0"
+ },
+ "google/gemma-2-2b-it": {
+  "created": "2024-07-16",
+  "params": 2614341888,
+  "revision": "299a8560bedf22ed1c72a8a11e7dce4a7f9f51f8",
+  "gated": true,
+  "chat_template": true,
+  "license": "gemma"
+ },
+ "google/gemma-2-9b-it": {
+  "created": "2024-06-24",
+  "params": 9241705984,
+  "revision": "11c9b309abf73637e4b6f9a3fa1e92e615547819",
+  "gated": true,
+  "chat_template": true,
+  "license": "gemma"
+ },
+ "google/gemma-2b-it": {
+  "created": "2024-02-08",
+  "params": 2506172416,
+  "revision": "96988410cbdaeb8d5093d1ebdc5a8fb563e02bad",
+  "gated": true,
+  "chat_template": true,
+  "license": "gemma"
+ },
+ "google/gemma-3-12b-it": {
+  "created": "2025-03-01",
+  "params": 12187325040,
+  "revision": "96b6f1eccf38110c56df3a15bffe176da04bfd80",
+  "gated": true,
+  "chat_template": true,
+  "license": "gemma"
+ },
+ "google/gemma-3-1b-it": {
+  "created": "2025-03-10",
+  "params": 999885952,
+  "revision": "dcc83ea841ab6100d6b47a070329e1ba4cf78752",
+  "gated": true,
+  "chat_template": true,
+  "license": "gemma"
+ },
+ "google/gemma-3-270m-it": {
+  "created": "2025-07-30",
+  "params": 268098176,
+  "revision": "ac82b4e820549b854eebf28ce6dedaf9fdfa17b3",
+  "gated": true,
+  "chat_template": true,
+  "license": "gemma"
+ },
+ "google/gemma-3-4b-it": {
+  "created": "2025-02-20",
+  "params": 4300079472,
+  "revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+  "gated": true,
+  "chat_template": true,
+  "license": "gemma"
+ },
+ "google/gemma-4-12B-it": {
+  "created": "2026-05-23",
+  "params": 11959730224,
+  "revision": "707f0a3b8a3c7ad586ed01e27eafbad8a27dd0f7",
+  "gated": false,
+  "chat_template": true,
+  "license": "apache-2.0"
+ },
+ "google/gemma-4-E2B-it": {
+  "created": "2026-03-02",
+  "params": 5123178051,
+  "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+  "gated": false,
+  "chat_template": true,
+  "license": "apache-2.0"
+ },
+ "google/gemma-4-E4B-it": {
+  "created": "2026-03-02",
+  "params": 7996156490,
+  "revision": "ee0ef6023621cff504d758262d4e04895a5af4a2",
+  "gated": false,
+  "chat_template": true,
+  "license": "apache-2.0"
+ },
+ "google/gemma-7b-it": {
+  "created": "2024-02-13",
+  "params": 8537680896,
+  "revision": "9c5798d27f588501ce1e108079d2a19e4c3a2353",
+  "gated": true,
+  "chat_template": true,
+  "license": "gemma"
+ },
+ "ibm-granite/granite-4.0-h-tiny": {
+  "created": "2025-09-16",
+  "params": 6939037248,
+  "revision": "791e0d3d28c86e106c9b6e0b4cecdee0375b6124",
+  "gated": false,
+  "chat_template": true,
+  "license": "apache-2.0"
+ },
+ "ibm-granite/granite-4.0-micro": {
+  "created": "2025-09-16",
+  "params": 3402836480,
+  "revision": "56111ae135df9c53a78c99028e7bc24035a9e979",
+  "gated": false,
+  "chat_template": true,
+  "license": "apache-2.0"
+ },
+ "ibm-granite/granite-4.1-3b": {
+  "created": "2026-04-06",
+  "params": 3402836480,
+  "revision": "c0650403e44e78ec0262dab1c90914c65b196c4e",
+  "gated": false,
+  "chat_template": true,
+  "license": "apache-2.0"
+ },
+ "ibm-granite/granite-4.1-8b": {
+  "created": "2026-04-06",
+  "params": 8791592960,
+  "revision": "1504002f650e656a0a3789d99574df12e3e94ed0",
+  "gated": false,
+  "chat_template": true,
+  "license": "apache-2.0"
+ },
+ "ibm-granite/granite-4.2-3b": {
+  "created": "2026-08-07",
+  "params": 3659737600,
+  "revision": "e459acceac81e5fe67c07d9cfc72329a332e7eb1",
+  "gated": false,
+  "chat_template": true,
+  "license": "apache-2.0"
+ },
+ "ibm-granite/granite-4.2-8b": {
+  "created": "2026-08-07",
+  "params": 8791592960,
+  "revision": "f8de16cdcdbc6c779ca517604e050d82cc119e44",
+  "gated": false,
+  "chat_template": true,
+  "license": "apache-2.0"
+ },
+ "meta-llama/Llama-2-13b-chat-hf": {
+  "created": "2023-07-13",
+  "params": 13015866880,
+  "revision": "a2cb7a712bb6e5e736ca7f8cd98167f81a0b5bd8",
+  "gated": true,
+  "chat_template": true,
+  "license": "llama2"
+ },
+ "meta-llama/Llama-2-7b-chat-hf": {
+  "created": "2023-07-13",
+  "params": 6738417664,
+  "revision": "f5db02db724555f92da89c216ac04704f23d4590",
+  "gated": true,
+  "chat_template": true,
+  "license": "llama2"
+ },
+ "meta-llama/Llama-3.1-8B-Instruct": {
+  "created": "2024-07-18",
+  "params": 8030261248,
+  "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+  "gated": true,
+  "chat_template": true,
+  "license": "llama3.1"
+ },
+ "meta-llama/Llama-3.2-1B-Instruct": {
+  "created": "2024-09-18",
+  "params": 1235814400,
+  "revision": "9213176726f574b556790deb65791e0c5aa438b6",
+  "gated": true,
+  "chat_template": true,
+  "license": "llama3.2"
+ },
+ "meta-llama/Llama-3.2-3B-Instruct": {
+  "created": "2024-09-18",
+  "params": 3212749824,
+  "revision": "0cb88a4f764b7a12671c53f0838cd831a0843b95",
+  "gated": true,
+  "chat_template": true,
+  "license": "llama3.2"
+ },
+ "meta-llama/Meta-Llama-3-8B-Instruct": {
+  "created": "2024-04-17",
+  "params": 8030261248,
+  "revision": "8afb486c1db24fe5011ec46dfbe5b5dccdb575c2",
+  "gated": true,
+  "chat_template": true,
+  "license": "llama3"
+ },
+ "microsoft/Phi-3-medium-4k-instruct": {
+  "created": "2024-05-07",
+  "params": 13960238080,
+  "revision": "48d87cd5e0523b430d77e93becd3655cd6897230",
+  "gated": false,
+  "chat_template": true,
+  "license": "mit"
+ },
+ "microsoft/Phi-3-mini-4k-instruct": {
+  "created": "2024-04-22",
+  "params": 3821079552,
+  "revision": "f39ac1d28e925b323eae81227eaba4464caced4e",
+  "gated": false,
+  "chat_template": true,
+  "license": "mit"
+ },
+ "microsoft/Phi-3.5-mini-instruct": {
+  "created": "2024-08-16",
+  "params": 3821079552,
+  "revision": "2fe192450127e6a83f7441aef6e3ca586c338b77",
+  "gated": false,
+  "chat_template": true,
+  "license": "mit"
+ },
+ "microsoft/Phi-4-mini-instruct": {
+  "created": "2025-02-19",
+  "params": 3836021760,
+  "revision": "cfbefacb99257ffa30c83adab238a50856ac3083",
+  "gated": false,
+  "chat_template": true,
+  "license": "mit"
+ },
+ "microsoft/phi-2": {
+  "created": "2023-12-13",
+  "params": 2779683840,
+  "revision": "810d367871c1d460086d9f82db8696f2e0a0fcd0",
+  "gated": false,
+  "chat_template": false,
+  "license": "mit"
+ },
+ "microsoft/phi-4": {
+  "created": "2024-12-11",
+  "params": 14659507200,
+  "revision": "2db69c1c3e91a05d2c64a3185acfbaf36f744e25",
+  "gated": false,
+  "chat_template": true,
+  "license": "mit"
+ },
+ "mistralai/Ministral-3-14B-Instruct-2512": {
+  "created": "2025-10-31",
+  "params": 13945032240,
+  "revision": "29439f81c2be264d8d393273f99e7db9c0961120",
+  "gated": false,
+  "chat_template": true,
+  "license": "apache-2.0"
+ },
+ "mistralai/Ministral-3-3B-Instruct-2512": {
+  "created": "2025-10-31",
+  "params": 3849090048,
+  "revision": "b35d4dfe56c142746f54dbd64f579faab2744308",
+  "gated": false,
+  "chat_template": true,
+  "license": "apache-2.0"
+ },
+ "mistralai/Ministral-3-8B-Instruct-2512": {
+  "created": "2025-10-31",
+  "params": 8918026716,
+  "revision": "5b26027e7b19eeb4b7352e1fed3926375dd2cb4d",
+  "gated": false,
+  "chat_template": true,
+  "license": "apache-2.0"
+ },
+ "mistralai/Mistral-7B-Instruct-v0.1": {
+  "created": "2023-09-27",
+  "params": 7241732096,
+  "revision": "ec5deb64f2c6e6fa90c1abf74a91d5c93a9669ca",
+  "gated": false,
+  "chat_template": true,
+  "license": "apache-2.0"
+ },
+ "mistralai/Mistral-7B-Instruct-v0.2": {
+  "created": "2023-12-11",
+  "params": 7241732096,
+  "revision": "63a8b081895390a26e140280378bc85ec8bce07a",
+  "gated": false,
+  "chat_template": true,
+  "license": "apache-2.0"
+ },
+ "mistralai/Mistral-7B-Instruct-v0.3": {
+  "created": "2024-05-22",
+  "params": 7248023552,
+  "revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+  "gated": false,
+  "chat_template": true,
+  "license": "apache-2.0"
+ },
+ "mistralai/Mistral-Nemo-Instruct-2407": {
+  "created": "2024-07-17",
+  "params": 12247782400,
+  "revision": "04d8a90549d23fc6bd7f642064003592df51e9b3",
+  "gated": false,
+  "chat_template": true,
+  "license": "apache-2.0"
+ },
+ "openbmb/MiniCPM5-1B": {
+  "created": "2026-05-21",
+  "params": 1080632832,
+  "revision": "87179e5c1f455ef22e6223592d2d61351b525bfc",
+  "gated": false,
+  "chat_template": true,
+  "license": "apache-2.0"
+ },
+ "openbmb/MiniCPM5-2B": {
+  "created": "2026-09-06",
+  "params": 2516756480,
+  "revision": "f97400052a43d642bbc6e9975e2397e3ae6a6b52",
+  "gated": false,
+  "chat_template": true,
+  "license": "apache-2.0"
+ },
+ "stabilityai/stablelm-zephyr-3b": {
+  "created": "2023-11-21",
+  "params": 2795443200,
+  "revision": "fe1fd5e36ccb8cb2cb1dc225ab6d2962692b9837",
+  "gated": false,
+  "chat_template": true,
+  "license": "other"
+ },
+ "tiiuae/Falcon-H1-Tiny-90M-Instruct": {
+  "created": "2026-01-12",
+  "params": 91131072,
+  "revision": "e6389502a0b12cd8da894b395ba5bf7436873b16",
+  "gated": false,
+  "chat_template": true,
+  "license": "other"
+ },
+ "tiiuae/falcon-7b-instruct": {
+  "created": "2023-04-25",
+  "params": 7217189760,
+  "revision": "8782b5c5d8c9290412416618f36a133653e85285",
+  "gated": false,
+  "chat_template": true,
+  "license": "apache-2.0"
+ }
+}

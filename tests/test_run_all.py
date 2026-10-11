@@ -1,0 +1,73 @@
+import json
+from dataclasses import replace
+
+from test_run import MODEL
+
+from llm_energy_per_task import frontier, run_all
+
+
+def test_skip_reasons(tmp_path, monkeypatch):
+    monkeypatch.delenv("HF_TOKEN", raising=False)
+    limit = 15_000_000_000
+
+    assert run_all.skip_reason(MODEL, tmp_path, limit, False) is None
+    assert "15B" in run_all.skip_reason(
+        replace(MODEL, params=30_000_000_000), tmp_path, limit, False
+    )
+    assert "template" in run_all.skip_reason(
+        replace(MODEL, chat_template=False), tmp_path, limit, False
+    )
+
+    gated = replace(MODEL, gated=True)
+    assert "HF_TOKEN" in run_all.skip_reason(gated, tmp_path, limit, False)
+    monkeypatch.setenv("HF_TOKEN", "x")
+    assert run_all.skip_reason(gated, tmp_path, limit, False) is None
+
+    (tmp_path / "failed").mkdir()
+    (tmp_path / "failed" / f"{MODEL.slug}.txt").write_text("exit 1")
+    assert "failed before" in run_all.skip_reason(MODEL, tmp_path, limit, False)
+    assert run_all.skip_reason(MODEL, tmp_path, limit, True) is None
+
+    (tmp_path / "runs").mkdir()
+    (tmp_path / "runs" / f"{MODEL.slug}.json").write_text("{}")
+    assert run_all.skip_reason(MODEL, tmp_path, limit, True) == "already measured"
+
+
+def test_weights_dir_follows_the_hub_cache_layout(monkeypatch):
+    monkeypatch.setenv("HF_HOME", "/workspace/hf-cache")
+    expected = "/workspace/hf-cache/hub/models--example--tiny-1B-instruct"
+    assert str(run_all.weights_dir(MODEL)) == expected
+
+
+def test_summary_reads_run_files_and_prefers_the_registry_date(tmp_path, monkeypatch):
+    task = {
+        "metric": "accuracy",
+        "score": 0.8,
+        "joules_per_item": 3.6,
+        "output_tokens_per_item": 4.0,
+        "energy_source": "counter",
+    }
+    run = {
+        "model": MODEL.id,
+        "released": "2024-12-25",
+        "params": MODEL.params,
+        "environment": {"gpu": "Fake L40S"},
+        "tasks": {"intent": task},
+    }
+    (tmp_path / "runs").mkdir()
+    (tmp_path / "runs" / f"{MODEL.slug}.json").write_text(json.dumps(run))
+    monkeypatch.setattr(frontier, "RESULTS", tmp_path)
+
+    monkeypatch.setattr(frontier, "load_models", lambda: [MODEL])
+    (row,) = frontier.summary()
+    assert row["released"] == MODEL.released
+    assert row["wh_per_1000_items"] == 1.0
+
+    monkeypatch.setattr(frontier, "load_models", lambda: [])
+    assert frontier.summary()[0]["released"] == "2024-12-25"
+
+    monkeypatch.setattr("sys.argv", ["frontier", "--bars", "0.5,0.9"])
+    frontier.main()
+    lines = (tmp_path / "frontier.csv").read_text().splitlines()
+    assert lines[0].startswith("bar,task,model")
+    assert len(lines) == 2  # one step at the 0.5 bar, none at 0.9

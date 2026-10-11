@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+*.tmp
+
+# Smoke runs use a handful of items and are not measurements.
+results/smoke/
+results/logs/

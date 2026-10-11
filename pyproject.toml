@@ -1,0 +1,33 @@
+[project]
+name = "llm-energy-per-task"
+version = "0.1.0"
+description = "GPU energy that small open-weight LLMs need per task, at measured accuracy"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    "huggingface-hub>=0.30",
+    "nvidia-ml-py>=13.0",
+    "pyarrow>=17",
+]
+
+[project.optional-dependencies]
+# Only the pod needs the inference engine; it has no macOS build worth installing.
+gpu = ["vllm==0.31.0; sys_platform == 'linux'"]
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/llm_energy_per_task"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

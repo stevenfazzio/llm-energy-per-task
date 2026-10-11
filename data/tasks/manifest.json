@@ -1,0 +1,36 @@
+{
+ "intent": {
+  "dataset": "mteb/banking77",
+  "revision": "18072d2685ea682290f7b8924d94c62acc19c0b2",
+  "files": [
+   "data/test-00000-of-00001.parquet"
+  ],
+  "origin": "Banking77, PolyAI (CC BY 4.0), read from the mteb parquet mirror",
+  "items": 500,
+  "seed": 0,
+  "longest_prompt_chars": 2095
+ },
+ "extraction": {
+  "dataset": "rajpurkar/squad",
+  "revision": "7b6d24c440a36b6815f21b70d25016731768db1f",
+  "files": [
+   "plain_text/validation-00000-of-00001.parquet"
+  ],
+  "origin": "SQuAD v1.1, Rajpurkar et al. (CC BY-SA 4.0)",
+  "items": 500,
+  "seed": 0,
+  "longest_prompt_chars": 3368
+ },
+ "toolcall": {
+  "dataset": "gorilla-llm/Berkeley-Function-Calling-Leaderboard",
+  "revision": "61fc0608cfd831fcfbbaa676ebdfef0ed963eeda",
+  "files": [
+   "BFCL_v3_simple.json",
+   "possible_answer/BFCL_v3_simple.json"
+  ],
+  "origin": "Berkeley Function-Calling Leaderboard v3, simple category (Apache-2.0)",
+  "items": 400,
+  "seed": 0,
+  "longest_prompt_chars": 1758
+ }
+}
