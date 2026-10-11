@@ -23,13 +23,28 @@ and joules per item.
 | Task | Items | Source | Scored by |
 |---|---|---|---|
 | `intent` — route a customer message to one of 77 intents | 2,000 | Banking77, test split | exact label match |
-| `extraction` — answer a question with a span from a passage | 2,000 | SQuAD v1.1, validation split | token F1 against the closest reference |
+| `extraction` — answer a question with a span from a passage | 2,000 | SQuAD v1.1, validation split | a reference answer appears in the reply |
 | `toolcall` — turn a request into one call to a described function | 400 | Berkeley Function-Calling Leaderboard v3, "simple" | name and arguments match |
 
 These stand in for what small models are actually used for: routing, pulling an
 answer out of retrieved text, and filling in a function call. The tool-call
 scorer is this repo's own, modelled on the leaderboard's argument check, so a
 score here is not a leaderboard score.
+
+The extraction score is not SQuAD's either. SQuAD's metric, token F1, was built
+for models that could only return a span of the passage. A chat model that
+wraps the right answer in a sentence loses most of its credit there: in the
+pilot, 93% of Mistral-7B-Instruct-v0.2's replies contained a reference answer
+and its F1 was 0.37, below a 0.5B model's. Holding quality fixed needs a score
+that does not move with how a model talks, and the extra words are already paid
+for in energy. So the score is whether a reference answer appears in the reply,
+word for word. F1 is published beside it as `token_f1`.
+
+That score errs both ways. A long reply can mention the reference in passing:
+in the pilot the wordiest model's replies also held the answer to a different
+question on the same passage 13% of the time, against 3% for the tersest. And a
+right answer in other words is missed. The first favours older, wordier models,
+so it understates how far energy has fallen.
 
 ## The protocol
 

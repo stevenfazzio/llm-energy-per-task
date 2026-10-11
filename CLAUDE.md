@@ -4,6 +4,11 @@ Measures the GPU energy small open-weight LLMs need per task, to chart the least
 energy that reaches a fixed score over time. The README has the method and its
 caveats; this file has what a session needs that the README does not.
 
+The question, in Steven's words: are models getting more energy efficient at
+doing the same tasks at the same level of quality? Quality is held fixed and
+energy is what moves. It is not "are models getting better at the task", and a
+choice that lets quality drift with a model's style fails it.
+
 ## State (2026-10-11)
 
 The pilot has run, and nothing in the dataset proper is measured yet. The four
@@ -50,11 +55,13 @@ What it left open, for Steven to decide:
   models sat within 3 points of each other, so a bar of 0.50 gave 5.4 J and a
   bar of 0.55 gave 19.1 J. The larger sets halve that interval for intent and
   extraction; tool calls stay at 400 items.
-- **Extraction rewards short answers more than right ones.** Both Mistrals
-  answer in sentences (a median of 11 to 15 words against 2 in the references)
-  and score below the 0.5B model: 0.366 and 0.474 against 0.527. v0.2 hits the
-  48-token cap on 17% of items. The answers are kept, so trying another scorer
-  needs no GPU.
+- **Extraction scorer: decided, 2026-10-11.** The score is whether a reference
+  answer appears in the reply (`contains_answer`); SQuAD's token F1 is kept as
+  the `token_f1` column. Under F1 both Mistrals, which answer in sentences,
+  scored below the 0.5B model (0.366 and 0.474 against 0.527) though their
+  replies held a reference 93% of the time against its 76%. The prompt and the
+  48-token cap stay: when the answer is there it ends within 17 words 95% of
+  the time. The pilot's own files still carry F1 as their score.
 - **`idle_watts` is not a settled idle.** It read 108 to 113 W, 2 seconds after
   warm-up. The same card drew 35 W empty at boot and still 56 W empty, 11
   seconds after a run exited, so it settles slower than that. Talked through on
@@ -65,9 +72,9 @@ What it left open, for Steven to decide:
   with a model loaded) and publish that in the README.
 - **The small end is overcharged.** Energy per item follows model size times
   tokens to within 12% across the 3B and 7B models, and the 0.5B model sits 8
-  to 37% above them. That biases against the smallest models, so against the
-  trend Steven is after: whether better models mean less energy per task. It
-  should be worse below 500M, which is a guess until the full run.
+  to 37% above them. That biases against the smallest models, so it understates
+  the trend. It should be worse below 500M, which is a guess until the full
+  run.
   `summary.csv` carries `mean_watts` and
   `joules_per_billion_params_per_1000_tokens` to show it.
 

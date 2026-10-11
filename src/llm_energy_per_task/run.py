@@ -120,11 +120,13 @@ def measure(
         rows = []
         for item, result in zip(items, results, strict=True):
             completion = result.outputs[0]
+            answer_text = strip_thinking(completion.text)
             rows.append(
                 {
                     "id": item["id"],
                     "output": completion.text,
-                    "score": task.score(item, strip_thinking(completion.text)),
+                    "score": task.score(item, answer_text),
+                    **{metric: scorer(item, answer_text) for metric, scorer in task.also.items()},
                     "prompt_tokens": len(result.prompt_token_ids),
                     "output_tokens": len(completion.token_ids),
                     "finish_reason": completion.finish_reason,
@@ -134,6 +136,7 @@ def measure(
         measured[name] = {
             "metric": task.metric,
             "score": fmean(row["score"] for row in rows),
+            "also": {metric: fmean(row[metric] for row in rows) for metric in task.also},
             "items": len(rows),
             "max_tokens": task.max_tokens,
             "joules_per_item": reading.joules / (passes * len(rows)),

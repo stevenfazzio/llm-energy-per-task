@@ -26,13 +26,32 @@ def test_intent_matches_the_datasets_irregular_labels():
     assert intent.score({"label": "reverted_card_payment?"}, "reverted_card_payment?") == 1.0
 
 
-def test_extraction_f1_follows_squad():
+def test_extraction_credits_a_reference_wherever_it_appears_in_the_reply():
     item = {"answers": ["Denver Broncos", "the Broncos"]}
-    assert extraction.score(item, "The Denver Broncos.") == 1.0
+    for answer in [
+        "The Denver Broncos.",
+        "The AFC champion Denver Broncos won Super Bowl 50.",
+        "It was the Broncos, according to the passage.",
+    ]:
+        assert extraction.score(item, answer) == 1.0, answer
     assert extraction.score(item, "Carolina Panthers") == 0.0
-    # Two right tokens among four, against a two-token reference: P 0.5, R 1.0.
-    assert abs(extraction.score(item, "Denver Broncos won it") - 2 / 3) < 1e-9
     assert extraction.score(item, "") == 0.0
+    # The words have to be the reference's own, whole, in order and unbroken.
+    one = {"answers": ["Denver Broncos"]}
+    for answer in ["Denver, home of the Broncos' rivals", "Broncos Denver", "Denver"]:
+        assert extraction.score(one, answer) == 0.0, answer
+    assert extraction.score({"answers": ["8000"]}, "It holds 18000 CDs") == 0.0
+    assert extraction.score({"answers": ["8000"]}, "It holds 8,000 CDs") == 1.0
+
+
+def test_extraction_keeps_squads_f1_beside_the_score():
+    item = {"answers": ["Denver Broncos", "the Broncos"]}
+    f1 = extraction.TASK.also["token_f1"]
+    assert f1(item, "The Denver Broncos.") == 1.0
+    assert f1(item, "Carolina Panthers") == 0.0
+    # Two right tokens among four, against a two-token reference: P 0.5, R 1.0.
+    assert abs(f1(item, "Denver Broncos won it") - 2 / 3) < 1e-9
+    assert f1(item, "") == 0.0
 
 
 FUNCTION = {"name": "calculate_triangle_area", "parameters": {}}

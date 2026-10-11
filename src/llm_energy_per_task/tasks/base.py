@@ -3,8 +3,8 @@
 from __future__ import annotations
 
 import re
-from collections.abc import Callable
-from dataclasses import dataclass
+from collections.abc import Callable, Mapping
+from dataclasses import dataclass, field
 
 
 @dataclass(frozen=True)
@@ -16,6 +16,9 @@ class Task:
     max_tokens: int
     prompt: Callable[[dict], str]
     score: Callable[[dict, str], float]
+    # Other ways of scoring the same answer, by name. Recorded beside the score,
+    # never held against a bar.
+    also: Mapping[str, Callable[[dict, str], float]] = field(default_factory=dict)
 
 
 _THINKING = re.compile(r"<think>.*?(?:</think>|\Z)", re.DOTALL)

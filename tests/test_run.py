@@ -100,6 +100,10 @@ def test_measure_builds_a_complete_record(fake_gpu):
     # The reasoning block is stripped before scoring but kept in the raw output.
     labelled = {row["id"]: row for row in outputs["intent"]}
     assert all(row["output"].startswith("<think>") for row in labelled.values())
+    # A task's other scores are kept per answer and averaged, like the score itself.
+    assert record["tasks"]["extraction"]["also"] == {"token_f1": 0.0}
+    assert all("token_f1" in row for row in outputs["extraction"])
+    assert record["tasks"]["intent"]["also"] == {}
     assert record["tasks"]["toolcall"]["score"] == 0.0
 
 
