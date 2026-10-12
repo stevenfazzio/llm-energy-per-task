@@ -1,6 +1,6 @@
 # llm-energy-per-task
 
-How much GPU energy a small open-weight LLM needs to do an everyday task, and
+How much GPU energy an open-weight LLM needs to do an everyday task, and
 whether that has kept falling.
 
 For each task and each score bar, the question is: among open models released
@@ -29,7 +29,7 @@ and joules per item.
 | `extraction` — answer a question with a span from a passage | 2,000 | SQuAD v1.1, validation split | a reference answer appears in the reply |
 | `toolcall` — turn a request into one call to a described function | 400 | Berkeley Function-Calling Leaderboard v3, "simple" | name and arguments match |
 
-These stand in for what small models are actually used for: routing, pulling an
+These stand in for everyday work a language model is put to: routing, pulling an
 answer out of retrieved text, and filling in a function call. The tool-call
 scorer is this repo's own, modelled on the leaderboard's argument check, so a
 score here is not a leaderboard score.
@@ -141,6 +141,17 @@ the gap between bars.
 - **Not the cheapest way to do the task.** A fine-tuned classifier a hundredth
   the size handles intent routing for far less. This is about general-purpose
   models, prompted.
+- **Not every open model.** Size is no part of the question: if the most frugal
+  model to clear a bar is a large one, it belongs on the line. But one 48 GB
+  card holds about 15B parameters at 16 bits a weight, and nothing larger was
+  measured. That shows in two ways. Three of the six chart lines begin on the
+  largest models measured (Llama-2-13b, Phi-3-medium and gemma-3-12b), so a
+  larger model released earlier may have cleared those bars sooner and at a
+  higher cost, and the 2023 bars were picked from 2023 models under the limit.
+  The lines probably start late, and understate the fall. And size is not
+  energy: granite-4.0-h-tiny, a mixture-of-experts model with 7B parameters,
+  costs about what a 2B to 3B model does here. A model of that kind above 15B
+  could sit on a line, and is missing.
 - **Not hardware-neutral at the small end.** A very small model cannot keep a
   48 GB card and its serving stack fully busy, so part of its figure is not the
   model's. In the four-model pilot, energy per item followed model size times
@@ -157,7 +168,7 @@ the gap between bars.
   before they answer and have no switch to stop them:
   `LiquidAI/LFM2.5-8B-A1B` and `LiquidAI/LFM2.5-2.6B`. The cap cut them off
   mid-thought, so they are left out of `summary.csv`; their records stay in
-  `results/`. Both date from mid-2026. If small models that only reason become
+  `results/`. Both date from mid-2026. If models that only reason become
   common, this dataset stops seeing the newest ones, and a line going flat
   would not mean the gains had stopped.
 - **Not free of contamination.** All three datasets are public and old enough to

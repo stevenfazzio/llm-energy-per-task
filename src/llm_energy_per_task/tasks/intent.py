@@ -1,8 +1,8 @@
 """Intent classification: route a customer message to one of 77 banking intents.
 
 Banking77 (Casanueva et al., 2020), test split. The whole label set goes in the
-prompt and the model answers with a label name -- how a small model gets used as
-a router when there is no labelled data to fine-tune a classifier on.
+prompt and the model answers with a label name -- how a general-purpose model
+gets used as a router when there is no labelled data to fine-tune a classifier on.
 """
 
 from __future__ import annotations

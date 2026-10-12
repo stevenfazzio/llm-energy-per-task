@@ -1,7 +1,7 @@
 [project]
 name = "llm-energy-per-task"
 version = "0.1.0"
-description = "GPU energy that small open-weight LLMs need per task, at measured accuracy"
+description = "GPU energy that open-weight LLMs need per task, at measured accuracy"
 requires-python = ">=3.11,<3.14"
 dependencies = [
     "huggingface-hub>=0.30",

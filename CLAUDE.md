@@ -1,6 +1,6 @@
 # llm-energy-per-task
 
-Measures the GPU energy small open-weight LLMs need per task, to chart the least
+Measures the GPU energy open-weight LLMs need per task, to chart the least
 energy that reaches a fixed score over time. The README has the method and its
 caveats; this file has what a session needs that the README does not.
 
@@ -8,6 +8,14 @@ The question, in Steven's words: are models getting more energy efficient at
 doing the same tasks at the same level of quality? Quality is held fixed and
 energy is what moves. It is not "are models getting better at the task", and a
 choice that lets quality drift with a model's style fails it.
+
+Size is no part of it either (Steven, 2026-10-12). The models here stop at
+about 15B parameters because that is what one 48 GB card holds at 16 bits a
+weight, not because the question is about small models: if the most frugal
+model to clear a bar is a large one, it is in scope. His picture is that for
+any task there was a time when only the biggest models could do it, and this
+dataset catches each line after that expensive beginning. The README says so
+under "Not every open model".
 
 ## State (2026-10-12)
 
@@ -19,7 +27,8 @@ answer, and `results/calibration.json` what the card draws doing nothing.
 Two of the 80 are marked `excluded` in `models.toml` (see below), so the
 dataset is 78 models. `frontier.py` has the bar rule and has been run:
 `results/summary.csv` has 234 rows and `results/frontier.csv` 418 (321 steps,
-36 straddling steps, 61 near misses). The chart is the next thing.
+36 straddling steps, 61 near misses). Steven is making the chart in an
+`ai-trends` session, so it is not this repo's work.
 
 A four-model pilot came first, on 500 items a task. Its rows are not
 comparable and sit under `results/pilot/`, which `frontier.py` does not read.
@@ -185,8 +194,10 @@ What they do not say:
 
 ## Next steps
 
-1. The chart, in `ai-trends`, from `results/frontier.csv`. Near misses and
-   straddling steps want their own marks.
+Nothing is waiting in this repo. The chart is being made in an `ai-trends`
+session from `results/frontier.csv`; near misses and straddling steps want
+their own marks there. The one extension discussed, large models, is described
+under "Where this is going".
 
 All 14 gated models are measured. The read-only token went to the pod as a
 file piped over SSH, so its value was never shown, and it went with the pod's
@@ -242,7 +253,15 @@ several do restrict is using outputs to train or improve another model, which
 is why the README keeps the raw answers out of the MIT grant. This is a
 reading, not legal advice.
 
-Still open: the chart itself, and a summarisation task (left out because a
+Discussed on 2026-10-12 and put off: measuring a handful of large open models,
+the biggest from each year, to recover the start of each line. They would run
+on two or four L40S cards with the energy summed, which keeps one card model
+for every row and the existing rows valid. Untested here: vLLM splitting a
+model across cards. A rough guess is $6 to $10, most of what is left of the
+budget. It cannot recover everything: the first models to do these tasks were
+probably closed ones, whose energy cannot be metered.
+
+Still open: a summarisation task (left out because a
 fixed quality bar needs a judge model or a weak overlap metric).
 
 ## Commands

@@ -1,4 +1,4 @@
-"""GPU energy that small open-weight LLMs need per task, at measured accuracy."""
+"""GPU energy that open-weight LLMs need per task, at measured accuracy."""
 
 from pathlib import Path
 

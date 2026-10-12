@@ -1,4 +1,6 @@
-# The models to measure: instruction-tuned, open-weight, up to about 15B parameters.
+# The models to measure: instruction-tuned and open-weight. They stop at about 15B
+# parameters because that is what the one card they are measured on can hold, not
+# because larger models are out of scope.
 #
 # Only `id` is required. Release date, parameter count, gating, chat template and
 # the pinned commit are fetched from Hugging Face into models.lock.json by
