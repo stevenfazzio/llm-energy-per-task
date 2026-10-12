@@ -17,8 +17,9 @@ items, 2,000 extraction items and the 400 tool calls. None failed and none
 timed out. `results/runs/` has the 80 records, `results/outputs/` every raw
 answer, and `results/calibration.json` what the card draws doing nothing.
 Two of the 80 are marked `excluded` in `models.toml` (see below), so the
-dataset is 78 models and `frontier.summary()` gives 234 rows.
-`frontier.py` has not been run on them: the bar rule below is not built.
+dataset is 78 models. `frontier.py` has the bar rule and has been run:
+`results/summary.csv` has 234 rows and `results/frontier.csv` 418 (321 steps,
+36 straddling steps, 61 near misses). The chart is the next thing.
 
 A four-model pilot came first, on 500 items a task. Its rows are not
 comparable and sit under `results/pilot/`, which `frontier.py` does not read.
@@ -58,6 +59,29 @@ Decided, with what the full run added:
   below the 0.5B model in the pilot though their replies held a reference 93%
   of the time against its 76%. The prompt and the 48-token cap stay. The
   pilot's own files still carry F1 as their score.
+- **Score bars, agreed 2026-10-11 and built 2026-10-12.** The rule was agreed
+  with Steven before the full run, so the trend could not steer it:
+  1. `frontier.csv` carries every bar on a 0.05 grid, 0.05 to 0.95.
+  2. A chart shows two bars per task: the highest that some model released in
+     2023 clears, and the highest that at least three models clear. The
+     `chart` column names them.
+  3. A model clears a bar when its score is at or above it. A step whose score
+     interval reaches below the bar has kind `step_straddling`. The interval
+     is Wilson's 95%, from the score and the item count.
+  4. A new low is a step only when it is under 0.97 of the last counted step.
+  Added on 2026-10-12, after the data, on Steven's say and as a record only: a
+  model under a bar whose interval reaches it, and which would have been a
+  step, is kept as kind `near_miss`. It does not move a line.
+  The bars came out as intent 0.55 and 0.70, extraction 0.90 and 0.95, tool
+  calls 0.85 and 0.95. Two start on a straddling step: intent 0.55 rests on
+  one 2023 model (Mistral-7B v0.2, 0.5545), and no 2023 model clears tool
+  calls 0.85 with its whole interval. That was left alone on purpose: the
+  rule chose plain "at or above" with a mark, and changing the selection
+  after seeing the data is what the rule was written to prevent. On the two
+  tool-call chart bars 9 of 10 steps straddle; 400 items is the reason.
+  From first step to last, the chart bars' lines fall by: intent 3.7x (0.55)
+  and 2.0x (0.70), extraction 4.2x (0.90) and 3.2x (0.95), tool calls 22.8x
+  (0.85, from Llama-2-13b at 38 J; 7.2x from the next step) and 2.7x (0.95).
 - **Intent scorer, 2026-10-12.** The score is whether the reply names the right
   intent and no other (`names_intent`). A name counts wherever it is written as
   the label is, underscores and all, or when the first line is nothing but the
@@ -98,23 +122,6 @@ Decided, with what the full run added:
   so it understates the trend. `summary.csv` carries `mean_watts` and
   `joules_per_billion_params_per_1000_tokens` to show it. Not yet looked at
   across the 80.
-
-Open, for Steven to decide:
-
-- **Score bars: the rule is agreed, the numbers wait for the code.** Agreed
-  with Steven on 2026-10-11, before the full run, so the trend cannot steer it:
-  1. `frontier.csv` carries every bar on a 0.05 grid.
-  2. The chart shows two bars per task: the highest that some model released
-     in 2023 clears, and the highest that at least three models clear.
-  3. A model clears a bar when its score is at or above it. A record-setter
-     whose score interval straddles the bar is flagged.
-  4. A new low counts as a step only if it is about 3% below the last; energy
-     repeats to within 1%.
-  None of this is in `frontier.py` yet, which still takes `--bars` and
-  defaults to 0.7/0.8/0.9. Why a rule was needed: on 500 items a score was
-  only good to 3 or 4 points either way. The larger sets halve that for intent
-  and extraction; tool calls stay at 400 items. It will bite at once: on
-  intent the best 2023 model scores 0.5545, against a 0.55 bar.
 
 What reading vLLM 0.31.0 showed, since it shapes the code:
 
@@ -178,9 +185,8 @@ What they do not say:
 
 ## Next steps
 
-1. Build the bar rule into `frontier.py` and run it, for `summary.csv` and
-   `frontier.csv`.
-2. Then the chart.
+1. The chart, in `ai-trends`, from `results/frontier.csv`. Near misses and
+   straddling steps want their own marks.
 
 All 14 gated models are measured. The read-only token went to the pod as a
 file piped over SSH, so its value was never shown, and it went with the pod's

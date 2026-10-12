@@ -78,6 +78,7 @@ def test_weights_dir_follows_the_hub_cache_layout(monkeypatch):
 def test_summary_reads_run_files_and_prefers_the_registry_date(tmp_path, monkeypatch):
     task = {
         "metric": "accuracy",
+        "items": 400,
         "score": 0.8,
         "also": {"token_f1": 0.5},
         "joules_per_item": 3.6,
@@ -114,8 +115,13 @@ def test_summary_reads_run_files_and_prefers_the_registry_date(tmp_path, monkeyp
     assert frontier.summary() == []
     monkeypatch.setattr(frontier, "load_models", lambda: [MODEL])
 
-    monkeypatch.setattr("sys.argv", ["frontier", "--bars", "0.5,0.9"])
+    monkeypatch.setattr("sys.argv", ["frontier"])
     frontier.main()
     lines = (tmp_path / "frontier.csv").read_text().splitlines()
-    assert lines[0].startswith("bar,task,model")
-    assert len(lines) == 2  # one step at the 0.5 bar, none at 0.9
+    assert lines[0].startswith("bar,chart,kind,task,model")
+    # Scoring 0.8, the one model is the line at every bar from 0.05 to 0.80 ...
+    assert len(lines) == 1 + 16
+    assert lines[1].startswith("0.05,,step,intent,") and lines[16].startswith("0.80,")
+    # ... and 0.80 is the bar a chart shows. Released in 2025, it picks no 2023 bar,
+    # and one model is not the three a bar needs.
+    assert all(line.split(",")[1] == "" for line in lines[1:])

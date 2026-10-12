@@ -9,13 +9,13 @@ the bar? Plotted over time that is a running minimum, stepping down only when a
 more frugal model clears it. Fixing the score is what makes the comparison mean
 something, since the most frugal model is always a weak one.
 
-**Status: measured, not yet charted.** All 80 models ran on one NVIDIA L40S on
-11 October 2026, and their records are in `results/runs/`. Two of them turned
-out to be reasoning-only and are left out, which makes the dataset 78 models.
-The score bars and the lines drawn from them are still to come. A four-model
-pilot ran first, on 500 items a task; the item sets were then enlarged, so its
-numbers are not comparable. They are kept under `results/pilot/` for the
-record.
+**Status: measured, and the lines are drawn; the chart is not.** All 80 models
+ran on one NVIDIA L40S on 11 October 2026. Two of them turned out to be
+reasoning-only and are left out, which makes the dataset 78 models.
+`results/summary.csv` has every model's scores and energy, and
+`results/frontier.csv` the lines. A four-model pilot ran first, on 500 items a
+task; the item sets were then enlarged, so its numbers are not comparable.
+They are kept under `results/pilot/` for the record.
 
 ## What gets measured
 
@@ -98,6 +98,38 @@ while answering. Each run also records `idle_watts`, read for five seconds
 shortly after warm-up; in a test at the end of the run that reading caught
 93 W (`results/calibration.json`), and across the 80 models it ran from 95 to
 104 W.
+
+## Bars and lines
+
+`results/summary.csv` has one row per model and task. `results/frontier.csv`
+has the lines: for each task and each bar from 0.05 to 0.95, the models that
+set a new low in energy at or above the bar, in order of release.
+
+How a bar is chosen and what counts as clearing one were settled before the
+models were measured, so the result could not pick its own bars:
+
+- **Two bars a task are meant for a chart**, named in the `chart` column. One
+  is the highest bar that some model released in 2023 clears (`2023`), so the
+  line starts where the dataset does. The other is the highest that at least
+  three models clear (`three_models`). They came out as 0.55 and 0.70 for
+  intent, 0.90 and 0.95 for extraction, and 0.85 and 0.95 for tool calls.
+- **A score is only good to a few points.** Each has a 95% interval
+  (`score_low`, `score_high`): one to two points either way on 2,000 items,
+  two to five on the 400 tool calls. A model clears a bar when its score is at
+  or above it. A step by a model whose interval reaches below the bar has the
+  kind `step_straddling`.
+- **A step has to be 3% or more below the last one.** Energy repeats to within
+  1% on one card.
+
+One thing was added after the models ran: near misses. A model just under a
+bar, whose interval reaches it and which would otherwise have been a step, is
+recorded with the kind `near_miss`. It does not move the line. There are 61 of
+them across the grid against 36 straddling steps, so a line is as likely to be
+missing a step by a hair as to have one by a hair.
+
+The tool-call lines want the most care. On the two bars a chart shows, 9 of
+their 10 steps straddle, because 400 items leave an interval nearly as wide as
+the gap between bars.
 
 ## What the number is not
 
