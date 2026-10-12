@@ -282,3 +282,24 @@ Everything else about it is fetched.
 - **Berkeley Function-Calling Leaderboard** — Patil et al. Apache-2.0.
 
 Exact dataset commits are in `data/tasks/manifest.json`.
+
+## Licence
+
+The code and this repo's own measurements (`results/summary.csv`,
+`results/frontier.csv`, `results/runs/` and `results/calibration.json`) are
+under the MIT licence in `LICENSE`.
+
+Two things here are not this repo's to license:
+
+- **The task items** in `data/tasks/` keep the licences of the datasets they
+  were drawn from, listed above. The SQuAD sample is CC BY-SA 4.0, which the
+  MIT licence does not replace.
+- **The raw answers** in `results/outputs/` are the models' outputs, published
+  so the scoring can be checked. Each model's own licence governs what its
+  outputs may be used for, and several restrict using them to train or improve
+  another model. Extraction answers also quote the SQuAD passages.
+
+The models' licences were read for anything against publishing scores or
+outputs, and none has it. Four Qwen models (Qwen1.5 0.5B, 1.8B and 4B, and
+Qwen2.5 3B) are licensed for research and evaluation only, which is what was
+done with them here.

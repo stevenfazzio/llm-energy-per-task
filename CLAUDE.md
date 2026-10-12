@@ -218,9 +218,32 @@ CSV published from this repo like any other upstream. That site's rule is that
 it plots other people's published numbers, so this repo is the publisher and
 needs to stand on its own: method, caveats and data all here.
 
-Still open: the chart itself, the score bars, a licence file (the SQuAD sample
-is CC BY-SA), whether to publish on GitHub, and a summarisation task (left out
-because a fixed quality bar needs a judge model or a weak overlap metric).
+Published on 2026-10-12 as a public repo, `origin`:
+https://github.com/stevenfazzio/llm-energy-per-task. The whole history was
+scanned for tokens and keys before the push and held none.
+
+The repo is MIT (`LICENSE`, added 2026-10-12), which covers the code and the
+measurements. The README says what it does not cover: the task items keep
+their datasets' licences (the SQuAD sample is CC BY-SA), and the raw answers
+in `results/outputs/` stay under whatever each model's licence says of its
+outputs.
+
+The models' licences were reviewed on 2026-10-12 for anything against
+publishing scores or raw outputs, and none has it. The 14 the Hub lists as
+"other" were read: LiquidAI's LFM Open License (6 models; Apache-like, with a
+revenue cap on commercial use), Tongyi Qianwen (Qwen1.5 7B and 14B), the two
+Qwen research licences (Qwen1.5 0.5B, 1.8B, 4B and Qwen2.5 3B; research and
+evaluation only, so they hold only while this stays non-commercial),
+Stability AI Community (stablelm-zephyr-3b; the user owns outputs) and TII's
+Falcon licence (Falcon-H1-Tiny; its card links a page of several TII
+licences without saying which, and the Falcon 3 one was read). The Llama and
+Gemma terms were searched for the same clauses, not read end to end. What
+several do restrict is using outputs to train or improve another model, which
+is why the README keeps the raw answers out of the MIT grant. This is a
+reading, not legal advice.
+
+Still open: the chart itself, and a summarisation task (left out because a
+fixed quality bar needs a judge model or a weak overlap metric).
 
 ## Commands
 
