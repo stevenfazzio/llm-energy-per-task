@@ -9,38 +9,70 @@ doing the same tasks at the same level of quality? Quality is held fixed and
 energy is what moves. It is not "are models getting better at the task", and a
 choice that lets quality drift with a model's style fails it.
 
-## State (2026-10-11)
+## State (2026-10-12)
 
-The pilot has run, and nothing in the dataset proper is measured yet. The four
-pilot models ran on 500 items a task. Steven then chose larger item sets (2,000
-for intent and extraction; the 400 tool calls are the whole source), so the
-pilot rows are not comparable and sit under `results/pilot/`, which
-`frontier.py` does not read. That folder also holds the two extra runs of the
-0.5B model made for noise. `results/runs/` is empty: all 80 loadable models,
-the pilot four included, are for the full run.
+The dataset is measured. All 80 loadable models ran on one pod on 2026-10-11
+(`hr1nmckg7ts46y`: one L40S, driver 580.126.09, vLLM 0.31.0), on 2,000 intent
+items, 2,000 extraction items and the 400 tool calls. None failed and none
+timed out. `results/runs/` has the 80 records, `results/outputs/` every raw
+answer, and `results/calibration.json` what the card draws doing nothing.
+`frontier.py` has not been run on them: the bar rule below is not built.
 
-Every prompt in the new sets was tokenized with each model's own tokenizer: the
-longest is 934 tokens against a 2,048 window. The four Llama 3.x tokenizers
-could not be fetched and were not checked; theirs are not the wasteful kind.
+A four-model pilot came first, on 500 items a task. Its rows are not
+comparable and sit under `results/pilot/`, which `frontier.py` does not read.
+That folder also holds the two extra runs of the 0.5B model made for noise.
 
-What the pilot confirmed:
+What the pilot and the full run confirmed:
 
-- vLLM 0.31.0 loads all four with the arguments `run.py` passes, including
-  Mistral-7B-Instruct-v0.3 through the Mistral path described below.
-- The energy counter exists on the L40S and agrees with sampled power to within
-  2% on every task. No prompt tokens were served from cache.
-- Energy repeats: `joules_per_item` spread by under 1% across three fresh runs.
-  Scores do not quite: tool-call accuracy ran 0.805 to 0.815, because greedy
-  decoding in a batch is not exactly repeatable. A bar needs that much margin.
-- The card is busy whatever the model's size: mean draw was 305 to 350 W for all
-  four, so the 0.5B model's figure is not mostly idling.
-- A model takes 2 to 3.5 minutes end to end. The pod answered SSH 30 seconds
-  after creation and the environment installed in about 2 minutes.
-- `scripts/pod_guard.sh` works: the pilot pod terminated itself with it.
+- vLLM 0.31.0 loads all 80 with the arguments `run.py` passes, including the
+  five repos that go through the Mistral path described below.
+- The energy counter agrees with sampled power to within 2.1% on every task of
+  every model. No prompt tokens were served from cache.
+- Energy repeats on one pod: `joules_per_item` spread by under 1% across three
+  fresh runs in the pilot. Scores do not quite: tool-call accuracy ran 0.805 to
+  0.815, because greedy decoding in a batch is not exactly repeatable. A bar
+  needs that much margin.
+- **A different pod reads about 3% differently.** Qwen2.5-0.5B on the same 400
+  tool calls, same software and same throughput, cost 1.063 J an item on the
+  full run's pod against 1.096 to 1.100 J across the pilot's three runs. That
+  is one comparison, and the driver differed too (580 against 595). It does
+  not touch this dataset, which is all one card. It does mean a model measured
+  later, on another pod, needs two or three models from this run measured
+  beside it, since 3% is the size of a step.
+- The card is busy for nearly everything: mean draw was 276 to 350 W, median
+  341 W. The exception is the 90M Falcon, at 200 W on extraction and 212 W on
+  tool calls.
+- Pace: 5.13 hours for the 80. About 2.5 minutes a model under 2B, 3 at 3B, 4
+  at 7 to 8B, 6 at 14B; the slowest was Llama-2-13b at 8.7. The first model on
+  a pod takes about two minutes longer, half of it a one-time kernel build.
+  Disk was never seen above 36 GB.
+- `scripts/pod_guard.sh` works: both pods were terminated with it.
 
-What it left open, for Steven to decide:
+Decided, with what the full run added:
 
-- **Score bars: the rule is agreed, the numbers wait for the data.** Agreed
+- **Extraction scorer, 2026-10-11.** The score is whether a reference answer
+  appears in the reply (`contains_answer`); SQuAD's token F1 is kept as the
+  `token_f1` column. Under F1 both Mistrals, which answer in sentences, scored
+  below the 0.5B model in the pilot though their replies held a reference 93%
+  of the time against its 76%. The prompt and the 48-token cap stay. The
+  pilot's own files still carry F1 as their score.
+- **`idle_watts` is a fair reading after all.** The calibration at the end of
+  the run (`bash scripts/pod_run.sh calibrate`, which now has run on hardware)
+  read 33.3 W with the card empty, 94.2 W with a model loaded and quiet, and
+  92.7 W over the stretch `idle_watts` reads. The loaded card is steady within
+  10 seconds. Across the 80 runs `idle_watts` was 95 to 104 W. The earlier
+  worry came from comparing it with the empty card: a loaded engine holds the
+  card about 60 W above empty. Nothing is subtracted from any figure.
+- **The small end is overcharged.** In the pilot, energy per item followed
+  model size times tokens to within 12% across the 3B and 7B models, and the
+  0.5B model sat 8 to 37% above them. That biases against the smallest models,
+  so it understates the trend. `summary.csv` carries `mean_watts` and
+  `joules_per_billion_params_per_1000_tokens` to show it. Not yet looked at
+  across the 80.
+
+Open, for Steven to decide:
+
+- **Score bars: the rule is agreed, the numbers wait for the code.** Agreed
   with Steven on 2026-10-11, before the full run, so the trend cannot steer it:
   1. `frontier.csv` carries every bar on a 0.05 grid.
   2. The chart shows two bars per task: the highest that some model released
@@ -51,35 +83,24 @@ What it left open, for Steven to decide:
      repeats to within 1%.
   None of this is in `frontier.py` yet, which still takes `--bars` and
   defaults to 0.7/0.8/0.9. Why a rule was needed: on 500 items a score was
-  only good to 3 or 4 points either way, and on intent the 3B and both 7B
-  models sat within 3 points of each other, so a bar of 0.50 gave 5.4 J and a
-  bar of 0.55 gave 19.1 J. The larger sets halve that interval for intent and
-  extraction; tool calls stay at 400 items.
-- **Extraction scorer: decided, 2026-10-11.** The score is whether a reference
-  answer appears in the reply (`contains_answer`); SQuAD's token F1 is kept as
-  the `token_f1` column. Under F1 both Mistrals, which answer in sentences,
-  scored below the 0.5B model (0.366 and 0.474 against 0.527) though their
-  replies held a reference 93% of the time against its 76%. The prompt and the
-  48-token cap stay: when the answer is there it ends within 17 words 95% of
-  the time. The pilot's own files still carry F1 as their score.
-- **`idle_watts` is not a settled idle.** It read 108 to 113 W, 2 seconds after
-  warm-up. The same card drew 35 W empty at boot and still 56 W empty, 11
-  seconds after a run exited, so it settles slower than that. Decided with
-  Steven on 2026-10-11: leave the per-run reading as it is, and calibrate once
-  at the end of the full run, after the results are copied back, with
-  `bash scripts/pod_run.sh calibrate`. That writes `results/calibration.json`:
-  the card empty, the card loaded and settled, and what `idle_watts` catches,
-  each with its trace. Put those three numbers in the README afterwards.
-  `calibrate.py` has only run against fakes, which is why it goes last. It is
-  documentation, not a correction: nothing here can read the draw in the gaps
-  inside a task, which is what the next item would need.
-- **The small end is overcharged.** Energy per item follows model size times
-  tokens to within 12% across the 3B and 7B models, and the 0.5B model sits 8
-  to 37% above them. That biases against the smallest models, so it understates
-  the trend. It should be worse below 500M, which is a guess until the full
-  run.
-  `summary.csv` carries `mean_watts` and
-  `joules_per_billion_params_per_1000_tokens` to show it.
+  only good to 3 or 4 points either way. The larger sets halve that for intent
+  and extraction; tool calls stay at 400 items. It will bite at once: on
+  intent the best 2023 models scored 0.551 and 0.552, against a 0.55 bar.
+- **Two models reason and cannot be told not to.** `LiquidAI/LFM2.5-8B-A1B`
+  and `LiquidAI/LFM2.5-2.6B` have no thinking switch in their templates (the
+  2.6B's template opens `<think>` itself), so every intent and extraction
+  answer was cut off mid-thought by the token cap. Both score zero on intent;
+  the 2.6B's 0.228 on extraction is its thinking quoting the passage. Their
+  rows say "could not answer inside the cap", not "cannot do the task". They
+  clear no bar a chart would show, so they cannot set a line. Drop them, or
+  keep them with a note.
+- **The intent scorer depends on style for three old models.** It reads the
+  first line of the reply. Llama-2-7b, Llama-2-13b and gemma-7b-it wrap the
+  label in a sentence and score 0.045, 0.000 and 0.000; scored as "the reply
+  names exactly one label and it is the right one" they get 0.407, 0.268 and
+  0.352. Of the other 77, 73 move by 0.02 or less and gemma-2b-it moves most,
+  from 0.170 to 0.213. This is the question Steven settled for extraction, in
+  favour of not marking style. Fixing it is a rescore from `results/outputs/`.
 
 What reading vLLM 0.31.0 showed, since it shapes the code:
 
@@ -99,9 +120,14 @@ billable: state the hourly price and the estimate, and wait for a yes. Give ever
 pod a guard that terminates it. The account carries other projects' spend, so
 count by pod, not by account total.
 
-Spent so far: **about $0.37**. The pilot pod (`rm2ki4tybbbtyc`, secure cloud,
-$1.09/hr) lived 20 minutes on 2026-10-11. That is price times lifetime; the
-billing API had not posted the charge when this was written.
+Spent so far: **about $6.25**, by pod:
+
+- `rm2ki4tybbbtyc`, the pilot: $0.37 billed. Secure cloud, 20 minutes on
+  2026-10-11.
+- `hr1nmckg7ts46y`, the full run: about $5.88. Secure cloud, $1.09/hr plus
+  disk, alive 5.33 hours from 19:47 UTC on 2026-10-11. The billing API had
+  posted $4.89 of it, for 4.43 hours, when this was written; `runpodctl
+  billing pods --grouping podId` has the final figure.
 
 The guard is two timers, because nothing RunPod offers does it: `runpodctl pod
 create` has no terminate-after flag through 2.15.0 (the RunPod plugin's docs say
@@ -112,8 +138,8 @@ pod's disk, so on a long run copy `results/` back as it goes.
 
 ## Running on a pod
 
-The commands are in the README under "Running it", and all of them have now run
-once. What they do not say:
+The commands are in the README under "Running it", and all of them have now run.
+What they do not say:
 
 - Template `runpod-torch-v280` works: it has `rsync`, `uv` and `runpodctl`
   1.14.15. That `runpodctl` gets its key from PID 1's environment, which
@@ -127,27 +153,30 @@ once. What they do not say:
   frees nothing, and four models left 34 GB behind.
 - On 2026-10-11 an L40S was $0.79/hr community and $1.09/hr secure, on hosts
   reporting CUDA 13.0 or 13.2. Community had none free above the CUDA floor.
+- The Bash tool here is zsh, which does not split a command kept in a
+  variable. Put the pod's host and port in an ssh config file and use
+  `ssh -F`.
+- `pgrep -f run_all` sent over SSH matches the remote shell carrying it, so it
+  never reports the run as over. Write the pattern as `"[r]un_all"`.
+- For a long run, a local loop copied `results/` back every 10 minutes. The
+  machine has to stay awake for it; `caffeinate -i` on the local guard does
+  that while the lid is open.
 
-## Next step: the full run
+## Next steps
 
-80 models can load (`microsoft/phi-2` publishes no chat template), 66 of them
-without a token. All 80 should take about 5.5 hours: roughly $4.30 at $0.79/hr
-or $6.00 at $1.09/hr. That is the pilot's pace, about 2.1 minutes plus 0.2 per
-billion parameters, plus about 80 minutes for the larger item sets, and it is
-an extrapolation from four models, none above 7B. The largest models should
-take about 9 minutes each, inside the 40-minute timeout. 60 GB of volume was
-ample; the largest download is about 30 GB.
+1. Build the bar rule into `frontier.py` and run it, for `summary.csv` and
+   `frontier.csv`.
+2. Steven's two open decisions above. The intent one needs a rescore command,
+   which does not exist yet.
+3. Then the chart.
 
-14 models are gated (every Llama, Gemma 1 through 3). Decided with Steven on
-2026-10-11: all 14 go in, using the read-only token already on this machine.
-It goes to the pod as a file, piped over SSH so its value is never shown (the
-command is in the README); `pod_run.sh` reads it from there.
+All 14 gated models are measured. The read-only token went to the pod as a
+file piped over SSH, so its value was never shown, and it went with the pod's
+disk. Meta approved the last three Llama 3.x requests while the run was under
+way.
 
-That token reads the two Llama 2 and eight Gemma repos. The four Llama 3.x
-repos refused it: Meta reviews each request by hand, and Steven submitted the
-four requests on 2026-10-11. Check again before the run. If they are still
-pending, run the rest: those four fail fast, and `--retry-failed` on a later
-pod of the same card measures them without redoing anything.
+Adding a model later means another pod, and so another physical card: measure
+two or three models from this run beside it, and see the 3% above.
 
 ## Rules that protect the measurements
 

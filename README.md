@@ -9,10 +9,11 @@ the bar? Plotted over time that is a running minimum, stepping down only when a
 more frugal model clears it. Fixing the score is what makes the comparison mean
 something, since the most frugal model is always a weak one.
 
-**Status: a four-model pilot has run; the dataset itself is not measured yet.**
-The pilot checked the harness on real hardware, using 500 items a task. The
-item sets were then enlarged, so its numbers are not comparable with what comes
-next. They are kept under `results/pilot/` for the record.
+**Status: measured, not yet charted.** All 80 models ran on one NVIDIA L40S on
+11 October 2026, and their records are in `results/runs/`. The score bars and
+the lines drawn from them are still to come. A four-model pilot ran first, on
+500 items a task; the item sets were then enlarged, so its numbers are not
+comparable. They are kept under `results/pilot/` for the record.
 
 ## What gets measured
 
@@ -70,6 +71,14 @@ Held fixed for every model, and written into every result file:
 
 Energy comes from NVML: the driver's cumulative energy counter, cross-checked by
 integrating sampled power over the same window. Both are recorded.
+
+Nothing is subtracted for idling: joules per item is everything the card drew
+during the window. For scale, the card that measured the dataset drew 33 W
+empty and 94 W with a model loaded and nothing to do, against about 340 W
+while answering. Each run also records `idle_watts`, read for five seconds
+shortly after warm-up; in a test at the end of the run that reading caught
+93 W (`results/calibration.json`), and across the 80 models it ran from 95 to
+104 W.
 
 ## What the number is not
 
@@ -136,7 +145,8 @@ uv run python -m llm_energy_per_task.frontier    # once there are results
 overwrite without `--force`, because changing the items invalidates every
 measurement made on them.
 
-On a rented GPU (run once, for the pilot, on RunPod's secure cloud):
+On a rented GPU (run twice on RunPod's secure cloud: the pilot, then all 80
+models in a little over five hours):
 
 1. Start a pod with one 48 GB card, a host CUDA of 12.9 or newer (what the
    pinned vLLM wheels are built for), about 60 GB of volume at `/workspace`, and

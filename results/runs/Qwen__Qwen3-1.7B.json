@@ -1,0 +1,83 @@
+{
+ "model": "Qwen/Qwen3-1.7B",
+ "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+ "released": "2025-04-27",
+ "params": 2031739904,
+ "measured": "2026-10-11T21:01:08+00:00",
+ "environment": {
+  "gpu": "NVIDIA L40S",
+  "driver": "580.126.09",
+  "energy_counter": true,
+  "vllm": "0.31.0",
+  "torch": "2.13.0+cu130",
+  "dtype": "bfloat16",
+  "max_model_len": 2048,
+  "max_num_seqs": 256,
+  "max_num_batched_tokens": 8192,
+  "prefix_caching": false,
+  "min_window_s": 30.0
+ },
+ "load_seconds": 74.51277334988117,
+ "idle_watts": 97.52337979043045,
+ "tasks": {
+  "intent": {
+   "metric": "accuracy",
+   "score": 0.3985,
+   "also": {},
+   "items": 2000,
+   "max_tokens": 24,
+   "joules_per_item": 2.7445402500629426,
+   "energy_source": "counter",
+   "passes": 2,
+   "window_seconds": 31.53596432507038,
+   "counter_joules": 10978.16100025177,
+   "sampled_joules": 10814.840337462188,
+   "mean_watts": 348.1155954861472,
+   "peak_watts": 352.993,
+   "prompt_tokens_per_item": 436.785,
+   "output_tokens_per_item": 5.0405,
+   "truncated": 0.0,
+   "cached_prompt_tokens": 0
+  },
+  "extraction": {
+   "metric": "contains_answer",
+   "score": 0.813,
+   "also": {
+    "token_f1": 0.7498548743510871
+   },
+   "items": 2000,
+   "max_tokens": 48,
+   "joules_per_item": 1.5337314999699592,
+   "energy_source": "counter",
+   "passes": 4,
+   "window_seconds": 35.76517242565751,
+   "counter_joules": 12269.851999759674,
+   "sampled_joules": 12290.773563041883,
+   "mean_watts": 343.06704449039444,
+   "peak_watts": 357.471,
+   "prompt_tokens_per_item": 223.1355,
+   "output_tokens_per_item": 8.499,
+   "truncated": 0.006,
+   "cached_prompt_tokens": 0
+  },
+  "toolcall": {
+   "metric": "accuracy",
+   "score": 0.9375,
+   "also": {},
+   "items": 400,
+   "max_tokens": 192,
+   "joules_per_item": 2.703635500073433,
+   "energy_source": "counter",
+   "passes": 10,
+   "window_seconds": 32.605076901614666,
+   "counter_joules": 10814.542000293732,
+   "sampled_joules": 10837.995776630765,
+   "mean_watts": 331.68276317600635,
+   "peak_watts": 354.059,
+   "prompt_tokens_per_item": 248.6575,
+   "output_tokens_per_item": 35.72,
+   "truncated": 0.0,
+   "cached_prompt_tokens": 0
+  }
+ }
+}
