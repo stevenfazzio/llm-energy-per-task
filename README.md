@@ -10,10 +10,12 @@ more frugal model clears it. Fixing the score is what makes the comparison mean
 something, since the most frugal model is always a weak one.
 
 **Status: measured, not yet charted.** All 80 models ran on one NVIDIA L40S on
-11 October 2026, and their records are in `results/runs/`. The score bars and
-the lines drawn from them are still to come. A four-model pilot ran first, on
-500 items a task; the item sets were then enlarged, so its numbers are not
-comparable. They are kept under `results/pilot/` for the record.
+11 October 2026, and their records are in `results/runs/`. Two of them turned
+out to be reasoning-only and are left out, which makes the dataset 78 models.
+The score bars and the lines drawn from them are still to come. A four-model
+pilot ran first, on 500 items a task; the item sets were then enlarged, so its
+numbers are not comparable. They are kept under `results/pilot/` for the
+record.
 
 ## What gets measured
 
@@ -55,8 +57,8 @@ Held fixed for every model, and written into every result file:
 - **16-bit weights** (`bfloat16`), whatever precision the model was published in.
 - **One prompt shape.** Each item is a single user turn through the model's own
   chat template. No system prompt, because several templates reject one.
-- **Thinking off** wherever a template has the switch. A reasoning variant would
-  be a separate entry, charged for its thinking tokens.
+- **Thinking off** wherever a template has the switch, as 17 of them do. A model
+  that cannot answer without thinking first is out of scope for now.
 - **Greedy decoding**, with a per-task cap on answer length.
 - **Batched hard.** All of a task's items are submitted together and the engine
   works on up to 256 of them at a time. That is vLLM's own choice for a 48 GB
@@ -101,6 +103,14 @@ shortly after warm-up; in a test at the end of the run that reading caught
   `summary.csv` has two columns for spotting it: `mean_watts`, and
   `joules_per_billion_params_per_1000_tokens`, which is level across models
   when energy tracks the work done.
+- **Not a measure of reasoning.** Every model answers directly, and the caps on
+  answer length are sized for that. Two models in `models.toml` always think
+  before they answer and have no switch to stop them:
+  `LiquidAI/LFM2.5-8B-A1B` and `LiquidAI/LFM2.5-2.6B`. The cap cut them off
+  mid-thought, so they are left out of `summary.csv`; their records stay in
+  `results/`. Both date from mid-2026. If small models that only reason become
+  common, this dataset stops seeing the newest ones, and a line going flat
+  would not mean the gains had stopped.
 - **Not free of contamination.** All three datasets are public and old enough to
   be in training data, more so for newer models.
 
@@ -202,7 +212,8 @@ models in a little over five hours):
 `run_all.py` measures smallest models first, skips any already measured, records
 a failure and moves on, and deletes each model's weights when it is done.
 `--max-hours` stops it starting new models after a time budget. Gated models
-(Llama, and Gemma before version 4) are skipped unless a token is on the pod.
+(Llama, and Gemma before version 4) are skipped unless a token is on the pod,
+and so is a model marked `excluded` in `models.toml`.
 One whose licence that account has not accepted is recorded as failed, and
 `--retry-failed` picks it up once it has.
 

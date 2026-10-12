@@ -9,6 +9,7 @@
 #   released = 2025-03-12      when the repo's creation date is not the launch date
 #   params = 6_740_000_000     when the repo publishes no parameter count
 #   trust_remote_code = true   when the engine cannot load the model without it
+#   excluded = "why"           left out of the dataset, and not measured again
 
 # --- 2023 ---------------------------------------------------------------------
 [[model]]
@@ -177,8 +178,10 @@ id = "LiquidAI/LFM2.5-350M"
 id = "LiquidAI/LFM2.5-230M"
 [[model]]
 id = "LiquidAI/LFM2.5-8B-A1B"
+excluded = "always reasons before it answers, and has no switch"
 [[model]]
 id = "LiquidAI/LFM2.5-2.6B"
+excluded = "always reasons before it answers, and has no switch"
 [[model]]
 id = "openbmb/MiniCPM5-1B"
 [[model]]

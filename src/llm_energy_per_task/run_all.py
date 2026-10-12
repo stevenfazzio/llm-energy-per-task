@@ -59,6 +59,8 @@ def run_model(command: list[str], log: Path, timeout_s: float) -> int | str:
 
 
 def skip_reason(model: Model, root: Path, max_params: int, retry_failed: bool) -> str | None:
+    if model.excluded:
+        return f"excluded: {model.excluded}"
     if (root / "runs" / f"{model.slug}.json").exists():
         return "already measured"
     if (root / "failed" / f"{model.slug}.txt").exists() and not retry_failed:

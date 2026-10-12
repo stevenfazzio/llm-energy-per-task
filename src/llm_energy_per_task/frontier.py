@@ -51,13 +51,17 @@ def per_unit_of_work(joules_per_item: float, params: int | None, tokens: float) 
 
 
 def summary() -> list[dict]:
-    """One row per model and task, from every run file."""
+    """One row per model and task, from every run file of a model in the dataset."""
     # The registry's date wins over the one stamped at measurement, so a release
     # date corrected in models.toml takes effect without measuring again.
-    released = {m.id: m.released for m in load_models()}
+    models = load_models()
+    released = {m.id: m.released for m in models}
+    excluded = {m.id for m in models if m.excluded}
     rows = []
     for path in sorted((RESULTS / "runs").glob("*.json")):
         run = json.loads(path.read_text())
+        if run["model"] in excluded:
+            continue
         for name, task in run["tasks"].items():
             tokens = task["prompt_tokens_per_item"] + task["output_tokens_per_item"]
             rows.append(
@@ -113,6 +117,9 @@ def main() -> None:
     rows = summary()
     if not rows:
         raise SystemExit("no run files in results/runs yet")
+    for model in load_models():
+        if model.excluded:
+            print(f"left out: {model.id} ({model.excluded})")
     gpus = sorted({row["gpu"] for row in rows})
     if len(gpus) > 1:
         print(f"WARNING: runs span {gpus}; energy is only comparable on one card\n")

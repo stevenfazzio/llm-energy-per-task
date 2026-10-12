@@ -16,6 +16,8 @@ The dataset is measured. All 80 loadable models ran on one pod on 2026-10-11
 items, 2,000 extraction items and the 400 tool calls. None failed and none
 timed out. `results/runs/` has the 80 records, `results/outputs/` every raw
 answer, and `results/calibration.json` what the card draws doing nothing.
+Two of the 80 are marked `excluded` in `models.toml` (see below), so the
+dataset is 78 models and `frontier.summary()` gives 234 rows.
 `frontier.py` has not been run on them: the bar rule below is not built.
 
 A four-model pilot came first, on 500 items a task. Its rows are not
@@ -63,6 +65,18 @@ Decided, with what the full run added:
   10 seconds. Across the 80 runs `idle_watts` was 95 to 104 W. The earlier
   worry came from comparing it with the empty card: a loaded engine holds the
   card about 60 W above empty. Nothing is subtracted from any figure.
+- **Reasoning is out of scope for the moment, 2026-10-12.** Steven's call; he
+  may take up reasoning models or tasks later. `LiquidAI/LFM2.5-8B-A1B` and
+  `LiquidAI/LFM2.5-2.6B` always reason and have no switch: their cards say so,
+  and the 2.6B's template opens `<think>` itself. The token caps cut off every
+  intent and extraction answer mid-thought, so their rows said "could not
+  answer inside the cap", not "cannot do the task". They are marked `excluded`
+  in `models.toml`, which keeps them out of `summary.csv` and out of any later
+  run; their records stay in `results/`. Neither set a step at any bar on the
+  0.05 grid, so excluding them moved no line. The 8B is capable given room: of
+  the 155 tool calls it finished inside 192 tokens, 96.8% were right. No other
+  model is a case of this: 17 templates take `enable_thinking` and ran with it
+  off, and none of the other 78 put a thinking marker in an answer.
 - **The small end is overcharged.** In the pilot, energy per item followed
   model size times tokens to within 12% across the 3B and 7B models, and the
   0.5B model sat 8 to 37% above them. That biases against the smallest models,
@@ -86,21 +100,14 @@ Open, for Steven to decide:
   only good to 3 or 4 points either way. The larger sets halve that for intent
   and extraction; tool calls stay at 400 items. It will bite at once: on
   intent the best 2023 models scored 0.551 and 0.552, against a 0.55 bar.
-- **Two models reason and cannot be told not to.** `LiquidAI/LFM2.5-8B-A1B`
-  and `LiquidAI/LFM2.5-2.6B` have no thinking switch in their templates (the
-  2.6B's template opens `<think>` itself), so every intent and extraction
-  answer was cut off mid-thought by the token cap. Both score zero on intent;
-  the 2.6B's 0.228 on extraction is its thinking quoting the passage. Their
-  rows say "could not answer inside the cap", not "cannot do the task". They
-  clear no bar a chart would show, so they cannot set a line. Drop them, or
-  keep them with a note.
 - **The intent scorer depends on style for three old models.** It reads the
   first line of the reply. Llama-2-7b, Llama-2-13b and gemma-7b-it wrap the
   label in a sentence and score 0.045, 0.000 and 0.000; scored as "the reply
   names exactly one label and it is the right one" they get 0.407, 0.268 and
-  0.352. Of the other 77, 73 move by 0.02 or less and gemma-2b-it moves most,
-  from 0.170 to 0.213. This is the question Steven settled for extraction, in
-  favour of not marking style. Fixing it is a rescore from `results/outputs/`.
+  0.352. Of the other 75 in the dataset, 71 move by 0.02 or less and
+  gemma-2b-it moves most, from 0.170 to 0.213. This is the question Steven
+  settled for extraction, in favour of not marking style. Fixing it is a
+  rescore from `results/outputs/`.
 
 What reading vLLM 0.31.0 showed, since it shapes the code:
 
@@ -166,8 +173,8 @@ What they do not say:
 
 1. Build the bar rule into `frontier.py` and run it, for `summary.csv` and
    `frontier.csv`.
-2. Steven's two open decisions above. The intent one needs a rescore command,
-   which does not exist yet.
+2. Steven's open decision above, on the intent scorer. Changing it needs a
+   rescore command, which does not exist yet.
 3. Then the chart.
 
 All 14 gated models are measured. The read-only token went to the pod as a

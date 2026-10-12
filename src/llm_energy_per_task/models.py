@@ -37,6 +37,9 @@ class Model:
     license: str | None
     pilot: bool = False
     trust_remote_code: bool = False
+    # Why the model is left out of the dataset, when it is. Its records, if it
+    # was measured before that was known, stay where they are.
+    excluded: str | None = None
 
     @property
     def slug(self) -> str:
@@ -79,6 +82,7 @@ def load_models() -> list[Model]:
                 license=facts["license"],
                 pilot=entry.get("pilot", False),
                 trust_remote_code=entry.get("trust_remote_code", False),
+                excluded=entry.get("excluded"),
             )
         )
     return models

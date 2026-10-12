@@ -23,6 +23,9 @@ def test_skip_reasons(tmp_path, monkeypatch):
         replace(MODEL, chat_template=False), tmp_path, limit, False
     )
 
+    left_out = replace(MODEL, excluded="reasons, with no switch")
+    assert "reasons" in run_all.skip_reason(left_out, tmp_path, limit, True)
+
     gated = replace(MODEL, gated=True)
     assert "HF_TOKEN" in run_all.skip_reason(gated, tmp_path, limit, False)
     monkeypatch.setenv("HF_TOKEN", "x")
@@ -105,6 +108,11 @@ def test_summary_reads_run_files_and_prefers_the_registry_date(tmp_path, monkeyp
 
     monkeypatch.setattr(frontier, "load_models", lambda: [])
     assert frontier.summary()[0]["released"] == "2024-12-25"
+
+    # A model the registry leaves out keeps its run file and has no row.
+    monkeypatch.setattr(frontier, "load_models", lambda: [replace(MODEL, excluded="reasons")])
+    assert frontier.summary() == []
+    monkeypatch.setattr(frontier, "load_models", lambda: [MODEL])
 
     monkeypatch.setattr("sys.argv", ["frontier", "--bars", "0.5,0.9"])
     frontier.main()
