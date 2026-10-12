@@ -103,7 +103,10 @@ def test_measure_builds_a_complete_record(fake_gpu):
     # A task's other scores are kept per answer and averaged, like the score itself.
     assert record["tasks"]["extraction"]["also"] == {"token_f1": 0.0}
     assert all("token_f1" in row for row in outputs["extraction"])
-    assert record["tasks"]["intent"]["also"] == {}
+    # The fake's answer is a bare label, which both of intent's scores read the same way.
+    intent = record["tasks"]["intent"]
+    assert intent["metric"] == "names_intent"
+    assert intent["also"] == {"first_line": intent["score"]}
     assert record["tasks"]["toolcall"]["score"] == 0.0
 
 

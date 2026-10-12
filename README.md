@@ -25,7 +25,7 @@ and joules per item.
 
 | Task | Items | Source | Scored by |
 |---|---|---|---|
-| `intent` — route a customer message to one of 77 intents | 2,000 | Banking77, test split | exact label match |
+| `intent` — route a customer message to one of 77 intents | 2,000 | Banking77, test split | the reply names the right intent and no other |
 | `extraction` — answer a question with a span from a passage | 2,000 | SQuAD v1.1, validation split | a reference answer appears in the reply |
 | `toolcall` — turn a request into one call to a described function | 400 | Berkeley Function-Calling Leaderboard v3, "simple" | name and arguments match |
 
@@ -48,6 +48,23 @@ in the pilot the wordiest model's replies also held the answer to a different
 question on the same passage 13% of the time, against 3% for the tersest. And a
 right answer in other words is missed. The first favours older, wordier models,
 so it understates how far energy has fallen.
+
+The intent score was also changed for the way models talk, after they had run,
+by rescoring their stored answers. The first rule read only the first line of
+the reply. Llama-2-7b scored 0.045 under it, because it wraps the label in a
+sentence: `The intent of the customer message is "card_arrival".` The score is
+now whether the reply names the right intent and no other. A name counts
+wherever it is written as the label is, underscores and all, or when the first
+line is nothing but the name. The same words as ordinary words elsewhere do
+not count, because the labels read like phrases a reply can use without
+classifying anything, and a reply that names two intents gets nothing. Four of
+the 78 models moved by more than 0.02: Llama-2-7b to 0.399, gemma-7b-it from 0
+to 0.351, Llama-2-13b from 0 to 0.257 and gemma-2b-it from 0.170 to 0.207. The
+first rule's score is published beside the new one as `first_line`.
+
+Rescoring cannot give back what the 24-token cap took. Llama-2-13b was cut off
+before naming any intent in 27% of its replies and gemma-7b-it in 36%, so those
+two are still understated on intent.
 
 ## The protocol
 
@@ -131,6 +148,7 @@ src/llm_energy_per_task/
   run.py             measure one model            (pod)
   run_all.py         loop over models, resumable  (pod)
   calibrate.py       what the card draws doing nothing, once per pod  (pod)
+  rescore.py         score the stored answers again, after a scorer changes
   frontier.py        results -> summary.csv and frontier.csv
 scripts/pod_run.sh   install and run, on the pod
 scripts/pod_guard.sh has the pod terminate itself after a time limit
@@ -149,6 +167,7 @@ uv sync
 uv run pytest
 uv run python -m llm_energy_per_task.models      # lock any models added to models.toml
 uv run python -m llm_energy_per_task.frontier    # once there are results
+uv run python -m llm_energy_per_task.rescore     # after changing how an answer is scored
 ```
 
 `data/tasks/` is already frozen. `tasks/prepare.py` regenerates it and refuses to

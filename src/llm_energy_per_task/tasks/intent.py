@@ -39,10 +39,62 @@ def normalise(text: str) -> str:
     return re.sub(r"[^a-z0-9]+", "_", text.lower()).strip("_")
 
 
-def score(item: dict, output: str) -> float:
+@cache
+def names() -> frozenset[str]:
+    return frozenset(normalise(label) for label in labels())
+
+
+@cache
+def _written() -> re.Pattern:
+    """Any intent written as its label is, and not as part of a longer name."""
+    longest_first = sorted(names(), key=len, reverse=True)
+    return re.compile(
+        r"(?<![a-z0-9_])(?:" + "|".join(map(re.escape, longest_first)) + r")(?![a-z0-9_])"
+    )
+
+
+def first_line(output: str) -> str:
     line = next((ln for ln in output.splitlines() if ln.strip()), "")
-    answer = normalise(line).removeprefix("intent_")
-    return float(answer == normalise(item["label"]))
+    return normalise(line).removeprefix("intent_")
 
 
-TASK = Task(name="intent", metric="accuracy", max_tokens=24, prompt=prompt, score=score)
+def named(output: str) -> set[str]:
+    """The intents a reply names.
+
+    A name counts wherever it is written the way the label is, underscores and
+    all, whatever is wrapped around it: 'The intent is "card_arrival".' The
+    same words written as ordinary words do not count, because the labels read
+    like phrases a reply can use without classifying anything: "the exchange
+    rate is 0.75" names nothing. The one exception is a first line that is
+    nothing but the name, where spacing and punctuation are forgiven.
+    """
+    found = set(_written().findall(output.lower()))
+    alone = first_line(output)
+    if alone in names():
+        found.add(alone)
+    return found
+
+
+def score(item: dict, output: str) -> float:
+    """Right when the reply names the item's intent and no other."""
+    return float(named(output) == {normalise(item["label"])})
+
+
+def first_line_match(item: dict, output: str) -> float:
+    """The stricter score first used: the first line is the label and nothing else.
+
+    It marks a model down for wrapping the right label in a sentence, which is
+    a manner of speaking and not a wrong answer, so it is kept as a column and
+    not held against a bar.
+    """
+    return float(first_line(output) == normalise(item["label"]))
+
+
+TASK = Task(
+    name="intent",
+    metric="names_intent",
+    max_tokens=24,
+    prompt=prompt,
+    score=score,
+    also={"first_line": first_line_match},
+)

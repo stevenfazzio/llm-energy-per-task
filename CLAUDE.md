@@ -58,6 +58,21 @@ Decided, with what the full run added:
   below the 0.5B model in the pilot though their replies held a reference 93%
   of the time against its 76%. The prompt and the 48-token cap stay. The
   pilot's own files still carry F1 as their score.
+- **Intent scorer, 2026-10-12.** The score is whether the reply names the right
+  intent and no other (`names_intent`). A name counts wherever it is written as
+  the label is, underscores and all, or when the first line is nothing but the
+  name. The rule it replaced, first line only, is kept as the `first_line`
+  column. It gave Llama-2-7b, Llama-2-13b and gemma-7b-it 0.045, 0.000 and
+  0.000 for wrapping the label in a sentence; they now have 0.399, 0.257 and
+  0.351. Over the 78 models 2,127 answers gained and 50 lost, the losses being
+  replies that list several intents. Steven chose this over counting the
+  label's words anywhere, which also credits replies that only echo the
+  customer ("the current exchange rate is...") and so favours rambling.
+  The 24-token cap still costs two of them: Llama-2-13b is cut off before
+  naming any intent in 27% of replies and gemma-7b-it in 36%. Only measuring
+  again with a longer cap would fix that, and neither would set a line.
+  On the lines: zephyr-7b-beta fell from 0.5515 to 0.541, so the 0.55 bar now
+  rests on one 2023 model, Mistral-7B v0.2 at 0.5545 (1,109 of 2,000).
 - **`idle_watts` is a fair reading after all.** The calibration at the end of
   the run (`bash scripts/pod_run.sh calibrate`, which now has run on hardware)
   read 33.3 W with the card empty, 94.2 W with a model loaded and quiet, and
@@ -99,15 +114,7 @@ Open, for Steven to decide:
   defaults to 0.7/0.8/0.9. Why a rule was needed: on 500 items a score was
   only good to 3 or 4 points either way. The larger sets halve that for intent
   and extraction; tool calls stay at 400 items. It will bite at once: on
-  intent the best 2023 models scored 0.551 and 0.552, against a 0.55 bar.
-- **The intent scorer depends on style for three old models.** It reads the
-  first line of the reply. Llama-2-7b, Llama-2-13b and gemma-7b-it wrap the
-  label in a sentence and score 0.045, 0.000 and 0.000; scored as "the reply
-  names exactly one label and it is the right one" they get 0.407, 0.268 and
-  0.352. Of the other 75 in the dataset, 71 move by 0.02 or less and
-  gemma-2b-it moves most, from 0.170 to 0.213. This is the question Steven
-  settled for extraction, in favour of not marking style. Fixing it is a
-  rescore from `results/outputs/`.
+  intent the best 2023 model scores 0.5545, against a 0.55 bar.
 
 What reading vLLM 0.31.0 showed, since it shapes the code:
 
@@ -173,9 +180,7 @@ What they do not say:
 
 1. Build the bar rule into `frontier.py` and run it, for `summary.csv` and
    `frontier.csv`.
-2. Steven's open decision above, on the intent scorer. Changing it needs a
-   rescore command, which does not exist yet.
-3. Then the chart.
+2. Then the chart.
 
 All 14 gated models are measured. The read-only token went to the pod as a
 file piped over SSH, so its value was never shown, and it went with the pod's
@@ -193,8 +198,11 @@ two or three models from this run beside it, and see the 3% above.
 - **One GPU model for every run.** Energy on different cards is not comparable;
   `frontier.py` warns if runs span more than one.
 - **Fix scoring bugs by rescoring, not rerunning.** `results/outputs/` holds
-  every raw answer for that reason. There is no rescore command yet; write one
-  when it is first needed.
+  every raw answer for that reason, and `python -m llm_energy_per_task.rescore`
+  redoes the scores from them (`--dry-run` first). Run with no scorer changed
+  it reports nothing moved and leaves every file byte for byte as it was; that
+  was checked on all 80 records before its first use. It does not touch
+  `results/pilot/`.
 - Smoke runs (`--limit N`) write to `results/smoke/`, which is ignored by git.
 
 ## Where this is going

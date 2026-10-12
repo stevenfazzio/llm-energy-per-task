@@ -27,6 +27,7 @@ COLUMNS = [
     "metric",
     "score",
     "token_f1",
+    "first_line",
     "joules_per_item",
     "wh_per_1000_items",
     "prompt_tokens_per_item",
@@ -72,8 +73,10 @@ def summary() -> list[dict]:
                     "params": run["params"],
                     "metric": task["metric"],
                     "score": task["score"],
-                    # SQuAD's metric, kept beside the extraction score; blank for other tasks.
+                    # Each kept beside one task's score, and blank for the others:
+                    # SQuAD's metric for extraction, the stricter match for intent.
                     "token_f1": task.get("also", {}).get("token_f1"),
+                    "first_line": task.get("also", {}).get("first_line"),
                     "joules_per_item": task["joules_per_item"],
                     "wh_per_1000_items": task["joules_per_item"] / 3.6,
                     "prompt_tokens_per_item": task["prompt_tokens_per_item"],

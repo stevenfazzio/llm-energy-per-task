@@ -21,9 +21,11 @@
  "idle_watts": 97.03899633752671,
  "tasks": {
   "intent": {
-   "metric": "accuracy",
-   "score": 0.176,
-   "also": {},
+   "metric": "names_intent",
+   "score": 0.1785,
+   "also": {
+    "first_line": 0.176
+   },
    "items": 2000,
    "max_tokens": 24,
    "joules_per_item": 0.554148222234514,

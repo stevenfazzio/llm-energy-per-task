@@ -19,7 +19,7 @@ from . import RESULTS
 from .energy import GpuMeter, Reading
 from .files import write_json, write_jsonl
 from .models import Model, load_models
-from .tasks import TASKS, load_items, strip_thinking
+from .tasks import TASKS, Task, load_items, strip_thinking
 
 # The protocol. Changing any of these changes what the numbers mean, so they are
 # written into every result.
@@ -66,6 +66,31 @@ def timed_passes(
         meter.stop()
         raise
     return first, passes, meter.stop()
+
+
+def answer_row(task: Task, item: dict, output: str, **measured) -> dict:
+    """One answer as it is stored: the raw text, its scores, and what was measured.
+
+    The scores are worked out from the raw text alone, which is what lets
+    rescore.py redo them later without a GPU.
+    """
+    answer_text = strip_thinking(output)
+    return {
+        "id": item["id"],
+        "output": output,
+        "score": task.score(item, answer_text),
+        **{metric: scorer(item, answer_text) for metric, scorer in task.also.items()},
+        **measured,
+    }
+
+
+def task_scores(task: Task, rows: list[dict]) -> dict:
+    """A task's scores over its answers, as the head of its entry in a run file."""
+    return {
+        "metric": task.metric,
+        "score": fmean(row["score"] for row in rows),
+        "also": {metric: fmean(row[metric] for row in rows) for metric in task.also},
+    }
 
 
 def load_engine(model: Model) -> Callable[[list[str], int], list]:
@@ -128,23 +153,19 @@ def measure(
         rows = []
         for item, result in zip(items, results, strict=True):
             completion = result.outputs[0]
-            answer_text = strip_thinking(completion.text)
             rows.append(
-                {
-                    "id": item["id"],
-                    "output": completion.text,
-                    "score": task.score(item, answer_text),
-                    **{metric: scorer(item, answer_text) for metric, scorer in task.also.items()},
-                    "prompt_tokens": len(result.prompt_token_ids),
-                    "output_tokens": len(completion.token_ids),
-                    "finish_reason": completion.finish_reason,
-                }
+                answer_row(
+                    task,
+                    item,
+                    completion.text,
+                    prompt_tokens=len(result.prompt_token_ids),
+                    output_tokens=len(completion.token_ids),
+                    finish_reason=completion.finish_reason,
+                )
             )
         outputs[name] = rows
         measured[name] = {
-            "metric": task.metric,
-            "score": fmean(row["score"] for row in rows),
-            "also": {metric: fmean(row[metric] for row in rows) for metric in task.also},
+            **task_scores(task, rows),
             "items": len(rows),
             "max_tokens": task.max_tokens,
             "joules_per_item": reading.joules / (passes * len(rows)),

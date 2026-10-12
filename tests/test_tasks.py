@@ -7,17 +7,38 @@ def test_strip_thinking_removes_closed_and_unclosed_blocks():
     assert strip_thinking("no reasoning here") == "no reasoning here"
 
 
-def test_intent_forgives_formatting_but_not_the_wrong_label():
+def test_intent_credits_the_right_label_however_it_is_wrapped():
     item = {"label": "card_arrival"}
     for answer in [
         "card_arrival",
         " Card Arrival.",
         "`card_arrival`",
         "Intent: card-arrival\nbecause",
+        'The intent of the customer message is "card_arrival".',
+        "Sure! Based on the message you provided, the intent is:\n\ncard_arrival",
     ]:
         assert intent.score(item, answer) == 1.0, answer
-    for answer in ["card_delivery_estimate", "", "The intent is card_arrival"]:
+    for answer in [
+        "card_delivery_estimate",
+        "",
+        # Two names are a hedge and not a classification, whichever comes first.
+        "card_arrival\ncard_delivery_estimate",
+        # The label's words used as ordinary words name nothing.
+        "Your card arrival is expected within five working days.",
+        # Nor does a made-up name that happens to contain the label.
+        "Intent: new_card_arrival_date",
+    ]:
         assert intent.score(item, answer) == 0.0, answer
+
+
+def test_intent_keeps_the_stricter_first_line_match_beside_the_score():
+    strict = intent.TASK.also["first_line"]
+    item = {"label": "card_arrival"}
+    assert strict(item, " Card Arrival.") == 1.0
+    assert strict(item, "Intent: card-arrival\nbecause") == 1.0
+    assert strict(item, 'The intent is "card_arrival".') == 0.0
+    # It credits the first of several names, which the score does not.
+    assert strict(item, "card_arrival\ncard_delivery_estimate") == 1.0
 
 
 def test_intent_matches_the_datasets_irregular_labels():
